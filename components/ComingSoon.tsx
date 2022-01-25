@@ -12,10 +12,10 @@ export const ComingSoon: React.FC<{}> = () => {
           rel="stylesheet"
         />
       </Head>
-      <main className="bg-slate-100 flex flex-col items-center justify-center min-h-screen">
+      <main className="flex flex-col justify-center items-center min-h-screen bg-slate-100">
         <div className="container">
           <div className="flex flex-col items-center">
-            <div className="flex flex-col items-center p-8 bg-white border border-gray-200 rounded-lg">
+            <div className="flex flex-col items-center p-8 bg-white rounded-lg border border-gray-200">
               <figure className="w-20">
                 <Image src={logo} alt="لوگو فرانت چپتر" />
               </figure>
@@ -30,6 +30,7 @@ export const ComingSoon: React.FC<{}> = () => {
                   target="_blank"
                   href="https://t.me/FrontChapter"
                   className="text-[#1e98d4] inline-block ml-4 leading-none"
+                  rel="noreferrer"
                 >
                   <i className="ri-telegram-fill ri-2x"></i>
                 </a>
@@ -37,6 +38,7 @@ export const ComingSoon: React.FC<{}> = () => {
                   target="_blank"
                   href="https://www.instagram.com/frontChapter/"
                   className="text-[#e1306c] inline-block leading-none"
+                  rel="noreferrer"
                 >
                   <i className="ri-instagram-line ri-2x"></i>
                 </a>
