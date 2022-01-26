@@ -3,7 +3,6 @@
     "bradlc.vscode-tailwindcss",
     "syler.sass-indented",
     "esbenp.prettier-vscode",
-    "pulkitgangwar.nextjs-snippets",
-    "heybourn.headwind"
+    "pulkitgangwar.nextjs-snippets"
   ]
 }
