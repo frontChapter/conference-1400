@@ -5,13 +5,12 @@ on: [push, delete]
 jobs:
   to_github:
     runs-on: ubuntu-latest
+    if: ${{ github.repository == 'frontChapter/conference-1400' }}
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
       - uses: pixta-dev/repository-mirroring-action@v1
         with:
-          target_repo_url:
-            ${{ secrets.MIRROR_REPO_URL }}
-          ssh_private_key:
-            ${{ secrets.MIRROR_REPO_SSH_PRIVATE_KEY }}
+          target_repo_url: ${{ secrets.MIRROR_REPO_URL }}
+          ssh_private_key: ${{ secrets.MIRROR_REPO_SSH_PRIVATE_KEY }}
