@@ -34,7 +34,14 @@ export const TopNavbar: React.FC<{}> = () => {
           </Link>
         </div>
         <div className="order-3 lg:order-4 lg:mr-auto">
-          <button>ثبت‌نام</button>
+          <a
+            href="https://evand.com/events/frontchapter-1400"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-orange rounded-3xl px-6 py-1 text-xl font-bold shadow-md"
+          >
+            ثبت نام
+          </a>
         </div>
         <div className="order-3 w-full lg:order-3 lg:mr-2 lg:w-auto">
           <TopNav collapsed={navCollapsed} setNavCollapse={setNavCollapse} />
