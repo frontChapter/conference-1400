@@ -43,6 +43,7 @@ module.exports = {
           '"Courier New"',
           'monospace',
         ],
+        heading: ['Lalezar', 'Vazir', 'cursive'],
       },
     },
   },
