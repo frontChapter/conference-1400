@@ -6,11 +6,13 @@ import { TopNav } from "./TopNav";
 export const TopNavbar: React.FC<{}> = () => {
   return (
     <div className="fixed inset-x-0 top-0 bg-white">
-      <div className="container flex flex-row items-center py-3 mx-auto">
-        <div>
+      <div className="container mx-auto flex flex-row flex-wrap items-center justify-between px-4 py-3 lg:justify-start">
+        <div className="order-1 lg:hidden">
+        </div>
+        <div className="order-2">
           <Link href="/">
             <a>
-              <figure className="w-12 h-12">
+              <figure className="h-12 w-12">
                 <Image
                   src={logo}
                   priority
@@ -22,7 +24,10 @@ export const TopNavbar: React.FC<{}> = () => {
             </a>
           </Link>
         </div>
-        <div className="mr-2">
+        <div className="order-3 lg:order-4 lg:mr-auto">
+          <button>ثبت‌نام</button>
+        </div>
+        <div className="collapse lg:collapsed order-3 w-full duration-300 lg:order-3 lg:mr-2 lg:w-auto">
           <TopNav />
         </div>
       </div>

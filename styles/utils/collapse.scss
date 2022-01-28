@@ -1,0 +1,13 @@
+@layer utilities {
+  .collapse {
+    @apply ease-in-out;
+
+    max-height: 0;
+    overflow: hidden;
+    transition-property: max-height;
+
+    &.collapsed {
+      max-height: 100vh;
+    }
+  }
+}
