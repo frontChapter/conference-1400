@@ -44,7 +44,7 @@ export const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
           <li key={index}>
             <Link href={href}>
               <a
-                className="block py-4 text-gray-500 transition hover:text-gray-900 lg:py-0"
+                className="block py-4 text-lg text-gray-500 transition hover:text-gray-900 lg:py-0"
                 onClick={() => setNavCollapse(false)}
               >
                 {title}
