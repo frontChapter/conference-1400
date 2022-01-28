@@ -27,6 +27,7 @@ export const TopNavbar: React.FC<{}> = () => {
                   objectFit="contain"
                   width={48}
                   height={48}
+                  alt="فرانت چپتر"
                 />
               </figure>
             </a>
