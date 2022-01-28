@@ -27,14 +27,26 @@ const items = [
   },
 ];
 
-export const TopNav: React.FC<{}> = () => {
+interface Props {
+  collapsed: boolean;
+  setNavCollapse: (state: boolean) => void;
+}
+
+export const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
   return (
-    <nav className="py-4">
-      <ul className="flex flex-col space-y-5 lg:flex-row lg:space-x-4 lg:space-y-0 lg:space-x-reverse">
+    <nav
+      className={
+        "collapse lg:collapsed duration-500" + (collapsed ? " collapsed" : "")
+      }
+    >
+      <ul className="flex flex-col lg:flex-row lg:space-x-4 lg:space-x-reverse">
         {items.map(({ title, href }, index) => (
           <li key={index}>
             <Link href={href}>
-              <a className="text-gray-500 transition hover:text-gray-900">
+              <a
+                className="block py-4 text-gray-500 transition hover:text-gray-900 lg:py-0"
+                onClick={() => setNavCollapse(false)}
+              >
                 {title}
               </a>
             </Link>
