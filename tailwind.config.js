@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': '#ff802e',
+        'primary-hover': '#e74e00',
+        'primary-active': '#b43d00',
+      },
       fontFamily: {
         sans: [
           'Vazir',
