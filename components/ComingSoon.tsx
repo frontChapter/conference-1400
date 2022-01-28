@@ -7,10 +7,6 @@ export const ComingSoon: React.FC<{}> = () => {
     <>
       <Head>
         <title>فرانت چپتر تو راهه</title>
-        <link
-          href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-          rel="stylesheet"
-        />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-slate-100">
         <div className="container">
