@@ -4,6 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "yarn lint",
     "lint": "yarn eslint && yarn stylelint",
     "eslint": "next lint",
     "stylelint": "stylelint styles/*.scss"
