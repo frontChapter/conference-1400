@@ -2,11 +2,11 @@
 @import "~@fontsource/lalezar/arabic-400.css";
 @import "~remixicon/fonts/remixicon.css";
 
-@import "./utils/collapse.scss";
-@import "./utils/hamburgers.scss";
+@import "./utils/collapse";
+@import "./utils/hamburgers";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "./components/button.scss";
+@import "./components/button";
