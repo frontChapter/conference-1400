@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "assets/images/logo.png";
 import { HamburgerButton } from "./HamburgerButton";
 import { TopNav } from "./TopNav";
 
