@@ -5,9 +5,9 @@
     "build": "next build",
     "start": "next start",
     "test": "yarn lint",
-    "lint": "yarn eslint && yarn stylelint",
-    "eslint": "next lint",
-    "stylelint": "stylelint styles/*.scss",
+    "lint": "yarn run lint:eslint && yarn run lint:stylelint",
+    "lint:eslint": "next lint",
+    "lint:stylelint": "stylelint styles/*.scss",
     "prepare": "husky install"
   },
   "dependencies": {
