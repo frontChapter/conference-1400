@@ -1,33 +1,62 @@
 import Image from "next/image";
 import Digikala from "../public/images/logo diji kala.png";
 
-// const speakersList = [
-//   {
-//     name: "رنیکا مشهدی",
-//     title: "توسعه‌دهنده‌ی فرانت‌اند در تربچه",
-//     photo: Avatar,
-//   },
-//   {
-//     name: "ام‌کلثوم زینت پرست",
-//     title: "توسعه‌دهنده‌ی فرانت‌اند در kolsom soft",
-//     photo: Avatar,
-//   },
-//   {
-//     name: "کوروش بینوا",
-//     title: "UI-Developer در مایکروهارد",
-//     photo: Avatar,
-//   },
-//   {
-//     name: "رعنا خوشه",
-//     title: "Co-Founder در زی‌زی سافت",
-//     photo: Avatar,
-//   },
-//   {
-//     name: "جواد جوادی",
-//     title: "توسعه‌دهنده‌ی فرانت‌اند در نوین توسعه گران آوار",
-//     photo: Avatar,
-//   },
-// ];
+const sponsorsList = [
+  {
+    title: "دیجی‌کالا",
+    link: "https://digikala.com/",
+    logo: Digikala,
+  },
+  {
+    title: "دیجی‌کالا",
+    link: "https://digikala.com/",
+    logo: Digikala,
+  },
+  {
+    title: "دیجی‌کالا",
+    link: "https://digikala.com/",
+    logo: Digikala,
+  },
+  {
+    title: "دیجی‌کالا",
+    link: "https://digikala.com/",
+    logo: Digikala,
+  },
+  {
+    title: "دیجی‌کالا",
+    link: "https://digikala.com/",
+    logo: Digikala,
+  },
+  {
+    title: "دیجی‌کالا",
+    link: "https://digikala.com/",
+    logo: Digikala,
+  },
+  {
+    title: "دیجی‌کالا",
+    link: "https://digikala.com/",
+    logo: Digikala,
+  },
+  {
+    title: "دیجی‌کالا",
+    link: "https://digikala.com/",
+    logo: Digikala,
+  },
+];
+
+type IListItemType = {
+  link: string;
+  title: string;
+  logo: string | StaticImageData;
+};
+
+const ListItem = ({ link, title, logo }: IListItemType) => (
+  <div className="px-3 basis-1/4">
+    <a href={link} target="_blank" rel="noreferrer">
+      <Image layout="responsive" src={logo} alt={title} title={title} />
+    </a>
+  </div>
+);
 
 const Sponsors = () => {
   return (
@@ -38,30 +67,9 @@ const Sponsors = () => {
         </h1>
         <div className="mx-auto max-w-xl">
           <div className="flex flex-row flex-wrap justify-center">
-            <div className="px-3 basis-1/4">
-              <Image layout="responsive" src={Digikala} alt="dijikala logo" />
-            </div>
-            <div className="px-3 basis-1/4">
-              <Image layout="responsive" src={Digikala} alt="dijikala logo" />
-            </div>
-            <div className="px-3 basis-1/4">
-              <Image layout="responsive" src={Digikala} alt="dijikala logo" />
-            </div>
-            <div className="px-3 basis-1/4">
-              <Image layout="responsive" src={Digikala} alt="dijikala logo" />
-            </div>
-            <div className="px-3 basis-1/4">
-              <Image layout="responsive" src={Digikala} alt="dijikala logo" />
-            </div>
-            <div className="px-3 basis-1/4">
-              <Image layout="responsive" src={Digikala} alt="dijikala logo" />
-            </div>
-            <div className="px-3 basis-1/4">
-              <Image layout="responsive" src={Digikala} alt="dijikala logo" />
-            </div>
-            <div className="px-3 basis-1/4">
-              <Image layout="responsive" src={Digikala} alt="dijikala logo" />
-            </div>
+            {sponsorsList.map((item, index) => (
+              <ListItem key={index} {...item} />
+            ))}
           </div>
           <p className="mt-8 text-sm text-gray-500">
             فرانت چپتر برای ادامه و گسترش فعالیت های خود در جهت افزایش آگاهی
