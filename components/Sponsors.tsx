@@ -83,7 +83,7 @@ const Sponsors = () => {
               className="px-4 py-2 bg-transparent rounded border cursor-pointer hover:bg-primary-500 border-primary text-primary hover:border-transparent hover:bg-primary hover:text-white"
               rel="noreferrer"
             >
-              حامی میشوم
+              حامی می‌شوم
             </a>
           </div>
         </div>
