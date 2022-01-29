@@ -1,4 +1,4 @@
-name: Lint & test
+name: CI
 
 on:
   push:
@@ -9,12 +9,15 @@ on:
     branches:
       - dev
       - master
+    types:
+      - opened
+      - review_requested
 
 env:
   NODE_VERSION: 16
-  
+
 jobs:
-  lint:
+  lints:
     runs-on: ubuntu-latest
     steps:
       - name: Check out files from GitHub
@@ -30,5 +33,17 @@ jobs:
         run: yarn run lint:eslint
       - name: Run stylelint
         run: yarn run lint:stylelint
-      - run: echo "✅ GOOD JOB 👌"
-      
+      - name: ✅ GOOD JOB 👌
+        run: echo "✅ GOOD JOB 👌"
+  mirror:
+    needs: lints
+    if: ${{ github.event.push }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url: ${{ secrets.MIRROR_REPO_URL }}
+          ssh_private_key: ${{ secrets.MIRROR_REPO_SSH_PRIVATE_KEY }}
