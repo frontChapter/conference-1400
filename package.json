@@ -4,7 +4,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "yarn eslint && yarn stylelint",
+    "eslint": "next lint",
+    "stylelint": "stylelint styles/*.scss"
   },
   "dependencies": {
     "@fontsource/lalezar": "^4.5.1",
