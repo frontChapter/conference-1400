@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Digikala from "../public/images/logo diji kala.png";
+import Digikala from "../public/images/sponsors/digikala.png";
 
 const sponsorsList = [
   {
