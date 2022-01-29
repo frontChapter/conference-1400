@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Jumbotron } from "components/Jumbotron";
 import Speakers from "components/Speakers";
+import Sponsors from "components/Sponsors";
 import { TopNavbar } from "components/TopNavbar";
 import TripSteps from "components/TripSteps";
 
@@ -20,6 +21,9 @@ export default function Home() {
         <Speakers />
       </div>
       <TripSteps />
+      <div className="container mx-auto px-6">
+        <Sponsors />
+      </div>
     </main>
   );
 }
