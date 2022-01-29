@@ -1,6 +1,6 @@
 import Image from "next/image";
-import bg from "../assets/images/jumbotron-bg.jpg";
-import logo from "../assets/images/logo.png";
+import bg from "assets/images/jumbotron-bg.jpg";
+import logo from "assets/images/logo.png";
 
 export const Jumbotron: React.FC<{}> = () => {
   return (
