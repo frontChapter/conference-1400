@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - dev
+      - master
+  pull_request:
+    branches:
+      - dev
+      - master
+    types:
+      - opened
+      - review_requested
+
+env:
+  NODE_VERSION: 16
+
+jobs:
+  lints:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out files from GitHub
+        uses: actions/checkout@v2
+      - name: Set up Node ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Run eslint
+        run: yarn run lint:eslint
+      - name: Run stylelint
+        run: yarn run lint:stylelint
+      - name: ✅ GOOD JOB 👌
+        run: echo "✅ GOOD JOB 👌"
+  mirror:
+    needs: lints
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url: ${{ secrets.MIRROR_REPO_URL }}
+          ssh_private_key: ${{ secrets.MIRROR_REPO_SSH_PRIVATE_KEY }}

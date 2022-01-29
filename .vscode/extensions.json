@@ -4,6 +4,7 @@
     "syler.sass-indented",
     "esbenp.prettier-vscode",
     "pulkitgangwar.nextjs-snippets",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint"
   ]
 }
