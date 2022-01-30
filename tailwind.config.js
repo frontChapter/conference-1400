@@ -6,11 +6,17 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
+      padding: {
+        "DEFAULT": "1rem",
+        "sm": "0.5rem",
+        "lg": "1rem",
+        "xl": "2rem",
+        "2xl": "2.5rem",
+      },
     },
     extend: {
       colors: {
-        primary: "#ff802e",
+        "primary": "#ff802e",
         "primary-hover": "#e74e00",
         "primary-active": "#b43d00",
       },
