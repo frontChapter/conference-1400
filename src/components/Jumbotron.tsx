@@ -63,7 +63,9 @@ const Jumbotron: React.FC<{}> = () => {
         </div>
 
         <WaveSvg className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 text-gray-50 md:block" />
-        <i className="ri-arrow-down-s-line absolute bottom-0 left-1/2 hidden -translate-x-1/2 text-4xl leading-none text-gray-800 md:block" />
+        <div className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 translate-y-1 md:block">
+          <i className="ri-arrow-down-s-line block animate-bounce text-4xl leading-none text-gray-800" />
+        </div>
       </div>
     </div>
   );
