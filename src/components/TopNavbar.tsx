@@ -10,8 +10,8 @@ export const TopNavbar: React.FC<{}> = () => {
 
   return (
     <div className="fixed inset-x-0 top-0 z-40 bg-white">
-      <div className="container flex flex-row flex-wrap justify-between items-center py-3 lg:justify-start">
-        <div className="order-1 w-9 h-9 lg:hidden">
+      <div className="container flex flex-row flex-wrap items-center justify-between py-3 lg:justify-start">
+        <div className="order-1 h-9 w-9 lg:hidden">
           <HamburgerButton
             collapsed={navCollapsed}
             setNavCollapse={setNavCollapse}
@@ -20,7 +20,7 @@ export const TopNavbar: React.FC<{}> = () => {
         <div className="order-2">
           <Link href="/">
             <a>
-              <figure className="w-12 h-12">
+              <figure className="h-12 w-12">
                 <Image
                   src={logo}
                   priority
@@ -38,7 +38,7 @@ export const TopNavbar: React.FC<{}> = () => {
             href="https://evand.com/events/frontchapter-1400"
             target="_blank"
             rel="noreferrer"
-            className="px-6 py-1 text-xl font-bold leading-9 rounded-3xl shadow-md btn-orange"
+            className="btn-orange rounded-3xl px-4 py-1 font-bold shadow-md md:px-6 md:text-xl md:leading-9"
           >
             ثبت نام
           </a>
