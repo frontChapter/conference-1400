@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import logo from "assets/images/logo.png";
-import { HamburgerButton } from "./HamburgerButton";
-import { TopNav } from "./TopNav";
+import HamburgerButton from "./HamburgerButton";
+import TopNav from "./TopNav";
 
-export const TopNavbar: React.FC<{}> = () => {
+const TopNavbar: React.FC<{}> = () => {
   let [navCollapsed, setNavCollapse] = useState<boolean>(false);
 
   return (
@@ -50,3 +50,5 @@ export const TopNavbar: React.FC<{}> = () => {
     </div>
   );
 };
+
+export default TopNavbar;

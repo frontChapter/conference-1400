@@ -3,10 +3,7 @@ interface Props {
   setNavCollapse: (state: boolean) => void;
 }
 
-export const HamburgerButton: React.FC<Props> = ({
-  collapsed,
-  setNavCollapse,
-}) => {
+const HamburgerButton: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
   return (
     <button
       className={"hamburger hamburger--spin" + (collapsed ? " is-active" : "")}
@@ -19,3 +16,5 @@ export const HamburgerButton: React.FC<Props> = ({
     </button>
   );
 };
+
+export default HamburgerButton;

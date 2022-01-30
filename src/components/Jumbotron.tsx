@@ -3,7 +3,7 @@ import bg from "assets/images/jumbotron-bg.jpg";
 import logo from "assets/images/logo.png";
 import WaveSvg from "assets/images/jumbotron-wave.svg?inline";
 
-export const Jumbotron: React.FC<{}> = () => {
+const Jumbotron: React.FC<{}> = () => {
   return (
     <div className="container py-8">
       <div className="relative overflow-hidden rounded-[75px] py-8 px-4 md:pt-20 md:pb-28">
@@ -68,3 +68,5 @@ export const Jumbotron: React.FC<{}> = () => {
     </div>
   );
 };
+
+export default Jumbotron;

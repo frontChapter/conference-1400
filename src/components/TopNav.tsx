@@ -32,7 +32,7 @@ interface Props {
   setNavCollapse: (state: boolean) => void;
 }
 
-export const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
+const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
   return (
     <nav
       className={
@@ -56,3 +56,5 @@ export const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
     </nav>
   );
 };
+
+export default TopNav;

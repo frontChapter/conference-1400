@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import logo from "assets/images/logo.svg";
 
-export const ComingSoon: React.FC<{}> = () => {
+const ComingSoon: React.FC<{}> = () => {
   return (
     <>
       <Head>
@@ -46,3 +46,5 @@ export const ComingSoon: React.FC<{}> = () => {
     </>
   );
 };
+
+export default ComingSoon;
