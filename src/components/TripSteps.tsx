@@ -1,6 +1,6 @@
 const TripSteps = () => {
   return (
-    <div className="flex flex-col justify-between items-center p-14 text-center bg-primary">
+    <div className="flex flex-col items-center justify-between bg-gradient-to-br from-[#DE4103] to-[#F08423] p-14 text-center">
       <div className="container">
         <h4 className="text-[36px] font-bold text-white">
           نگران مسیر و اقامت نباشید!
