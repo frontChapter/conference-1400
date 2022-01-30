@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fontsource/lalezar": "^4.5.1",
+    "@persian-tools/persian-tools": "^3.2.1",
     "autoprefixer": "^10.4.2",
     "hamburgers": "^1.1.3",
     "next": "latest",
