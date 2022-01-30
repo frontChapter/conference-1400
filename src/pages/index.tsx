@@ -4,6 +4,7 @@ import Speakers from "components/Speakers";
 import Sponsors from "components/Sponsors";
 import TopNavbar from "components/TopNavbar";
 import TripSteps from "components/TripSteps";
+import Subscribe from "components/Subscribe";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
       <TripSteps />
       <div className="container">
         <Sponsors />
+      </div>
+      <div className="container">
+        <Subscribe />
       </div>
     </main>
   );
