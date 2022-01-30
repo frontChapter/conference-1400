@@ -1,6 +1,7 @@
 import Image from "next/image";
 import bg from "assets/images/jumbotron-bg.jpg";
 import logo from "assets/images/logo.png";
+import WaveSvg from "assets/images/jumbotron-wave.svg?inline";
 
 export const Jumbotron: React.FC<{}> = () => {
   return (
@@ -58,6 +59,9 @@ export const Jumbotron: React.FC<{}> = () => {
 
           {/* TODO: Add wave and arrow on bottom */}
         </div>
+
+        <WaveSvg className="absolute bottom-0 left-1/2 hidden -translate-x-1/2 text-gray-50 md:block" />
+        <i className="ri-arrow-down-s-line absolute bottom-0 left-1/2 hidden -translate-x-1/2 text-4xl leading-none text-gray-800 md:block" />
       </div>
     </div>
   );
