@@ -9,7 +9,6 @@
 }
 
 .stepper li {
-  list-style-type: none;
   float: left;
   width: 33.33%;
   position: relative;
@@ -40,6 +39,33 @@
 
 .stepper li:first-child::after {
   content: none;
+}
+
+@media (max-width: 640px) {
+  .stepper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 48px;
+  }
+
+  .stepper li {
+    width: unset;
+    flex: 1 0 50%;
+  }
+
+  .stepper li::before {
+    width: 80px;
+    height: 80px;
+    line-height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    color: #ff802e;
+  }
+
+  .stepper li::after {
+    content: none;
+  }
 }
 
 .stepper li:nth-child(1)::before {

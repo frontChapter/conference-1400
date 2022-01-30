@@ -1,11 +1,11 @@
 const TripSteps = () => {
   return (
-    <div className="flex flex-col items-center justify-between bg-gradient-to-br from-[#DE4103] to-[#F08423] p-14 text-center">
-      <div className="container">
+    <div className="flex flex-col items-center justify-between bg-gradient-to-br from-[#DE4103] to-[#F08423] p-8 text-center sm:p-14">
+      <div className="container px-0">
         <h4 className="text-[36px] font-bold text-white">
           نگران مسیر و اقامت نباشید!
         </h4>
-        <p className="pt-4 text-[18px] text-white">
+        <p className="hidden pt-4 text-[18px] text-white sm:block">
           میتونید با عضو شدن توی خبرنامه فرانت چپتر، علاوه بر مطلع شدن از تاریخ
           جلسات و شرکت توی اونا، از رویداد ها و همکاری های فرانت چپتر با بقیه
           جامعه های برنامه نویسی باخبر بشید. درضمن قول می‌دیم که اسپم نکنیم و
