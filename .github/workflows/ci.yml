@@ -18,6 +18,7 @@ env:
 
 jobs:
   lints:
+    if: ${{ github.repository == 'frontChapter/conference-1400' }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out files from GitHub
