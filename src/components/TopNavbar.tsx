@@ -10,7 +10,7 @@ export const TopNavbar: React.FC<{}> = () => {
 
   return (
     <div className="fixed inset-x-0 top-0 z-40 bg-white">
-      <div className="container mx-auto flex flex-row flex-wrap items-center justify-between py-3 lg:justify-start">
+      <div className="container flex flex-row flex-wrap items-center justify-between py-3 lg:justify-start">
         <div className="order-1 h-9 w-9 lg:hidden">
           <HamburgerButton
             collapsed={navCollapsed}
