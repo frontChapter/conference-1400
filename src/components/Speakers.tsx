@@ -39,7 +39,7 @@ type IListItemType = {
 const ListItem = ({ photo, name, title }: IListItemType) => (
   <div className="basis-1/5">
     <div className="flex flex-col items-center">
-      <figure className="h-32 w-32">
+      <figure className="w-32 h-32">
         <Image
           src={photo}
           priority
@@ -52,10 +52,7 @@ const ListItem = ({ photo, name, title }: IListItemType) => (
       <span className="mt-1.5 max-w-[8rem] text-center text-lg font-medium text-[#4B5563]">
         {name}
       </span>
-      <span
-        className="mt-1.5 max-w-[8rem] text-center text-xs font-medium text-[#6B7280]"
-        text-center
-      >
+      <span className="mt-1.5 max-w-[8rem] text-center text-xs font-medium text-[#6B7280]">
         {title}
       </span>
     </div>
@@ -65,10 +62,10 @@ const ListItem = ({ photo, name, title }: IListItemType) => (
 const Speakers = () => {
   return (
     <div className="my-14">
-      <h4 className="mb-8 text-center text-4xl font-bold leading-loose text-primary">
+      <h4 className="mb-8 text-4xl font-bold leading-loose text-center text-primary">
         ارائه دهندگان
       </h4>
-      <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-0 sm:gap-y-4">
+      <div className="flex flex-row flex-wrap gap-4 justify-center sm:gap-0 sm:gap-y-4">
         {speakersList.map((item, index) => (
           <ListItem key={index} {...item} />
         ))}
