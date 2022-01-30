@@ -61,7 +61,7 @@ const ListItem = ({ photo, name, title }: IListItemType) => (
 
 const Speakers = () => {
   return (
-    <div className="my-14">
+    <div className="container py-16">
       <h4 className="mb-8 text-4xl font-bold leading-loose text-center text-primary">
         ارائه دهندگان
       </h4>

@@ -20,7 +20,7 @@ export default function Home() {
         <Jumbotron />
         <Countdown />
       </div>
-      <div className="container">
+      <div className="bg-white">
         <Speakers />
       </div>
       <TripSteps />
