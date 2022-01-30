@@ -44,8 +44,7 @@
 @media (max-width: 640px) {
   .stepper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     row-gap: 48px;
   }
 
