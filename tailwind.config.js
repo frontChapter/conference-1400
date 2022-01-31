@@ -58,6 +58,9 @@ module.exports = {
         ],
         heading: ["Lalezar", "Vazir", "cursive"],
       },
+      fontSize: {
+        "2rem": "2rem",
+      }
     },
   },
   plugins: [],

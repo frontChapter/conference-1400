@@ -45,6 +45,7 @@
   .stepper {
     display: flex;
     flex-wrap: wrap;
+    flex-flow: row wrap;
     row-gap: 48px;
   }
 
