@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const Subscribe: React.FC<{}> = () => {
 
-    let [email, setEmail] = useState(null)
+    let [email, setEmail] = useState("")
     let [subBtnClicked, setSubBtnClicked] = useState(false)
 
     function SubscribeHandler(){
