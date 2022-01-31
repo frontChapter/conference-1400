@@ -17,7 +17,7 @@ const TopNavbar: React.FC<{}> = () => {
             setNavCollapse={setNavCollapse}
           />
         </div>
-        <div className="order-2">
+        <div className="order-2 lg:ml-6">
           <Link href="/">
             <a>
               <figure className="h-12 w-12">
@@ -43,7 +43,7 @@ const TopNavbar: React.FC<{}> = () => {
             ثبت نام
           </a>
         </div>
-        <div className="order-3 w-full lg:order-3 lg:mr-2 lg:w-auto">
+        <div className="order-3 w-full lg:order-3 lg:w-auto">
           <TopNav collapsed={navCollapsed} setNavCollapse={setNavCollapse} />
         </div>
       </div>
