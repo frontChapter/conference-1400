@@ -1,0 +1,52 @@
+.bg-subscribe {
+    background-color: #F8F7F2;
+    padding: 48px 122px;
+    width: 1024px;
+    height: 336px;
+}
+
+.bg-subscribe > h3{
+    font-size: 32px;
+    font-weight: 900;
+    color: #4B5563;
+    margin-bottom: 25px;
+}
+
+.bg-subscribe > p{
+    width: 590px;
+    color:#6B7280;   
+    font-weight: 400;
+    font-style: 18px; 
+    line-height: 30px;
+    text-justify: newspaper;
+}
+
+.email-subscribe{
+    display: block;
+    width: 465px;
+    height: 62px;
+    padding: 5px 65px;
+}
+
+.email-subscribe:focus{
+    outline: none;
+}
+
+.email-input-section{
+    display: block;
+    height: 50px;
+}
+
+.email-icon{
+    top:16px;
+    right: 175px;
+}
+
+.email-separator{
+    top:19px;
+    right: 210px;
+}
+
+.btn-subscribe{
+    left: 165px
+}
