@@ -38,7 +38,7 @@ const TopNavbar: React.FC<{}> = () => {
             href="https://evand.com/events/frontchapter-1400"
             target="_blank"
             rel="noreferrer"
-            className="btn-orange rounded-3xl px-4 py-1 font-bold shadow-md md:px-6 md:text-xl md:leading-9"
+            className="btn-orange rounded-3xl px-4 py-1 font-medium shadow-md md:px-6 md:text-lg md:leading-9"
           >
             ثبت نام
           </a>
