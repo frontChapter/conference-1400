@@ -39,7 +39,7 @@ const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
         "collapse lg:collapsed duration-500" + (collapsed ? " collapsed" : "")
       }
     >
-      <ul className="flex flex-col lg:flex-row lg:space-x-4 lg:space-x-reverse">
+      <ul className="flex flex-col lg:flex-row lg:space-x-6 lg:space-x-reverse">
         {items.map(({ title, href }, index) => (
           <li key={index}>
             <Link href={href}>
