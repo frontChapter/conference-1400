@@ -62,7 +62,7 @@ const SingleTime: React.FC<{ label: string; value: number }> = ({ label, value }
     <div>
       <div className="flex h-16 w-16 items-center justify-center rounded-2xl border-[3px] border-[#fbdede] bg-gradient-to-tl from-[#ff8d27] to-[#e54404]">
         <div className="text-2rem font-black leading-none text-white">
-          {value !== 0 ? digitsEnToFa(Math.max(0, value)) : "?"}
+          {digitsEnToFa(Math.max(0, value))}
         </div>
       </div>
       <div className="mt-[6px] text-center text-lg font-medium text-gray-500">{label}</div>
