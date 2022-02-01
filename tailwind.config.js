@@ -15,6 +15,9 @@ module.exports = {
       },
     },
     extend: {
+      transitionDuration: {
+        DEFAULT: '250ms'
+      },
       colors: {
         "primary": "#ff802e",
         "primary-hover": "#e74e00",
