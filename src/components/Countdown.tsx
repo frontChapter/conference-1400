@@ -27,9 +27,7 @@ const Countdown: React.FC<{}> = () => {
   );
 };
 
-const CountdownTimer: React.FC<{ remain: number }> = ({
-  remain: rawRemain,
-}) => {
+const CountdownTimer: React.FC<{ remain: number }> = ({ remain: rawRemain }) => {
   const [remain, setRemain] = useState(0);
   const duration = moment.duration(remain);
 
@@ -59,10 +57,7 @@ const CountdownTimer: React.FC<{ remain: number }> = ({
   );
 };
 
-const SingleTime: React.FC<{ label: string; value: number }> = ({
-  label,
-  value,
-}) => {
+const SingleTime: React.FC<{ label: string; value: number }> = ({ label, value }) => {
   return (
     <div>
       <div className="flex h-16 w-16 items-center justify-center rounded-2xl border-[3px] border-[#fbdede] bg-gradient-to-tl from-[#ff8d27] to-[#e54404]">
@@ -70,18 +65,14 @@ const SingleTime: React.FC<{ label: string; value: number }> = ({
           {value !== 0 ? digitsEnToFa(Math.max(0, value)) : "?"}
         </div>
       </div>
-      <div className="mt-[6px] text-center text-lg font-medium text-gray-500">
-        {label}
-      </div>
+      <div className="mt-[6px] text-center text-lg font-medium text-gray-500">{label}</div>
     </div>
   );
 };
 
 const Divider: React.FC<{}> = () => {
   return (
-    <div className="flex h-16 items-center text-2xl font-bold leading-9 text-[#ea5b5b]">
-      :
-    </div>
+    <div className="flex h-16 items-center text-2xl font-bold leading-9 text-[#ea5b5b]">:</div>
   );
 };
 
