@@ -1,8 +1,12 @@
 import MailIcon from "assets/images/mail.svg?inline";
 import EmailSeparator from "assets/images/EmailSeparator.svg?inline";
 import { useState } from "react";
+import axios from "axios";
 
 type IButtonStatus = { text: string; disabled: boolean };
+
+const publicAccountID = process.env.NEXT_PUBLIC_ELASTIC_ACCOUNT_ID;
+const apiURL = "https://api.elasticemail.com/v2/contact/add";
 
 const Subscribe: React.FC<{}> = () => {
   let [email, setEmail] = useState<string>("");
@@ -11,12 +15,25 @@ const Subscribe: React.FC<{}> = () => {
     disabled: false,
   });
 
-  const subscribeHandler = () => {
-    setButtonStatus({
-      text: "عضو شدی! :)",
-      disabled: true,
-    });
-    //Logic Goes here
+  const subscribeHandler = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    axios
+      .get(apiURL, {
+        params: {
+          email,
+          publicAccountID,
+        },
+      })
+      .then(() => {
+        setButtonStatus({
+          text: "عضو شدی! :)",
+          disabled: true,
+        });
+      })
+      .catch((err) => {
+        alert("مشکلی در ثبت وجود داشت، دوباره امتحان کنید");
+        console.error({ err });
+      });
   };
 
   return (
@@ -38,25 +55,28 @@ const Subscribe: React.FC<{}> = () => {
           />
 
           <EmailSeparator className="email-separator" />
+          <form onSubmit={subscribeHandler}>
+            <input
+              disabled={buttonStatus.disabled}
+              className="email-input "
+              placeholder="آدرس ایمیل ..."
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              type="email"
+            />
 
-          <input
-            disabled={buttonStatus.disabled}
-            className="email-input "
-            placeholder="آدرس ایمیل ..."
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-
-          <button
-            className={
-              buttonStatus.disabled
-                ? "btn-subscribe btn-green"
-                : "btn-subscribe btn-orange"
-            }
-            onClick={subscribeHandler}
-          >
-            {buttonStatus.text}
-          </button>
+            <button
+              className={
+                buttonStatus.disabled
+                  ? "btn-subscribe btn-green"
+                  : "btn-subscribe btn-orange"
+              }
+              disabled={buttonStatus.disabled}
+            >
+              {buttonStatus.text}
+            </button>
+          </form>
         </div>
       </div>
     </div>
