@@ -13,7 +13,7 @@ export const itemsData: item[] = [
     time: "10:00",
     type: "management",
     title: "مقدمه و معرفی همایش",
-    showByDefault: true,
+    showByDefault: false,
     expandable: false,
   },
   {
@@ -53,7 +53,7 @@ export const itemsData: item[] = [
     time: "10:00",
     type: "management",
     title: "پذیرایی و استراحت ظهر",
-    showByDefault: true,
+    showByDefault: false,
     expandable: false,
   },
   {
@@ -77,7 +77,7 @@ export const itemsData: item[] = [
     time: "10:00",
     type: "management",
     title: "ناهار و استراحت",
-    showByDefault: true,
+    showByDefault: false,
     expandable: false,
   },
 ];
