@@ -15,10 +15,14 @@ module.exports = {
       },
     },
     extend: {
+      transitionDuration: {
+        DEFAULT: '250ms'
+      },
       colors: {
         "primary": "#ff802e",
         "primary-hover": "#e74e00",
         "primary-active": "#b43d00",
+        "secondary": "#0cc355",
       },
       fontFamily: {
         sans: [
