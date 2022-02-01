@@ -1,52 +1,54 @@
 .bg-subscribe {
-    background-color: #F8F7F2;
-    padding: 48px 122px;
-    width: 1024px;
-    height: 336px;
+  background-color: #f8f7f2;
+  @apply mx-auto rounded-lg py-12 px-6 sm:px-32;
 }
 
-.bg-subscribe > h3{
-    font-size: 32px;
-    font-weight: 900;
-    color: #4B5563;
-    margin-bottom: 25px;
+.bg-subscribe > h3 {
+  font-size: 32px;
+  font-weight: 900;
+  color: #4b5563;
+  margin-bottom: 25px;
 }
 
-.bg-subscribe > p{
-    width: 590px;
-    color:#6B7280;   
-    font-weight: 400;
-    font-style: 18px; 
-    line-height: 30px;
-    text-justify: newspaper;
+.bg-subscribe > p {
+  color: #6b7280;
+  font-weight: 400;
+  text-justify: newspaper;
 }
 
-.email-subscribe{
-    display: block;
-    width: 465px;
-    height: 62px;
-    padding: 5px 65px;
+.email-section {
+  display: block;
+  max-width: 450px;
+  overflow: hidden;
+  @apply relative mx-auto mt-10 rounded-full;
 }
 
-.email-subscribe:focus{
-    outline: none;
+.email-input {
+  display: block;
+  padding: 1.125rem 4.0625rem 1.125rem 105px;
+  width: 100%;
+  max-width: 100%;
+  @apply mx-auto bg-white text-lg text-gray-500;
 }
 
-.email-input-section{
-    display: block;
-    height: 50px;
+.email-input:focus {
+  outline: none;
 }
 
-.email-icon{
-    top:16px;
-    right: 175px;
+.email-icon {
+  top: 1.3rem;
+  right: 1.55rem;
+  @apply absolute;
 }
 
-.email-separator{
-    top:19px;
-    right: 210px;
+.email-separator {
+  top: 1.45rem;
+  right: 3.5rem;
+  @apply absolute h-5;
 }
 
-.btn-subscribe{
-    left: 165px
+.btn-subscribe {
+  left: 0.75rem;
+  top: 0.55rem;
+  @apply absolute rounded-full p-3 px-4;
 }
