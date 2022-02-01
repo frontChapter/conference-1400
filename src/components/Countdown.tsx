@@ -12,7 +12,7 @@ const Countdown: React.FC<{}> = () => {
   return (
     <div className="container relative flex flex-col items-center justify-center py-6 md:flex-row md:py-12">
       <div className="text-2xl font-bold text-primary md:text-4xl">فقط</div>
-      <div className="my-4 flex space-x-1 space-x-reverse sm:space-x-3 md:my-0 md:mx-8">
+      <div className="my-4 flex space-x-1 space-x-reverse sm:space-x-3 sm:space-x-reverse md:my-0 md:mx-8">
         <CountdownTimer remain={remain} />
       </div>
       <div className="flex flex-col text-center md:text-right">
@@ -27,9 +27,7 @@ const Countdown: React.FC<{}> = () => {
   );
 };
 
-const CountdownTimer: React.FC<{ remain: number }> = ({
-  remain: rawRemain,
-}) => {
+const CountdownTimer: React.FC<{ remain: number }> = ({ remain: rawRemain }) => {
   const [remain, setRemain] = useState(0);
   const duration = moment.duration(remain);
 
@@ -59,29 +57,22 @@ const CountdownTimer: React.FC<{ remain: number }> = ({
   );
 };
 
-const SingleTime: React.FC<{ label: string; value: number }> = ({
-  label,
-  value,
-}) => {
+const SingleTime: React.FC<{ label: string; value: number }> = ({ label, value }) => {
   return (
     <div>
       <div className="flex h-16 w-16 items-center justify-center rounded-2xl border-[3px] border-[#fbdede] bg-gradient-to-tl from-[#ff8d27] to-[#e54404]">
         <div className="text-2rem font-black leading-none text-white">
-          {value !== 0 ? digitsEnToFa(Math.max(0, value)) : "?"}
+          {digitsEnToFa(Math.max(0, value))}
         </div>
       </div>
-      <div className="mt-[6px] text-center text-lg font-medium text-gray-500">
-        {label}
-      </div>
+      <div className="mt-[6px] text-center text-lg font-medium text-gray-500">{label}</div>
     </div>
   );
 };
 
 const Divider: React.FC<{}> = () => {
   return (
-    <div className="flex h-16 items-center text-2xl font-bold leading-9 text-[#ea5b5b]">
-      :
-    </div>
+    <div className="flex h-16 items-center text-2xl font-bold leading-9 text-[#ea5b5b]">:</div>
   );
 };
 
