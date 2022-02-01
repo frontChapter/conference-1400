@@ -22,7 +22,9 @@ module.exports = {
         "primary": "#ff802e",
         "primary-hover": "#e74e00",
         "primary-active": "#b43d00",
-        "secondary": "#0cc355",
+        "secondary": "#0CC455",
+        "secondary-hover": "#039E41",
+        "secondary-active": "#039E41",
       },
       fontFamily: {
         sans: [
@@ -64,7 +66,7 @@ module.exports = {
       },
       fontSize: {
         "2rem": "2rem",
-      }
+      },
     },
   },
   plugins: [],

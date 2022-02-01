@@ -2,4 +2,8 @@
   .btn-orange {
     @apply bg-primary text-white transition hover:bg-primary-hover active:bg-primary-active;
   }
+
+  .btn-green {
+    @apply bg-secondary text-white transition hover:bg-secondary-hover active:bg-secondary-active;
+  }
 }
