@@ -4,28 +4,28 @@ const Avatar = "/images/avatar.png";
 
 const speakersList = [
   {
-    name: "رنیکا مشهدی",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در تربچه",
+    name: "به زودی",
+    title: "سمت و تخصص سخنران",
     photo: Avatar,
   },
   {
-    name: "ام‌کلثوم زینت پرست",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در kolsom soft",
+    name: "به زودی",
+    title: "سمت و تخصص سخنران",
     photo: Avatar,
   },
   {
-    name: "کوروش بینوا",
-    title: "UI-Developer در مایکروهارد",
+    name: "به زودی",
+    title: "سمت و تخصص سخنران",
     photo: Avatar,
   },
   {
-    name: "رعنا خوشه",
-    title: "Co-Founder در زی‌زی سافت",
+    name: "به زودی",
+    title: "سمت و تخصص سخنران",
     photo: Avatar,
   },
   {
-    name: "جواد جوادی",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در نوین توسعه گران آوار",
+    name: "به زودی",
+    title: "سمت و تخصص سخنران",
     photo: Avatar,
   },
 ];
@@ -39,10 +39,11 @@ type IListItemType = {
 const ListItem = ({ photo, name, title }: IListItemType) => (
   <div className="basis-1/5">
     <div className="flex flex-col items-center">
-      <figure className="w-32 h-32">
+      <figure className="h-32 w-32">
         <Image
           src={photo}
           priority
+          className="rounded-lg"
           objectFit="contain"
           width={128}
           height={128}
@@ -62,10 +63,10 @@ const ListItem = ({ photo, name, title }: IListItemType) => (
 const Speakers = () => {
   return (
     <div className="container py-16">
-      <h4 className="mb-8 text-4xl font-bold leading-loose text-center text-primary">
+      <h4 className="mb-8 text-center text-4xl font-bold leading-loose text-primary">
         ارائه دهندگان
       </h4>
-      <div className="flex flex-row flex-wrap gap-4 justify-center sm:gap-0 sm:gap-y-4">
+      <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-0 sm:gap-y-4">
         {speakersList.map((item, index) => (
           <ListItem key={index} {...item} />
         ))}
