@@ -7,7 +7,7 @@ const EventPlace = () => {
         <div className="card overflow-hidden rounded-xl bg-white">
           <div className="background-image">
             <h4 className="flex">
-              <FaMapMarkerAlt className="mt-2 ml-5 text-5xl" />
+              <FaMapMarkerAlt className="ml-2 sm:ml-5 sm:text-5xl" />
               محل برگزاری
             </h4>
             <div className="rating">
@@ -32,15 +32,19 @@ const EventPlace = () => {
                   </p>
                   <div className="my-4 mb-3 flex flex-col gap-2 sm:my-0 sm:flex-row sm:gap-4">
                     <a
-                      href=""
+                      target="_blank"
+                      href="http://mizban-group.com/"
                       className="inline-flex justify-center rounded border-2 border-secondary px-3 py-1 align-baseline text-secondary hover:bg-secondary-hover hover:text-white"
+                      rel="noreferrer"
                     >
                       <FaGlobeAmericas className="mt-1 ml-1" />
-                      <span>صفحه‌ی هتل در سایت شب</span>
+                      <span>سایت هتل میزبان</span>
                     </a>
                     <a
-                      href=""
+                      target="_blank"
+                      href="https://www.instagram.com/mizbanhotel/"
                       className="inline-flex justify-center rounded border-2 border-[#374151] px-3 py-1 align-baseline text-[#374151] hover:bg-[#374151] hover:text-white"
+                      rel="noreferrer"
                     >
                       <FaGlobeAmericas className="mt-1 ml-1" />
                       <span>اینستاگرام هتل</span>
@@ -59,7 +63,11 @@ const EventPlace = () => {
                   src="https://www.openstreetmap.org/export/embed.html?bbox=52.63209164142609%2C36.6886481478241%2C52.63562947511674%2C36.69069357650528&layer=mapnik&marker=36.68966979355623%2C52.633861899375916"
                 />
                 <small>
-                  <a href="https://www.openstreetmap.org/?mlat=36.68967&mlon=52.63386#map=19/36.68967/52.63386">
+                  <a
+                    target="_blank"
+                    href="https://www.openstreetmap.org/?mlat=36.68967&mlon=52.63386#map=19/36.68967/52.63386"
+                    rel="noreferrer"
+                  >
                     مشاهده روی نقشه
                   </a>
                 </small>
