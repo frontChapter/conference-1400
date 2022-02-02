@@ -1,0 +1,30 @@
+.background-image {
+  height: 324px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(12, 195, 85, 0.75), rgba(12, 195, 85, 0.75)),
+    url(/images/hotel-banner.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 48px;
+  color: white;
+  position: relative;
+}
+
+.rating {
+  background: white;
+  color: #ffca0f;
+  position: absolute;
+  bottom: -1.8rem;
+  font-size: 2.3rem;
+  padding: 12px 24px 16px 24px;
+  box-shadow: 0px 4px 16px rgba(14, 5, 52, 0.08);
+  border-radius: 8px;
+  @apply flex sm:hidden;
+}
