@@ -8,6 +8,7 @@ const HamburgerButton: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
     <button
       className={"hamburger hamburger--spin" + (collapsed ? " is-active" : "")}
       type="button"
+      aria-label="منو"
       onClick={() => setNavCollapse(!collapsed)}
     >
       <span className="hamburger-box block h-9 w-9">

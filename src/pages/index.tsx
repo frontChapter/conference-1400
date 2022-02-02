@@ -6,6 +6,8 @@ import TopNavbar from "components/TopNavbar";
 import TripSteps from "components/TripSteps";
 import Countdown from "components/Countdown";
 import Subscribe from "components/Subscribe";
+import Schedule from "components/Schedule";
+import EventPlace from "components/EventPlace";
 
 export default function Home() {
   return (
@@ -24,9 +26,11 @@ export default function Home() {
         <Speakers />
       </div>
       <TripSteps />
+      <Schedule />
       <div className="container">
         <Sponsors />
       </div>
+      <EventPlace />
       <div className="container">
         <Subscribe />
       </div>
