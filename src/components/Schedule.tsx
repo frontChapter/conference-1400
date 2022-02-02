@@ -18,8 +18,7 @@ const Schedule: React.FC<{}> = () => {
             onClick={() => setShowAll(true)}
           >
             <i className="ri-arrow-down-s-line block leading-none md:text-lg" />
-            <div className="mx-2 font-bold md:text-base">نمایش برنامه کامل</div>
-            <i className="ri-arrow-down-s-line block leading-none md:text-lg" />
+            <div className="mx-2 font-bold md:text-base">برنامه کامل</div>
           </div>
         </div>
       </div>
