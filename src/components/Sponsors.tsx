@@ -68,7 +68,7 @@ const ListItem = ({ link, title, logo }: IListItemType) => (
 
 const Sponsors = () => {
   return (
-    <section className="sponsors">
+    <section id="sponsors" className="sponsors">
       <div className="container">
         <div className="my-14">
           <h1 className="mb-8 text-4xl font-bold leading-loose text-center text-primary">
