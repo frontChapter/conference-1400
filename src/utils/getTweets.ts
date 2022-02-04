@@ -14,6 +14,8 @@ export const getTweets = async (): Promise<false | Tweet[]> => {
   const token = process.env.TWITTER_API_BREARER_TOKEN || "";
   const listId = process.env.TWITTER_LIST_ID || "";
 
+  if (!token || !listId) return false;
+
   const client = new TwitterApiReadOnly(token);
   const listTweets = await client.v2.listTweets(listId, {
     "max_results": 10,
