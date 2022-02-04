@@ -1,5 +1,7 @@
 .multi-truncate {
-  display: flex !important;
+  display: block;
+  /* stylelint-disable-next-line value-no-vendor-prefix */
+  display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-box-orient: vertical;
