@@ -12,14 +12,16 @@ const TopNavbar: React.FC<{}> = () => {
     <div className="fixed inset-x-0 top-0 z-40 bg-white">
       <div className="container flex flex-row flex-wrap items-center justify-between py-3 lg:justify-start">
         <div className="order-1 h-9 w-9 lg:hidden">
-          <HamburgerButton
-            collapsed={navCollapsed}
-            setNavCollapse={setNavCollapse}
-          />
+          <HamburgerButton collapsed={navCollapsed} setNavCollapse={setNavCollapse} />
         </div>
         <div className="order-2 lg:ml-6">
           <Link href="/">
-            <a>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                window.jump("body");
+              }}
+            >
               <figure className="h-12 w-12">
                 <Image
                   src={logo}
