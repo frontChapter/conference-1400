@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Tweet } from "utils/getTweets";
+import { Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Tweets: React.FC<{ tweets: false | Tweet[] }> = ({ tweets }) => {
   if (!tweets || tweets.length < 6) return null;
@@ -28,12 +30,39 @@ const Tweets: React.FC<{ tweets: false | Tweet[] }> = ({ tweets }) => {
       </div>
 
       {/* Tweets wrapper */}
-      <div className="mt-8 flex flex-shrink-0 flex-grow-0 space-x-6 space-x-reverse overflow-auto px-6">
-        {tweets.map((tweet, index) => (
-          <Tweet key={index} tweet={tweet} />
-        ))}
+      <div className="mt-8">
+        <Slider tweets={tweets} />
       </div>
     </div>
+  );
+};
+
+const Slider: React.FC<{ tweets: Tweet[] }> = ({ tweets }) => {
+  return (
+    <Swiper
+      speed={1500}
+      loop={true}
+      modules={[Autoplay]}
+      slidesPerView={"auto"}
+      loopedSlides={tweets.length}
+      centeredSlides={true}
+      autoplay={{
+        delay: 5000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      }}
+      breakpoints={{
+        1024: {
+          centeredSlides: false,
+        },
+      }}
+    >
+      {tweets.map((tweet, index) => (
+        <SwiperSlide key={index} style={{ width: "auto !important" }}>
+          <Tweet tweet={tweet} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 
@@ -41,37 +70,37 @@ const Tweet: React.FC<{ tweet: Tweet }> = ({ tweet }) => {
   const author = tweet.author;
 
   return (
-    <div className="tweet h-56 w-72 flex-none rounded-2xl bg-white px-6 py-4">
-      <div className="flex h-full flex-col">
-        <div className="flex items-center justify-end">
-          <div className="ml-auto pl-2">
-            <a href={tweet.url} target="_blank" rel="noreferrer">
+    <a href={tweet.url} target="_blank" rel="noreferrer" className="mx-3 block">
+      <div className="tweet h-56 w-72 flex-none rounded-2xl bg-white px-6 py-3">
+        <div className="flex h-full flex-col">
+          <div className="flex items-center justify-end">
+            <div className="ml-auto pl-2">
               <i className="ri-twitter-fill block text-2xl leading-none text-[#00b2ff]"></i>
-            </a>
+            </div>
+            <div className="flex min-w-0 max-w-full shrink grow-0 flex-col" dir="ltr">
+              <div className="max-w-full truncate text-gray-900">{author.name}</div>
+              <div className="mt-2 text-xs font-light text-gray-500">@{author.username}</div>
+            </div>
+            <div className="mr-3">
+              <figure className="flex h-12 w-12">
+                <Image
+                  src={author.profile_image_url as string}
+                  alt={author.name}
+                  width={48}
+                  height={48}
+                  objectFit="contain"
+                  className="rounded-full"
+                />
+              </figure>
+            </div>
           </div>
-          <div className="flex min-w-0 max-w-full shrink grow-0 flex-col" dir="ltr">
-            <div className="max-w-full truncate text-gray-900">{author.name}</div>
-            <div className="mt-2 text-xs font-light text-gray-500">@{author.username}</div>
-          </div>
-          <div className="mr-3">
-            <figure className="flex h-12 w-12">
-              <Image
-                src={author.profile_image_url as string}
-                alt={author.name}
-                width={48}
-                height={48}
-                objectFit="contain"
-                className="rounded-full"
-              />
-            </figure>
-          </div>
-        </div>
 
-        <div className="multi-truncate multi-truncate-5 mt-5 max-h-full text-gray-500">
-          {tweet.text}
+          <div className="multi-truncate multi-truncate-5 mt-3 max-h-full leading-7 text-gray-500">
+            {tweet.text}
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
