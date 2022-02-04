@@ -7,6 +7,10 @@ const jump = (target: string | Element | number, opts?: jumpJs.Options | undefin
   window.jumping = true;
 
   jumpJs(target, {
+    ...{
+      duration: 500,
+      offset: -72,
+    },
     ...opts,
     callback: () => {
       window.jumping = false;

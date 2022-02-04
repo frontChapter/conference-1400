@@ -39,10 +39,7 @@ interface Props {
 const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
   const itemClickHandler = (href: string) => {
     const selector = href.substring(1);
-
     window.jump(selector || "body", {
-      duration: 500,
-      offset: -72,
       callback: () => setNavCollapse(true),
     });
   };
