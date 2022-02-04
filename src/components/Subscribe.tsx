@@ -1,4 +1,5 @@
 import axios from "axios";
+import Swal from "sweetalert2";
 import { FormEvent, useState } from "react";
 
 type status = keyof typeof buttonBgClass;
@@ -42,13 +43,32 @@ const Subscribe: React.FC<{}> = () => {
       .then(({ data }) => {
         if (data.success) {
           setStatus("success");
+          Swal.fire({
+            title: "حله!",
+            text: "برای تایید عضویت ایمیلت رو چک کن.",
+            icon: "success",
+            confirmButtonText: "باشه",
+            buttonsStyling: false,
+            customClass: {
+              confirmButton: "rounded-xl bg-secondary px-4 py-3 text-white outline-none",
+            },
+          });
         } else {
           throw new Error("");
         }
       })
       .catch((err) => {
         setStatus("default");
-        alert("اوه! یه مشکلی وجود داره! لطفا دوباره امتحان کن.");
+        Swal.fire({
+          title: "یه مشکلی پیش اومده!",
+          text: "یه چیزی اشتباهه! لطفا دوباره امتحان کن.",
+          icon: "error",
+          confirmButtonText: "باشه",
+          buttonsStyling: false,
+          customClass: {
+            confirmButton: "rounded-xl bg-secondary px-4 py-3 text-white outline-none",
+          },
+        });
       });
   };
 
