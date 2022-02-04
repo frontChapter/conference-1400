@@ -2,7 +2,7 @@ import { FaGlobeAmericas, FaMapMarkerAlt, FaStar } from "react-icons/fa";
 
 const EventPlace = () => {
   return (
-    <div className="bg-[#EEF9EF] sm:py-8 sm:px-14">
+    <div id="place" className="bg-[#EEF9EF] sm:py-8 sm:px-14">
       <div className="container">
         <div className="card overflow-hidden rounded-xl bg-white">
           <div className="background-image">

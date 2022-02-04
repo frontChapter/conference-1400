@@ -10,6 +10,10 @@ const items = [
     href: "/#speakers",
   },
   {
+    title: "برنامه سفر",
+    href: "/#trip",
+  },
+  {
     title: "برنامه همایش",
     href: "/#schedule",
   },
@@ -18,13 +22,13 @@ const items = [
     href: "/#sponsors",
   },
   {
-    title: "برنامه سفر",
+    title: "محل برگزاری",
     href: "/#place",
   },
-  {
-    title: "تیم برگزاری",
-    href: "/#team",
-  },
+  // {
+  //   title: "تیم برگزاری",
+  //   href: "/#team",
+  // },
 ];
 
 interface Props {
@@ -33,19 +37,29 @@ interface Props {
 }
 
 const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
+  const itemClickHandler = (href: string) => {
+    const selector = href.substring(1);
+
+    window.jump(selector || "body", {
+      duration: 500,
+      offset: -72,
+      callback: () => setNavCollapse(true),
+    });
+  };
+
   return (
-    <nav
-      className={
-        "collapse lg:collapsed duration-500" + (collapsed ? " collapsed" : "")
-      }
-    >
+    <nav className={"collapse lg:collapsed duration-500" + (collapsed ? " collapsed" : "")}>
       <ul className="flex flex-col lg:flex-row lg:space-x-6 lg:space-x-reverse">
         {items.map(({ title, href }, index) => (
           <li key={index}>
             <Link href={href}>
               <a
                 className="block py-4 text-lg text-gray-500 transition hover:text-gray-900 lg:py-0"
-                onClick={() => setNavCollapse(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setNavCollapse(true);
+                  itemClickHandler(href);
+                }}
               >
                 {title}
               </a>
