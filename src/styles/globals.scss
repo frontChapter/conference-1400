@@ -4,6 +4,7 @@
 
 @import "./utils/collapse";
 @import "./utils/hamburgers";
+@import "./utils/truncate";
 
 @tailwind base;
 @tailwind components;
@@ -14,6 +15,9 @@
 @import "./components/sponsors";
 @import "./components/subscribe.scss";
 @import "./components/event-place.scss";
+
+@import "/node_modules/swiper/swiper";
+@import "/node_modules/swiper/modules/autoplay/autoplay";
 
 // body {
 //   max-width: 100%;
