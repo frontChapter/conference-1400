@@ -1,0 +1,13 @@
+.multi-truncate {
+  display: flex !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+
+  @for $i from 2 through 5 {
+    &-#{$i} {
+      -webkit-line-clamp: $i;
+    }
+  }
+}
