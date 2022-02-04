@@ -8,8 +8,11 @@ import Countdown from "components/Countdown";
 import Subscribe from "components/Subscribe";
 import Schedule from "components/Schedule";
 import EventPlace from "components/EventPlace";
+import Tweets from "components/Tweets";
+import { GetStaticProps } from "next";
+import getTweets, { Tweet } from "utils/getTweets";
 
-export default function Home() {
+export default function Home({ tweets }: { tweets: false | Tweet[] }) {
   return (
     <main className="content min-h-screen bg-gray-50 pt-[72px]">
       <Head>
@@ -34,6 +37,15 @@ export default function Home() {
       <div className="container">
         <Subscribe />
       </div>
+      <Tweets tweets={tweets} />
     </main>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      tweets: await getTweets(),
+    },
+  };
+};
