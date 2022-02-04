@@ -81,6 +81,9 @@ module.exports = {
       fontSize: {
         "2rem": "2rem",
       },
+      rotate: {
+        "135": "135deg",
+      }
     },
   },
   plugins: [],
