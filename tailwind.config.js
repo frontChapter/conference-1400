@@ -14,6 +14,20 @@ module.exports = {
         "2xl": "2.5rem",
       },
     },
+    borderRadius: {
+      "none": "0",
+      "DEFAULT": "0.25rem",
+      "sm": "0.125rem",
+      "md": "0.375rem",
+      "lg": "0.5rem",
+      "xl": "0.75rem",
+      "2xl": "1rem",
+      "3xl": "1.25rem",
+      "4xl": "1.5rem",
+      "5xl": "1.75rem",
+      "6xl": "2rem",
+      "full": "9999px",
+    },
     extend: {
       transitionDuration: {
         DEFAULT: '250ms'
@@ -67,6 +81,9 @@ module.exports = {
       fontSize: {
         "2rem": "2rem",
       },
+      rotate: {
+        "135": "135deg",
+      }
     },
   },
   plugins: [],

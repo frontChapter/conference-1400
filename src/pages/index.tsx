@@ -34,9 +34,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
         <Sponsors />
       </div>
       <EventPlace />
-      <div className="container">
-        <Subscribe />
-      </div>
+      <Subscribe />
       <Tweets tweets={tweets} />
     </main>
   );
