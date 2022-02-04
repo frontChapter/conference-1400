@@ -8,13 +8,13 @@ const Tweets: React.FC<{ tweets: false | Tweet[] }> = ({ tweets }) => {
 
   return (
     <div className="py-8">
-      <div className="container flex items-center justify-between">
-        <h2 className="text-2rem font-bold text-gray-600">
+      <div className="container flex flex-col items-center justify-between sm:flex-row">
+        <h2 className="text-2xl font-bold text-gray-600 md:text-2rem">
           <span>درباره</span>
           <span className="text-primary"> فرانت چپتر </span>
           <span>چی‌میگن؟</span>
         </h2>
-        <div className="flex flex-col text-gray-600">
+        <div className="mt-6 flex flex-col text-gray-600 sm:mt-0">
           <a
             dir="ltr"
             target="_blank"
