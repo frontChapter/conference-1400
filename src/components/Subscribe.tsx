@@ -29,6 +29,14 @@ const Subscribe: React.FC<{}> = () => {
   let [email, setEmail] = useState("");
   const [status, setStatus] = useState<status>("default");
 
+  const alertOptions = {
+    confirmButtonText: "باشه",
+    buttonsStyling: false,
+    customClass: {
+      confirmButton: "rounded-xl bg-blue-500 px-4 py-3 text-white outline-none",
+    },
+  };
+
   const subscribeHandler = (event: FormEvent) => {
     event.preventDefault();
     setStatus("loading");
@@ -43,31 +51,37 @@ const Subscribe: React.FC<{}> = () => {
       .then(({ data }) => {
         if (data.success) {
           setStatus("success");
+
           Swal.fire({
+            ...alertOptions,
             title: "حله!",
             text: "برای تایید عضویت ایمیلت رو چک کن.",
             icon: "success",
-            confirmButtonText: "باشه",
-            buttonsStyling: false,
-            customClass: {
-              confirmButton: "rounded-xl bg-secondary px-4 py-3 text-white outline-none",
-            },
           });
         } else {
-          throw new Error("");
+          if (data.messageid === "contact_invalid_email") {
+            setStatus("default");
+
+            Swal.fire({
+              ...alertOptions,
+              title: "یه چیزی درست نیست!",
+              text: "مطمئنی آدرس ایمیل رو درست وارد کردی؟",
+              icon: "warning",
+              confirmButtonText: "بستن",
+            });
+          } else {
+            throw new Error("");
+          }
         }
       })
-      .catch((err) => {
+      .catch(() => {
         setStatus("default");
+
         Swal.fire({
-          title: "یه مشکلی پیش اومده!",
-          text: "یه چیزی اشتباهه! لطفا دوباره امتحان کن.",
+          ...alertOptions,
+          title: "اوووپس!",
+          text: "یه مشکلی پیش اومده! لطفا دوباره امتحان کن.",
           icon: "error",
-          confirmButtonText: "باشه",
-          buttonsStyling: false,
-          customClass: {
-            confirmButton: "rounded-xl bg-secondary px-4 py-3 text-white outline-none",
-          },
         });
       });
   };
