@@ -39,9 +39,7 @@ interface Props {
 const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
   const itemClickHandler = (href: string) => {
     const selector = href.substring(1);
-    window.jump(selector || "body", {
-      callback: () => setNavCollapse(true),
-    });
+    window.jump(selector || "body");
   };
 
   return (
@@ -54,7 +52,7 @@ const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
                 className="block py-4 text-lg text-gray-500 transition hover:text-gray-900 lg:py-0"
                 onClick={(e) => {
                   e.preventDefault();
-                  setNavCollapse(true);
+                  setNavCollapse(false);
                   itemClickHandler(href);
                 }}
               >
