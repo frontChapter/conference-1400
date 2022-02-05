@@ -10,6 +10,7 @@ on:
 
 jobs:
   analyze:
+    if: ${{ github.repository == 'frontChapter/conference-1400' }}
     name: Analyze
     runs-on: ubuntu-latest
     permissions:
