@@ -1,6 +1,6 @@
 import axios from "axios";
 import Swal from "sweetalert2";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 type status = keyof typeof buttonBgClass;
 
@@ -37,6 +37,14 @@ const Subscribe: React.FC<{}> = () => {
     },
   };
 
+  useEffect(() => {
+    const persistedEmail = localStorage.getItem("subscribe_email");
+    if (persistedEmail) {
+      setEmail(persistedEmail);
+      setStatus("success");
+    }
+  }, []);
+
   const subscribeHandler = (event: FormEvent) => {
     event.preventDefault();
     setStatus("loading");
@@ -51,6 +59,7 @@ const Subscribe: React.FC<{}> = () => {
       .then(({ data }) => {
         if (data.success) {
           setStatus("success");
+          localStorage.setItem("subscribe_email", email);
 
           Swal.fire({
             ...alertOptions,
