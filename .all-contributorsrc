@@ -1,0 +1,48 @@
+{
+  "projectName": "conference-1400",
+  "projectOwner": "frontChapter",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "ssshojaei",
+      "name": "Saleh Shojaei",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26822650?v=4",
+      "profile": "https://roxaleh.ir/",
+      "contributions": [
+        "code",
+        "eventOrganizing",
+        "infra",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "AmirHosseinKarimi",
+      "name": "Amir Hossein Karimi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17345129?v=4",
+      "profile": "https://www.vira.studio/",
+      "contributions": [
+        "code",
+        "projectManagement",
+        "doc",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "shiraliali",
+      "name": "ali shirali",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35615183?v=4",
+      "profile": "https://github.com/shiraliali",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
