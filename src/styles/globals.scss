@@ -12,8 +12,10 @@
 @import "./components/button";
 @import "./components/stepper";
 @import "./components/sponsors";
-@import "./components/subscribe.scss";
 @import "./components/event-place.scss";
+
+@import "/node_modules/swiper/swiper";
+@import "/node_modules/swiper/modules/autoplay/autoplay";
 
 // body {
 //   max-width: 100%;
