@@ -7,7 +7,15 @@ const Jumbotron: React.FC<{}> = () => {
   return (
     <div className="container py-6 md:py-8">
       <div className="relative overflow-hidden rounded-[20px] py-8 px-4 sm:rounded-[75px] md:pt-20 md:pb-28">
-        <Image alt="تصویر همایش" src={bg} layout="fill" objectFit="cover" quality={100} />
+        <Image
+          alt="تصویر همایش"
+          src={bg}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          placeholder="blur"
+          priority
+        />
 
         <div className="relative flex flex-col items-center">
           <div className="flex items-center">
