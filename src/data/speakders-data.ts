@@ -6,34 +6,46 @@ import speaker5Avatar from "assets/images/speakers/speaker-5.jpg";
 
 export const speakersList: speaker[] = [
   {
-    name: "رنیکا مشهدی",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در تربچه",
+    name: "رونیکا مشهدی",
+    position: "توسعه دهنده وب",
+    company: "اسنپ فود",
     photo: speaker1Avatar,
+    brandClass: "text-[#f700a2]",
   },
   {
-    name: "ام‌کلثوم زینت پرست",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در kolsom soft",
+    name: "شمیم رضوانی",
+    position: "توسعه دهنده بک‌اند",
+    company: "دیجیکالا",
     photo: speaker2Avatar,
+    brandClass: "text-[#e94257]",
   },
   {
     name: "کوروش بینوا",
-    title: "UI-Developer در مایکروهارد",
+    position: "توسعه دهنده فرانت‌اند",
+    company: "شیپور",
     photo: speaker3Avatar,
+    brandClass: "text-[#0265e5]",
   },
   {
     name: "رعنا خوشه",
-    title: "Co-Founder در زی‌زی سافت",
+    position: "مدیر فنی",
+    company: "لیارا",
     photo: speaker4Avatar,
+    brandClass: "",
   },
   {
     name: "جواد جوادی",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در نوین توسعه گران آوار",
+    position: "مدیر تیم پشتیبانی",
+    company: "جابینجا",
     photo: speaker5Avatar,
+    brandClass: "from-[#02abdf] to-[#01bd9c] bg-gradient-to-r bg-clip-text text-transparent",
   },
 ];
 
 export interface speaker {
-  photo: StaticImageData;
   name: string;
-  title: string;
+  position: string;
+  company: string;
+  brandClass?: string;
+  photo: StaticImageData;
 }
