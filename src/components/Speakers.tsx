@@ -22,18 +22,20 @@ const ListItem = ({ photo, name, position, company, brandClass }: speaker) => (
 
 const Speakers = () => {
   return (
-    <div id="speakers" className="container py-8 lg:py-24">
-      <h4 className="mb-8 text-center text-2xl font-black leading-normal text-primary lg:text-4xl">
-        ارائه دهندگان
-      </h4>
-      <div className="flex justify-center">
-        <div className="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-8 md:gap-y-16 md:gap-x-16 lg:gap-x-6 xl:gap-x-8">
-          {speakersList.map((item, index) => (
-            <ListItem key={index} {...item} />
-          ))}
+    <section className="bg-white">
+      <div id="speakers" className="container py-8 lg:py-24">
+        <h4 className="mb-8 text-center text-2xl font-black leading-normal text-primary lg:text-4xl">
+          ارائه دهندگان
+        </h4>
+        <div className="flex justify-center">
+          <div className="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-8 md:gap-y-16 md:gap-x-16 lg:gap-x-6 xl:gap-x-8">
+            {speakersList.map((item, index) => (
+              <ListItem key={index} {...item} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
