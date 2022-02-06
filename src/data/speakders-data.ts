@@ -1,23 +1,23 @@
-import speaker1Avatar from "assets/images/speakers/speaker-1.jpg";
-import speaker2Avatar from "assets/images/speakers/speaker-2.jpg";
 import speaker3Avatar from "assets/images/speakers/speaker-3.jpg";
 import speaker4Avatar from "assets/images/speakers/speaker-4.jpg";
 import speaker5Avatar from "assets/images/speakers/speaker-5.jpg";
+import miladMoafiAvatar from "assets/images/speakers/milad_moafi.jpg";
+import amirAliGholiAvatar from "assets/images/speakers/amirali_gholi.jpg";
 
 export const speakersList: speaker[] = [
   {
-    name: "رونیکا مشهدی",
-    position: "توسعه دهنده وب",
-    company: "اسنپ فود",
-    photo: speaker1Avatar,
-    brandClass: "text-[#f700a2]",
+    name: "میلاد معافی",
+    position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
+    company: "بانک سامان",
+    photo: miladMoafiAvatar,
+    brandClass: "text-[#017be6]",
   },
   {
-    name: "شمیم رضوانی",
-    position: "توسعه دهنده بک‌اند",
-    company: "دیجیکالا",
-    photo: speaker2Avatar,
-    brandClass: "text-[#e94257]",
+    name: "امیرعلی قلی",
+    position: "توسعه دهنده‌ی جاوااسکریپت",
+    company: "لیارا",
+    photo: amirAliGholiAvatar,
+    brandClass: "text-[#303030]",
   },
   {
     name: "کوروش بینوا",
