@@ -84,6 +84,18 @@ module.exports = {
       },
       rotate: {
         "135": "135deg",
+      },
+      animation: {
+        heartbeat: 'heartbeat 2s linear infinite',
+      },
+      keyframes: {
+        heartbeat: {
+          "0%": { transform: "scale(1)" },
+          "7%": { transform: "scale(1.2)" },
+          "14%": { transform: "scale(1)" },
+          "21%": { transform: "scale(1.2)" },
+          "35%": { transform: "scale(1)" },
+        }
       }
     },
   },
