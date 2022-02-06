@@ -13,6 +13,7 @@
   "dependencies": {
     "@fontsource/lalezar": "^4.5.1",
     "@persian-tools/persian-tools": "^3.2.1",
+    "@tailwindcss/line-clamp": "^0.3.1",
     "@types/jump.js": "^1.0.4",
     "autoprefixer": "^10.4.2",
     "axios": "^0.25.0",

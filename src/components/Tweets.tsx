@@ -94,10 +94,7 @@ const Tweet: React.FC<{ tweet: Tweet }> = ({ tweet }) => {
               </figure>
             </div>
           </div>
-
-          <div className="multi-truncate multi-truncate-5 mt-3 max-h-full leading-7 text-gray-500">
-            {tweet.text}
-          </div>
+          <div className="line-clamp-5 mt-3 max-h-full leading-7 text-gray-500">{tweet.text}</div>
         </div>
       </div>
     </a>
