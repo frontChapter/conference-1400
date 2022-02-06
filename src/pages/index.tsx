@@ -11,6 +11,7 @@ import EventPlace from "components/EventPlace";
 import Tweets from "components/Tweets";
 import { GetStaticProps } from "next";
 import getTweets, { Tweet } from "utils/getTweets";
+import Footer from "components/Footer";
 
 export default function Home({ tweets }: { tweets: false | Tweet[] }) {
   return (
@@ -34,6 +35,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
         <Subscribe />
         <Tweets tweets={tweets} />
       </main>
+      <Footer />
     </div>
   );
 }
