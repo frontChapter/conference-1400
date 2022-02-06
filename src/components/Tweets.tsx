@@ -7,7 +7,7 @@ const Tweets: React.FC<{ tweets: false | Tweet[] }> = ({ tweets }) => {
   if (!tweets || tweets.length < 6) return null;
 
   return (
-    <div className="py-8">
+    <section className="py-8">
       <div className="container flex flex-col items-center justify-between sm:flex-row">
         <h2 className="text-2xl font-bold text-gray-600 md:text-2rem">
           <span>درباره</span>
@@ -33,7 +33,7 @@ const Tweets: React.FC<{ tweets: false | Tweet[] }> = ({ tweets }) => {
       <div className="mt-8">
         <Slider tweets={tweets} />
       </div>
-    </div>
+    </section>
   );
 };
 

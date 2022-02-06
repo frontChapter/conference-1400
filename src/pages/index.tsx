@@ -19,20 +19,16 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
         <title>همایش فرانت‌اند ۱۴۰۰ | فرانت چپتر</title>
       </Head>
       <TopNavbar />
-      <div className="relative overflow-hidden">
+      <section className="relative overflow-hidden">
         <div className="absolute top-0 left-0 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full border-[40px] border-gray-200"></div>
         <div className="absolute bottom-0 right-0 mr-16 h-80 w-80 translate-x-1/2 -translate-y-16 rounded-full border-[20px] border-gray-100"></div>
         <Jumbotron />
         <Countdown />
-      </div>
-      <div className="bg-white">
-        <Speakers />
-      </div>
+      </section>
+      <Speakers />
       <TripSteps />
       <Schedule />
-      <div className="container">
-        <Sponsors />
-      </div>
+      <Sponsors />
       <EventPlace />
       <Subscribe />
       <Tweets tweets={tweets} />
