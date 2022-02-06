@@ -133,7 +133,7 @@ const Subscribe: React.FC<{}> = () => {
                 type="email"
                 placeholder="آدرس ایمیل شما"
                 className={
-                  "min-w-0 grow pr-3 font-medium text-gray-500 outline-none placeholder:text-right" +
+                  "w-full grow pr-3 font-medium text-gray-500 outline-none placeholder:text-right sm:w-auto" +
                   (status !== "default" ? " cursor-default" : "")
                 }
               />
