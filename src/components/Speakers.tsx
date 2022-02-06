@@ -1,42 +1,7 @@
+import { speaker, speakersList } from "data/speakders-data";
 import Image from "next/image";
 
-const Avatar = "/images/avatar.png";
-
-const speakersList = [
-  {
-    name: "رنیکا مشهدی",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در تربچه",
-    photo: Avatar,
-  },
-  {
-    name: "ام‌کلثوم زینت پرست",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در kolsom soft",
-    photo: Avatar,
-  },
-  {
-    name: "کوروش بینوا",
-    title: "UI-Developer در مایکروهارد",
-    photo: Avatar,
-  },
-  {
-    name: "رعنا خوشه",
-    title: "Co-Founder در زی‌زی سافت",
-    photo: Avatar,
-  },
-  {
-    name: "جواد جوادی",
-    title: "توسعه‌دهنده‌ی فرانت‌اند در نوین توسعه گران آوار",
-    photo: Avatar,
-  },
-];
-
-type IListItemType = {
-  photo: string | StaticImageData;
-  name: string;
-  title: string;
-};
-
-const ListItem = ({ photo, name, title }: IListItemType) => (
+const ListItem = ({ photo, name, title }: speaker) => (
   <div className="basis-1/5">
     <div className="flex flex-col items-center">
       <figure className="h-32 w-32">
