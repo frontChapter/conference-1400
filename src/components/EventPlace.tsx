@@ -18,7 +18,7 @@ const EventPlace = () => {
                 ))}
             </div>
           </div>
-          <div className="content mt-14 px-6 py-4">
+          <div className="mt-14 px-6 py-4">
             <div className="flex flex-col gap-4 sm:flex-row">
               <div className="basis-8/12">
                 <div className="flex h-[100%] flex-col justify-between">
