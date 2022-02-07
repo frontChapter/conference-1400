@@ -1,6 +1,6 @@
-import miladMoafi from "assets/images/speakers/milad_moafi.jpg";
-import amirAliGholi from "assets/images/speakers/amirali_gholi.jpg";
-import speaker2 from "assets/images/avatars/speaker-2.png";
+import miladMoafi from "assets/images/speakers/milad-moafi.jpg";
+import amirAliGholi from "assets/images/speakers/amirali-gholi.jpg";
+import speaker2 from "assets/images/speakers/speaker-2.jpg";
 
 export const itemsData: item[] = [
   {
