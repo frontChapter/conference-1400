@@ -43,7 +43,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      tweets: false,
+      tweets: await getTweets(),
     },
   };
 };
