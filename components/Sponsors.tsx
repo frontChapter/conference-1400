@@ -1,46 +1,46 @@
 import Image from "next/image";
-import Digikala from "../public/images/sponsors/digikala.png";
+import Liara from "assets/images/sponsors/liara.png";
 
 const sponsorsList = [
   {
-    title: "دیجی‌کالا",
+    title: "لیارا",
     link: "https://digikala.com/",
-    logo: Digikala,
+    logo: Liara,
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Digikala,
+    logo: Liara,
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Digikala,
+    logo: Liara,
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Digikala,
+    logo: Liara,
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Digikala,
+    logo: Liara,
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Digikala,
+    logo: Liara,
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Digikala,
+    logo: Liara,
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Digikala,
+    logo: Liara,
   },
 ];
 
@@ -51,7 +51,7 @@ type IListItemType = {
 };
 
 const ListItem = ({ link, title, logo }: IListItemType) => (
-  <div className="px-3 basis-1/4">
+  <div className="basis-1/4 px-3">
     <a href={link} target="_blank" rel="noreferrer">
       <Image layout="responsive" src={logo} alt={title} title={title} />
     </a>
@@ -62,7 +62,7 @@ const Sponsors = () => {
   return (
     <section className="sponsors">
       <div className="my-14">
-        <h1 className="mb-8 text-4xl font-bold leading-loose text-center text-primary">
+        <h1 className="mb-8 text-center text-4xl font-bold leading-loose text-primary">
           حامی های مالی و معنوی فرانت چپتر
         </h1>
         <div className="mx-auto max-w-xl">
@@ -72,15 +72,14 @@ const Sponsors = () => {
             ))}
           </div>
           <p className="mt-8 text-sm text-gray-500">
-            فرانت چپتر برای ادامه و گسترش فعالیت های خود در جهت افزایش آگاهی
-            جامعه فرانت اند و همچنین برگزاری چنین رویداد هایی نیاز به حمایت های
-            شما دارد.
+            فرانت چپتر برای ادامه و گسترش فعالیت های خود در جهت افزایش آگاهی جامعه فرانت اند و
+            همچنین برگزاری چنین رویداد هایی نیاز به حمایت های شما دارد.
           </p>
-          <div className="justify-items-center mt-8 text-center">
+          <div className="mt-8 justify-items-center text-center">
             <a
               href="https://t.me/ordinarySaleh"
               target="_blank"
-              className="px-4 py-2 bg-transparent rounded border cursor-pointer hover:bg-primary-500 border-primary text-primary hover:border-transparent hover:bg-primary hover:text-white"
+              className="hover:bg-primary-500 cursor-pointer rounded border border-primary bg-transparent px-4 py-2 text-primary hover:border-transparent hover:bg-primary hover:text-white"
               rel="noreferrer"
             >
               حامی می‌شوم
