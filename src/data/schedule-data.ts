@@ -1,4 +1,4 @@
-import miladMoafi from "assets/images/speakers/milad-moafi.jpg";
+import miladMoafi from "assets/images/speakers/milad-moafi.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.jpg";
 import speaker1 from "assets/images/speakers/speaker-1.jpg";
 import speaker2 from "assets/images/speakers/speaker-2.jpg";
