@@ -109,7 +109,7 @@ const Subscribe: React.FC<{}> = () => {
 
   return (
     <section className="container flex justify-center py-4 sm:py-8">
-      <div className="flex flex-col items-center space-y-6 rounded-3xl bg-[#f8f7f2] py-8 px-6 lg:py-12">
+      <div className="flex flex-1 flex-col items-center space-y-6 rounded-3xl bg-[#f8f7f2] py-8 px-6 lg:py-12">
         <h3 className="text-2xl font-black text-gray-600">از اینا بیشترم هست!</h3>
         <p className="max-w-3xl text-center text-lg text-gray-500">
           میتونی با عضو شدن توی خبرنامه فرانت چپتر، علاوه بر مطلع شدن از تاریخ جلسات و شرکت توی
