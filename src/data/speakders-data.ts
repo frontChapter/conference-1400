@@ -1,6 +1,6 @@
-import miladMoafiAvatar from "assets/images/speakers/milad-moafi.jpg";
+import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
+import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.jpg";
-import speaker3Avatar from "assets/images/speakers/speaker-3.jpg";
 import speaker4Avatar from "assets/images/speakers/speaker-4.jpg";
 import speaker5Avatar from "assets/images/speakers/speaker-5.jpg";
 
