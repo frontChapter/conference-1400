@@ -1,8 +1,8 @@
+import miladMoafiAvatar from "assets/images/speakers/milad-moafi.jpg";
+import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.jpg";
 import speaker3Avatar from "assets/images/speakers/speaker-3.jpg";
 import speaker4Avatar from "assets/images/speakers/speaker-4.jpg";
 import speaker5Avatar from "assets/images/speakers/speaker-5.jpg";
-import miladMoafiAvatar from "assets/images/speakers/milad_moafi.jpg";
-import amirAliGholiAvatar from "assets/images/speakers/amirali_gholi.jpg";
 
 export const speakersList: speaker[] = [
   {
