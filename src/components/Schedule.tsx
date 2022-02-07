@@ -121,7 +121,7 @@ const Item: React.FC<{
                   <Image
                     width={128}
                     height={128}
-                    className="rounded-full bg-gray-200 text-transparent"
+                    className="rounded-full bg-slate-200 text-transparent"
                     src={item.speaker.avatar}
                     alt={item.speaker.name}
                   />
