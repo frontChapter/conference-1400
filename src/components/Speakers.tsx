@@ -29,8 +29,8 @@ const ListItem = ({ photo, name, position, company, brandClass }: speaker) => (
 
 const Speakers = () => {
   return (
-    <section className="bg-white">
-      <div id="speakers" className="container py-8 lg:py-24">
+    <section id="speakers" className="bg-white">
+      <div className="container py-8 lg:py-24">
         <h4 className="mb-8 text-center text-2xl font-black leading-normal text-primary lg:text-4xl">
           ارائه دهندگان
         </h4>
