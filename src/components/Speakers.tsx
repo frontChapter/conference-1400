@@ -3,8 +3,15 @@ import Image from "next/image";
 
 const ListItem = ({ photo, name, position, company, brandClass }: speaker) => (
   <div className={"flex w-44 flex-col items-center"}>
-    <figure className="h-32 w-32 overflow-hidden rounded-2xl">
-      <Image src={photo} objectFit="contain" width={128} height={128} alt={name} />
+    <figure className="h-32 w-32">
+      <Image
+        src={photo}
+        objectFit="contain"
+        width={128}
+        height={128}
+        alt={name}
+        className="rounded-2xl bg-slate-200 text-transparent"
+      />
     </figure>
     <strong className="my-2 max-w-full truncate text-center text-lg font-medium text-gray-600">
       {name}
