@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { useEffect } from "react";
+import Gumshoe from "gumshoejs";
 
 const items = [
   {
@@ -42,14 +44,22 @@ const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
     window.jump(selector || "body");
   };
 
+  useEffect(() => {
+    new Gumshoe(".topnav-items a", {
+      navClass: "text-gray-900",
+      nested: false,
+      offset: 72,
+    });
+  }, []);
+
   return (
     <nav className={"collapse lg:collapsed duration-500" + (collapsed ? " collapsed" : "")}>
-      <ul className="flex flex-col lg:flex-row lg:space-x-6 lg:space-x-reverse">
+      <ul className="topnav-items flex flex-col lg:flex-row lg:space-x-6 lg:space-x-reverse">
         {items.map(({ title, href }, index) => (
-          <li key={index}>
+          <li key={index} className="text-gray-500 transition hover:text-gray-900">
             <Link href={href}>
               <a
-                className="block py-4 text-lg text-gray-500 transition hover:text-gray-900 lg:py-0"
+                className="block py-4 text-lg lg:py-0"
                 onClick={(e) => {
                   e.preventDefault();
                   setNavCollapse(false);
