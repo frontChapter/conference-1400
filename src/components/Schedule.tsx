@@ -58,6 +58,7 @@ const Item: React.FC<{
   const [expanded, setExpanded] = useState<boolean>(false);
 
   const divider = <div className="mx-4 hidden h-6 border-l-2 border-gray-200 md:block"></div>;
+  const icon = planIcons[item.type];
 
   return (
     <div className={"collapse duration-1000 " + (visible ? "collapsed" : "")}>
@@ -68,7 +69,7 @@ const Item: React.FC<{
             {digitsEnToFa(item.time)}
           </div>
           <i
-            className={`${planIcons.management} z-30 block rounded-full bg-secondary p-3 leading-none text-white`}
+            className={`${icon} z-30 block rounded-full bg-secondary p-3 leading-none text-white`}
           ></i>
 
           {/* Cover last item dotted line to hide */}
@@ -106,7 +107,7 @@ const Item: React.FC<{
                 {digitsEnToFa(item.time)}
               </div>
               <i
-                className={`${planIcons.management} block rounded-full bg-secondary p-2 text-xs leading-none text-white`}
+                className={`${icon} block rounded-full bg-secondary p-2 text-xs leading-none text-white`}
               ></i>
             </div>
 
@@ -116,8 +117,12 @@ const Item: React.FC<{
             {item.speaker && (
               <div className="order-1 mb-4 flex md:order-2 md:mb-0">
                 {divider}
-                <div className="h-8 w-8">
-                  <Image src={item.speaker.avatar} alt={item.speaker.name} />
+                <div className="h-7 w-7">
+                  <Image
+                    className="rounded-full"
+                    src={item.speaker.avatar}
+                    alt={item.speaker.name}
+                  />
                 </div>
                 <div className="mr-2 text-lg text-gray-500">{item.speaker.name}</div>
               </div>
@@ -156,7 +161,10 @@ const Item: React.FC<{
             >
               <div className="pt-4 md:pt-3" ref={contentRef}>
                 <div className="flex items-start justify-between border-t-2 border-gray-200 pt-4 md:border-t-0 md:pt-0">
-                  <div className="text-gray-500">{item.content}</div>
+                  <div
+                    className="text-gray-500"
+                    dangerouslySetInnerHTML={{ __html: item.content }}
+                  />
                   {item.speaker?.links && (
                     <div className="mr-2 md:hidden">
                       <Links links={item.speaker.links} />
