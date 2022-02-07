@@ -119,7 +119,9 @@ const Item: React.FC<{
                 {divider}
                 <div className="h-7 w-7">
                   <Image
-                    className="rounded-full"
+                    width={128}
+                    height={128}
+                    className="rounded-full bg-gray-200 text-transparent"
                     src={item.speaker.avatar}
                     alt={item.speaker.name}
                   />
