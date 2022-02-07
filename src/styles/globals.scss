@@ -1,0 +1,23 @@
+@import "~vazir-font/dist/font-face.css";
+@import "~@fontsource/lalezar/arabic-400.css";
+@import "~remixicon/fonts/remixicon.css";
+
+@import "./utils/collapse";
+@import "./utils/hamburgers";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./components/button";
+@import "./components/stepper";
+@import "./components/sponsors";
+@import "./components/event-place.scss";
+
+@import "/node_modules/swiper/swiper";
+@import "/node_modules/swiper/modules/autoplay/autoplay";
+
+// body {
+//   max-width: 100%;
+//   overflow-x: hidden;
+// }

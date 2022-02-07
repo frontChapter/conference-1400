@@ -1,0 +1,17 @@
+.background-image {
+  height: 324px;
+  background: linear-gradient(0deg, #0003, #0003), linear-gradient(0deg, #0cc355bf, #0cc355bf),
+    url("/images/hotel-banner.jpg");
+  @apply relative flex w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat text-4xl font-bold text-white sm:text-5xl;
+}
+
+.rating {
+  background: white;
+  color: #ffca0f;
+  position: absolute;
+  bottom: -1.8rem;
+  padding: 12px 24px 16px;
+  box-shadow: 0 4px 16px #0e053414;
+  border-radius: 8px;
+  @apply flex text-3xl sm:hidden;
+}

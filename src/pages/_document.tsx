@@ -6,10 +6,6 @@ class MyDocument extends Document {
       <Html dir="rtl" lang="fa">
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css"
-          />
         </Head>
         <body>
           <Main />
