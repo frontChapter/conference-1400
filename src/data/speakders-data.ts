@@ -20,11 +20,11 @@ export const speakersList: speaker[] = [
     brandClass: "text-[#303030]",
   },
   {
-    name: "کوروش بینوا",
-    position: "توسعه دهنده فرانت‌اند",
-    company: "شیپور",
-    photo: speaker3Avatar,
-    brandClass: "text-[#0265e5]",
+    name: "میلاد اعظمی",
+    position: "اینفولوئنسر فرانت‌اند",
+    company: "فریلنسر",
+    photo: miladAzamiAvatar,
+    brandClass: "from-[#02abdf] to-[#01bd9c] bg-gradient-to-r bg-clip-text text-transparent",
   },
   {
     name: "رعنا خوشه",
