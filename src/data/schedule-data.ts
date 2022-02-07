@@ -1,6 +1,6 @@
-import miladMoafi from "assets/images/speakers/milad-moafi.jpg";
+import miladMoafi from "assets/images/speakers/milad-moafi.png";
+import miladAzami from "assets/images/speakers/milad-azami.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.jpg";
-import speaker1 from "assets/images/speakers/speaker-1.jpg";
 import speaker2 from "assets/images/speakers/speaker-2.jpg";
 import speaker3 from "assets/images/speakers/speaker-3.jpg";
 import speaker4 from "assets/images/speakers/speaker-4.jpg";
@@ -42,17 +42,17 @@ export const itemsData: item[] = [
   {
     time: "11:00",
     type: "presentation",
-    title: "عنوان ارائه‌ی دوم",
+    title: "واقعیت های دنیای برنامه نویسی",
     showByDefault: true,
     expandable: true,
     content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+      "یادگیری برنامه نویسی چقدر طول میکشه؟ پیدا کردن کار راحته؟ تو شهرستان هم میتونم کار بکنم؟ اصلا حقوق برنامه نویسی چقدره؟",
     speaker: {
-      name: "نام ارائه‌دهنده",
-      avatar: speaker1,
+      name: "میلاد اعظمی",
+      avatar: miladAzami,
       links: {
-        website: "https://frontchapter.ir",
-        linkedin: "https://linkedin.com",
+        linkedin: "https://www.linkedin.com/in/milad-azami-b226631b5/",
+        instagram: "https://www.instagram.com/javascript.front/",
       },
     },
   },
@@ -73,8 +73,8 @@ export const itemsData: item[] = [
       name: "میلاد معافی",
       avatar: miladMoafi,
       links: {
-        twitter: "https://twitter.com/milixof/",
         linkedin: "https://www.linkedin.com/in/milixov",
+        twitter: "https://twitter.com/milixof/",
       },
     },
   },

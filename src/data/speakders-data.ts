@@ -1,6 +1,6 @@
-import miladMoafiAvatar from "assets/images/speakers/milad-moafi.jpg";
+import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
+import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.jpg";
-import speaker3Avatar from "assets/images/speakers/speaker-3.jpg";
 import speaker4Avatar from "assets/images/speakers/speaker-4.jpg";
 import speaker5Avatar from "assets/images/speakers/speaker-5.jpg";
 
@@ -20,11 +20,11 @@ export const speakersList: speaker[] = [
     brandClass: "text-[#303030]",
   },
   {
-    name: "کوروش بینوا",
-    position: "توسعه دهنده فرانت‌اند",
-    company: "شیپور",
-    photo: speaker3Avatar,
-    brandClass: "text-[#0265e5]",
+    name: "میلاد اعظمی",
+    position: "اینفولوئنسر فرانت‌اند",
+    company: "فریلنسر",
+    photo: miladAzamiAvatar,
+    brandClass: "from-[#02abdf] to-[#01bd9c] bg-gradient-to-r bg-clip-text text-transparent",
   },
   {
     name: "رعنا خوشه",
