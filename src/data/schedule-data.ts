@@ -73,8 +73,8 @@ export const itemsData: item[] = [
       name: "میلاد معافی",
       avatar: miladMoafi,
       links: {
-        twitter: "https://twitter.com/milixof/",
         linkedin: "https://www.linkedin.com/in/milixov",
+        twitter: "https://twitter.com/milixof/",
       },
     },
   },
