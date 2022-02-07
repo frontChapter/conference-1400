@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { GetStaticProps } from "next";
+import getTweets, { Tweet } from "utils/getTweets";
 import Jumbotron from "components/Jumbotron";
 import Speakers from "components/Speakers";
 import Sponsors from "components/Sponsors";
@@ -9,8 +11,6 @@ import Subscribe from "components/Subscribe";
 import Schedule from "components/Schedule";
 import EventPlace from "components/EventPlace";
 import Tweets from "components/Tweets";
-import { GetStaticProps } from "next";
-import getTweets, { Tweet } from "utils/getTweets";
 import Footer from "components/Footer";
 
 export default function Home({ tweets }: { tweets: false | Tweet[] }) {
@@ -43,8 +43,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      tweets: false,
-      // tweets: await getTweets(),
+      tweets: await getTweets(),
     },
   };
 };
