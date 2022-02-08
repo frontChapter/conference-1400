@@ -1,6 +1,6 @@
 import { FaGlobeAmericas, FaMapMarkerAlt, FaStar } from "react-icons/fa";
 
-const EventPlace = () => {
+const OldEventPlace = () => {
   return (
     <section id="place" className="bg-[#EEF9EF] sm:py-8 sm:px-14">
       <div className="container">
@@ -80,4 +80,4 @@ const EventPlace = () => {
   );
 };
 
-export default EventPlace;
+export default OldEventPlace;

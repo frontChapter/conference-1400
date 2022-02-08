@@ -9,7 +9,7 @@ import TripSteps from "components/TripSteps";
 import Countdown from "components/Countdown";
 import Subscribe from "components/Subscribe";
 import Schedule from "components/Schedule";
-import EventPlace from "components/EventPlace";
+import OldEventPlace from "components/OldEventPlace";
 import Tweets from "components/Tweets";
 import Footer from "components/Footer";
 
@@ -31,7 +31,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
         <TripSteps />
         <Schedule />
         <Sponsors />
-        <EventPlace />
+        <OldEventPlace />
         <Subscribe />
         <Tweets tweets={tweets} />
       </main>
