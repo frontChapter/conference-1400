@@ -3,6 +3,7 @@ module.exports = {
   reactStrictMode: true,
   images: {
     domains: ['pbs.twimg.com'],
+    deviceSizes: [640, 768, 1024, 1280, 1536],
   },
   webpack: (config) => {
     config.module.rules.push({
