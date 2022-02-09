@@ -19,7 +19,7 @@ const EventPlace: React.FC<{}> = () => {
 
 const Hotel: React.FC<{}> = () => {
   return (
-    <div className="rounded-3xl bg-white p-9 xl:py-16 xl:px-20">
+    <div className="rounded-3xl bg-white p-6 sm:p-9 xl:py-16 xl:px-20">
       <div className="flex flex-col-reverse md:flex-row md:items-stretch">
         {/* Right / Bottom */}
         <div className="flex basis-3/5 flex-col justify-between md:pl-6 xl:pl-16">
@@ -58,6 +58,7 @@ const Hotel: React.FC<{}> = () => {
                 objectPosition="right center"
                 alt="هتل میزبان روی نقشه"
                 className="text-transparent"
+                sizes="(max-width: 639px) 560px,(max-width: 767px) 552px,(max-width: 1023px) 384px,(max-width: 1279px) 528px,(max-width: 1535px) 570px, 714px"
               />
             </figure>
             <a
@@ -73,20 +74,23 @@ const Hotel: React.FC<{}> = () => {
 
         {/* Left / Top */}
         <div className="mb-8 flex basis-2/5 flex-col md:mb-0">
-          <div className="z-10 flex items-center justify-center space-x-1 space-x-reverse self-center rounded-3xl bg-white py-4 px-5 shadow">
+          <div className="z-10 flex items-center justify-center space-x-1 space-x-reverse self-center rounded-3xl bg-white p-2 shadow sm:py-4 sm:px-5">
             {[...Array(5)].map((x, y) => (
-              <figure key={y}>
+              <figure key={y} className="w-4 sm:w-6">
                 <Image src={Star} width={24} height={22} alt="⭐️" />
               </figure>
             ))}
           </div>
-          <div className="-mt-8 flex h-full items-stretch">
+          <div className="relative -mt-5 flex aspect-video items-stretch overflow-auto rounded-3xl sm:-mt-8 md:aspect-auto md:h-full">
             <Image
               src={MizbanHotel}
+              layout="fill"
               objectFit="cover"
+              objectPosition="left center"
               placeholder="blur"
               alt="هتل میزبان"
-              className="block rounded-3xl leading-none text-transparent"
+              className="block h-full w-full leading-none text-transparent"
+              sizes="(max-width: 639px) 640px,(max-width: 767px) 552px,(max-width: 1023px) 272px,(max-width: 1279px) 368px,(max-width: 1535px) 423px, 519px"
             />
           </div>
         </div>
