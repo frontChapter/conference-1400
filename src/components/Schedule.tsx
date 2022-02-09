@@ -132,7 +132,7 @@ const Item: React.FC<{
 
             {/* Links */}
             {item.speaker?.links && (
-              <div className="hidden md:order-3 md:flex">
+              <div className="hidden md:order-3 lg:flex">
                 {divider}
                 <div className="hidden md:block">
                   <Links links={item.speaker.links} />
