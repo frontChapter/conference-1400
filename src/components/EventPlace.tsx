@@ -18,14 +18,14 @@ const EventPlace = () => {
                 ))}
             </div>
           </div>
-          <div className="mt-14 px-6 py-4">
-            <div className="flex flex-col gap-4 sm:flex-row">
+          <div className="px-6">
+            <div className="flex flex-col gap-4 sm:flex-row h-72 items-center">
               <div className="basis-8/12">
                 <div className="flex h-[100%] flex-col justify-between">
-                  <h5 className="mb-3 text-2xl font-bold text-[#4B5563] sm:mb-0">
+                  <h5 className="mb-3 text-2xl font-bold text-[#4B5563] sm:mb-5">
                     هتل میزبان بابلسر
                   </h5>
-                  <p className="text-[18px] text-[#6B7280]">
+                  <p className="text-[18px] text-[#6B7280] sm:mb-5">
                     هتل میزبان بابلسر در کیلومتر سه کمربندی بابلسر به مساحت بیش از ۷۰۰۰ متر مربع،
                     واقع گردیده است که با نمای قله‌ی شکوهمند دماوند و نمای شالیزار، شهر و دریا
                     منظره‌ی بی همتایی را ایجاد کرده که موجب اعجاب جهانیان است.
