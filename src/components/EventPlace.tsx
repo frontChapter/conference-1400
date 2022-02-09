@@ -22,15 +22,15 @@ const Hotel: React.FC<{}> = () => {
     <div className="rounded-3xl bg-white p-6 sm:p-9 xl:py-16 xl:px-20">
       <div className="flex flex-col-reverse md:flex-row md:items-stretch">
         {/* Right / Bottom */}
-        <div className="flex basis-3/5 flex-col justify-between md:pl-6 xl:pl-16">
+        <div className="flex basis-3/5 flex-col justify-between md:pl-6 xl:pl-16 2xl:basis-1/2">
           <h4 className="mb-5 text-3xl font-bold text-gray-900">هتل میزبان بابلسر</h4>
-          <div className="text-lg leading-relaxed text-gray-600 md:font-medium 2xl:pl-20">
+          <div className="text-lg leading-relaxed text-gray-600 md:font-medium">
             هتل پنج ستاره میزبان بابلسر، مشرف به دریای خزر و رشته کوه البرز و قله دماوند از تازه
             ساخت‌ترین مجموعه‌های بابلسر می‌باشد که ترکیبی از رستوران‌ها، واحدهای اقامتی و مرکز خرید
             است. پرسنل مجرب این هتل، آرامشی وصف نشدنی و اقامتی دلنشین را برای شما مهمانان گرامی
             آرزومندند.
           </div>
-          <div className="my-8 flex items-center justify-center md:my-5 md:justify-start">
+          <div className="my-8 flex items-center justify-center md:my-5 md:justify-start 2xl:my-12">
             <a
               href="https://www.eghamat24.com/BabolsarHotels/Mizban2Hotel.html"
               target="_blank"
@@ -73,7 +73,7 @@ const Hotel: React.FC<{}> = () => {
         </div>
 
         {/* Left / Top */}
-        <div className="mb-8 flex basis-2/5 flex-col md:mb-0">
+        <div className="mb-8 flex basis-2/5 flex-col md:mb-0 2xl:basis-1/2">
           <div className="z-10 flex items-center justify-center space-x-1 space-x-reverse self-center rounded-3xl bg-white p-2 shadow sm:py-4 sm:px-5">
             {[...Array(5)].map((x, y) => (
               <figure key={y} className="w-4 sm:w-6">
