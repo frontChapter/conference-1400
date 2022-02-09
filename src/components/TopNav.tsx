@@ -54,7 +54,7 @@ const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
 
   return (
     <nav className={"collapse lg:collapsed duration-500" + (collapsed ? " collapsed" : "")}>
-      <ul className="topnav-items flex flex-col lg:flex-row lg:space-x-6 lg:space-x-reverse">
+      <ul className="topnav-items flex flex-col lg:flex-row lg:space-x-7 lg:space-x-reverse">
         {items.map(({ title, href }, index) => (
           <li key={index} className="text-gray-500 transition hover:text-gray-900">
             <Link href={href}>
