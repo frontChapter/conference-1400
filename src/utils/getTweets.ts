@@ -16,14 +16,14 @@ export const getTweets = async (): Promise<false | Tweet[]> => {
 
   if (!token || !listId) return false;
 
-  const client = new TwitterApiReadOnly(token);
-  const listTweets = await client.v2.listTweets(listId, {
-    "max_results": 10,
-    "expansions": "author_id",
-    "user.fields": "name,username,verified,profile_image_url",
-  });
-
   try {
+    const client = new TwitterApiReadOnly(token);
+    const listTweets = await client.v2.listTweets(listId, {
+      "max_results": 10,
+      "expansions": "author_id",
+      "user.fields": "name,username,verified,profile_image_url",
+    });
+
     let users: Users = {};
     for (const user of listTweets.data.includes?.users || []) {
       users[user.id] = user;
