@@ -28,10 +28,10 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
           <Countdown />
         </section>
         <Speakers />
-        <TripSteps />
         <Schedule />
         <Sponsors />
         <EventPlace />
+        <TripSteps />
         <Subscribe />
         <Tweets tweets={tweets} />
       </main>
