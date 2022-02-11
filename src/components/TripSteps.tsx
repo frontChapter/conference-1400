@@ -1,6 +1,6 @@
 const TripSteps: React.FC<{}> = () => {
   return (
-    <section id="trip" className="container flex flex-col items-center py-12 md:py-8">
+    <section id="trip" className="container flex flex-col items-center py-9 md:py-12 lg:py-16">
       <h3 className="mb-5 text-2xl font-black leading-normal text-primary md:text-4xl">
         نگران مسیر و اقامت نباشید!
       </h3>

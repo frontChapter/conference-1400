@@ -44,10 +44,10 @@ const ListItem = ({ link, title, logo }: IListItemType) => (
 
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="container">
+    <section id="sponsors" className="container py-9 md:py-12 lg:py-16">
       <div className="sponsors">
         <div className="container">
-          <div className="my-14">
+          <div className="">
             <h1 className="mb-8 text-center text-4xl font-bold leading-loose text-primary">
               حامی های مالی و معنوی فرانت چپتر
             </h1>

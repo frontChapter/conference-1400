@@ -7,7 +7,7 @@ const Tweets: React.FC<{ tweets: false | Tweet[] }> = ({ tweets }) => {
   if (!tweets || tweets.length < 6) return null;
 
   return (
-    <section className="py-8">
+    <section className="py-9 md:py-12 lg:py-16">
       <div className="container flex flex-col items-center justify-between sm:flex-row">
         <h2 className="text-2xl font-bold text-gray-600 md:text-2rem">
           <span>درباره</span>
@@ -94,7 +94,7 @@ const Tweet: React.FC<{ tweet: Tweet }> = ({ tweet }) => {
               </figure>
             </div>
           </div>
-          <div className="line-clamp-5 mt-3 max-h-full leading-7 text-gray-500">{tweet.text}</div>
+          <div className="mt-3 max-h-full leading-7 text-gray-500 line-clamp-5">{tweet.text}</div>
         </div>
       </div>
     </a>

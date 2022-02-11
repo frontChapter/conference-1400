@@ -7,7 +7,7 @@ const Schedule: React.FC<{}> = () => {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <section id="schedule" className="bg-[#eef9ef] py-12 md:py-8">
+    <section id="schedule" className="bg-[#eef9ef] py-9 md:py-12 lg:py-16">
       <div className="container flex flex-col items-center">
         <h2 className="text-center text-2rem font-black text-secondary">برنامه همایش</h2>
         <Items showAll={showAll} />
