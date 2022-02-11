@@ -1,0 +1,8 @@
+.sights-tab {
+  transition: all 0.3s;
+  @apply flex items-center justify-center gap-1 rounded border border-[#374151] bg-white px-1 py-1 text-[#374151] hover:bg-[#374151] hover:text-white sm:px-3;
+}
+
+.sights-tab.active {
+  @apply border-0 bg-secondary text-white hover:bg-secondary-hover focus:bg-secondary-active;
+}
