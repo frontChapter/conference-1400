@@ -108,9 +108,11 @@ const Subscribe: React.FC<{}> = () => {
   );
 
   return (
-    <section className="container flex justify-center py-4 sm:py-8">
-      <div className="flex flex-1 flex-col items-center space-y-6 rounded-3xl bg-[#f8f7f2] py-8 px-6 lg:py-12">
-        <h3 className="text-2xl font-black text-gray-600">از اینا بیشترم هست!</h3>
+    <section className="container flex justify-center py-9 md:py-12 lg:py-16">
+      <div className="flex flex-col items-center space-y-6 rounded-3xl bg-[#f8f7f2] py-8 px-6 lg:py-12">
+        <h3 className="text-2xl font-black leading-normal text-gray-600 md:text-28 lg:text-4xl">
+          از اینا بیشترم هست!
+        </h3>
         <p className="max-w-3xl text-center text-lg text-gray-500">
           میتونی با عضو شدن توی خبرنامه فرانت چپتر، علاوه بر مطلع شدن از تاریخ جلسات و شرکت توی
           اونها، از رویدادها و همکاری‌های فرانت چپتر با بقیه جامعه‌های برنامه نویسی باخبر بشی.

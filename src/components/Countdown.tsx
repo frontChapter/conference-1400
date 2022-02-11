@@ -10,7 +10,7 @@ const Countdown: React.FC<{}> = () => {
   const remain = remainingTime ? parseInt(remainingTime) : 0;
 
   return (
-    <div className="container relative flex flex-col items-center justify-center py-6 md:flex-row md:py-12">
+    <div className="container relative flex flex-col items-center justify-center py-9 md:flex-row md:py-12 lg:py-16">
       <div className="text-2xl font-bold text-primary md:text-4xl">فقط</div>
       <div className="my-4 flex space-x-1 space-x-reverse sm:space-x-3 sm:space-x-reverse md:my-0 md:mx-8">
         <CountdownTimer remain={remain} />

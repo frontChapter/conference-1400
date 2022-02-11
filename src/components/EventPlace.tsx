@@ -1,82 +1,103 @@
-import { FaGlobeAmericas, FaMapMarkerAlt, FaStar } from "react-icons/fa";
+import Image from "next/image";
+import Star from "assets/images/icons/star.png";
+import MizbanHotel from "assets/images/mizban-hotel.jpg";
+import MizbanHotelMap from "assets/images/mizban-hotel-map.jpg";
 
-const EventPlace = () => {
+const EventPlace: React.FC<{}> = () => {
   return (
-    <section id="place" className="bg-[#EEF9EF] sm:py-8 sm:px-14">
-      <div className="container">
-        <div className="card overflow-hidden rounded-xl bg-white">
-          <div className="background-image">
-            <h4 className="flex">
-              <FaMapMarkerAlt className="ml-2 sm:ml-5 sm:text-5xl" />
-              محل برگزاری
-            </h4>
-            <div className="rating">
-              {Array(5)
-                .fill(null)
-                .map((_, index) => (
-                  <FaStar key={index} />
-                ))}
-            </div>
+    <section id="place" className="bg-[#eef9ef] py-9 md:py-12 lg:py-16">
+      <div className="container flex flex-col items-center space-y-4 md:space-y-6 lg:space-y-9">
+        <div className="flex items-center justify-center">
+          <i className="ri-map-pin-2-fill block text-2xl leading-none text-secondary"></i>
+          <h3 className="mr-4 text-center text-2xl font-black leading-normal text-secondary md:text-28 lg:text-4xl">
+            محل برگزاری
+          </h3>
+        </div>
+        <Hotel />
+      </div>
+    </section>
+  );
+};
+
+const Hotel: React.FC<{}> = () => {
+  return (
+    <div className="rounded-3xl bg-white p-6 sm:p-9 xl:py-16 xl:px-20">
+      <div className="flex flex-col-reverse md:flex-row md:items-stretch">
+        {/* Right / Bottom */}
+        <div className="flex basis-3/5 flex-col justify-between md:pl-6 xl:pl-16 2xl:basis-1/2">
+          <h4 className="mb-5 text-3xl font-bold text-gray-900">هتل میزبان بابلسر</h4>
+          <div className="text-lg leading-relaxed text-gray-600 md:font-medium">
+            هتل پنج ستاره میزبان بابلسر، مشرف به دریای خزر و رشته کوه البرز و قله دماوند از تازه
+            ساخت‌ترین مجموعه‌های بابلسر می‌باشد که ترکیبی از رستوران‌ها، واحدهای اقامتی و مرکز خرید
+            است. پرسنل مجرب این هتل، آرامشی وصف نشدنی و اقامتی دلنشین را برای شما مهمانان گرامی
+            آرزومندند.
           </div>
-          <div className="mt-14 px-6 py-4">
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <div className="basis-8/12">
-                <div className="flex h-[100%] flex-col justify-between">
-                  <h5 className="mb-3 text-2xl font-bold text-[#4B5563] sm:mb-0">
-                    هتل میزبان بابلسر
-                  </h5>
-                  <p className="text-[18px] text-[#6B7280]">
-                    هتل میزبان بابلسر در کیلومتر سه کمربندی بابلسر به مساحت بیش از ۷۰۰۰ متر مربع،
-                    واقع گردیده است که با نمای قله‌ی شکوهمند دماوند و نمای شالیزار، شهر و دریا
-                    منظره‌ی بی همتایی را ایجاد کرده که موجب اعجاب جهانیان است.
-                  </p>
-                  <div className="my-4 mb-3 flex flex-col gap-2 sm:my-0 sm:flex-row sm:gap-4">
-                    <a
-                      target="_blank"
-                      href="http://mizban-group.com/"
-                      className="inline-flex justify-center rounded border-2 border-secondary px-3 py-1 align-baseline text-secondary hover:bg-secondary-hover hover:text-white"
-                      rel="noreferrer"
-                    >
-                      <FaGlobeAmericas className="mt-1 ml-1" />
-                      <span>سایت هتل میزبان</span>
-                    </a>
-                    <a
-                      target="_blank"
-                      href="https://www.instagram.com/mizbanhotel/"
-                      className="inline-flex justify-center rounded border-2 border-[#374151] px-3 py-1 align-baseline text-[#374151] hover:bg-[#374151] hover:text-white"
-                      rel="noreferrer"
-                    >
-                      <FaGlobeAmericas className="mt-1 ml-1" />
-                      <span>اینستاگرام هتل</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="basis-4/12">
-                <iframe
-                  width="100%"
-                  height={220}
-                  frameBorder={0}
-                  scrolling="no"
-                  marginHeight={0}
-                  marginWidth={0}
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=52.63209164142609%2C36.6886481478241%2C52.63562947511674%2C36.69069357650528&layer=mapnik&marker=36.68966979355623%2C52.633861899375916"
-                />
-                <small>
-                  <a
-                    target="_blank"
-                    href="https://www.openstreetmap.org/?mlat=36.68967&mlon=52.63386#map=19/36.68967/52.63386"
-                    rel="noreferrer"
-                  >
-                    مشاهده روی نقشه
-                  </a>
-                </small>
-              </div>
-            </div>
+          <div className="my-8 flex items-center justify-center md:my-5 md:justify-start 2xl:my-12">
+            <a
+              href="https://www.eghamat24.com/BabolsarHotels/Mizban2Hotel.html"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full bg-secondary py-2 px-5 font-bold text-white transition hover:bg-secondary-hover md:text-lg"
+            >
+              <span className="md:hidden">هتل در اقامت ۲۴</span>
+              <span className="hidden md:block">صفحه هتل در سایت اقامت ۲۴</span>
+            </a>
+            <a
+              href="https://www.instagram.com/mizbanhotel/"
+              target="_blank"
+              rel="noreferrer"
+              className="mr-5"
+            >
+              <i className="ri-instagram-line block text-3xl leading-none text-gray-500" />
+            </a>
+          </div>
+          <div className="relative overflow-hidden rounded-3xl">
+            <figure className="h-[70px]">
+              <Image
+                src={MizbanHotelMap}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="right center"
+                alt="هتل میزبان روی نقشه"
+                className="text-transparent"
+                sizes="(max-width: 639px) 560px,(max-width: 767px) 552px,(max-width: 1023px) 384px,(max-width: 1279px) 528px,(max-width: 1535px) 570px, 714px"
+              />
+            </figure>
+            <a
+              href="https://goo.gl/maps/aqqqTHxmfiERH44S7"
+              target="_blank"
+              rel="noreferrer"
+              className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40"
+            >
+              <div className="text-lg font-semibold text-white">لوکیشن هتل روی نقشه</div>
+            </a>
+          </div>
+        </div>
+
+        {/* Left / Top */}
+        <div className="mb-8 flex basis-2/5 flex-col md:mb-0 2xl:basis-1/2">
+          <div className="z-10 flex items-center justify-center space-x-1 space-x-reverse self-center rounded-3xl bg-white p-2 shadow sm:py-4 sm:px-5">
+            {[...Array(5)].map((x, y) => (
+              <figure key={y} className="w-4 sm:w-6">
+                <Image src={Star} width={24} height={22} alt="⭐️" />
+              </figure>
+            ))}
+          </div>
+          <div className="relative -mt-5 flex aspect-video items-stretch overflow-auto rounded-3xl sm:-mt-8 md:aspect-auto md:h-full">
+            <Image
+              src={MizbanHotel}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="left center"
+              placeholder="blur"
+              alt="هتل میزبان"
+              className="block h-full w-full leading-none text-transparent"
+              sizes="(max-width: 639px) 640px,(max-width: 767px) 552px,(max-width: 1023px) 272px,(max-width: 1279px) 368px,(max-width: 1535px) 423px, 519px"
+            />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
