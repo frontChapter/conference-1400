@@ -1,10 +1,10 @@
 const TripSteps: React.FC<{}> = () => {
   return (
-    <section id="trip" className="container flex flex-col items-center py-12 md:py-8">
-      <h3 className="mb-5 text-2xl font-black leading-normal text-primary md:text-4xl">
+    <section id="trip" className="container flex flex-col items-center py-9 md:py-12 lg:py-16">
+      <h3 className="mb-5 text-center text-2xl font-black leading-normal text-primary md:mb-7 md:text-28 lg:mb-9 lg:text-4xl">
         نگران مسیر و اقامت نباشید!
       </h3>
-      <p className="mb-5 text-center font-medium leading-relaxed text-gray-500 md:mb-0 md:text-lg lg:w-3/5">
+      <p className="mb-5 text-center font-medium leading-relaxed text-gray-500 sm:w-5/6 md:mb-0 md:text-lg lg:w-3/5">
         یکی از مهم ترین هدف‌های این همایش برای ما، پیدا کردن رفقای تازه هست! سفر کمک میکنه بهترین
         رفیق‌ها رو پیدا کنیم و با کلی آدم تازه آشنا بشیم. توی این سفر با ما همراه باشید که کلی اتفاق
         هیجان انگیز رو قرار هست کنار هم تجربه کنیم.

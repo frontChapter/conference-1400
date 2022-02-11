@@ -7,9 +7,11 @@ const Schedule: React.FC<{}> = () => {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <section id="schedule" className="bg-[#eef9ef] py-12 md:py-8">
+    <section id="schedule" className="bg-[#eef9ef] py-9 md:py-12 lg:py-16">
       <div className="container flex flex-col items-center">
-        <h2 className="text-center text-2rem font-black text-secondary">برنامه همایش</h2>
+        <h3 className="text-center text-2xl font-black leading-normal text-secondary md:text-28 lg:text-4xl">
+          برنامه همایش
+        </h3>
         <Items showAll={showAll} />
         <div className="collapse duration-200" style={{ maxHeight: showAll ? 0 : 100 }}>
           <div
@@ -33,7 +35,7 @@ const Items: React.FC<{ showAll: boolean }> = ({ showAll }) => {
   });
 
   return (
-    <div className="relative mt-3 overflow-hidden md:mt-8">
+    <div className="relative mt-3 overflow-hidden md:mt-5 lg:mt-8">
       <div className="absolute top-7 right-[91px] z-10 hidden h-[200vh] border-l-2 border-dashed border-secondary md:block"></div>
       <div className="items relative">
         {itemsData.map((item, index) => (
