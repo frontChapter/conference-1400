@@ -30,10 +30,10 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
         </section>
         <Speakers />
         <Schedule />
-        <Sponsors />
         <EventPlace />
-        <TripSights />
         <TripSteps />
+        <TripSights />
+        <Sponsors />
         <Subscribe />
         <Tweets tweets={tweets} />
       </main>
