@@ -4,6 +4,7 @@ const Liara = "/images/sponsors/liara.png";
 const Quera = "/images/sponsors/quera.png";
 const Shab = "/images/sponsors/shab.png";
 const A4Zi = "/images/sponsors/a4zi.png";
+const Rokla = "/images/sponsors/rokla.jpg";
 
 const sponsorsList = [
   {
@@ -17,14 +18,19 @@ const sponsorsList = [
     logo: Quera,
   },
   {
-    title: "ای فور زی",
-    link: "https://a4zi.com/",
-    logo: A4Zi,
-  },
-  {
     title: "شب",
     link: "https://shab.ir/",
     logo: Shab,
+  },
+  {
+    title: "رکلا",
+    link: "https://rokla.ir/",
+    logo: Rokla,
+  },
+  {
+    title: "ای فور زی",
+    link: "https://a4zi.com/",
+    logo: A4Zi,
   },
 ];
 
