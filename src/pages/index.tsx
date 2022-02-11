@@ -32,7 +32,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
         <Schedule />
         <EventPlace />
         <TripSteps />
-        <TripSights />
+        {/* <TripSights /> */}
         <Sponsors />
         <Subscribe />
         <Tweets tweets={tweets} />
