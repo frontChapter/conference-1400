@@ -48,9 +48,9 @@ const Sponsors = () => {
       <div className="sponsors">
         <div className="container">
           <div className="">
-            <h1 className="mb-8 text-center text-4xl font-bold leading-loose text-primary">
-              حامی های مالی و معنوی فرانت چپتر
-            </h1>
+            <h3 className="mb-5 text-center text-2xl font-black leading-normal text-primary md:mb-7 md:text-28 lg:mb-9 lg:text-4xl">
+              حامیان مالی و معنوی فرانت چپتر
+            </h3>
             <div className="mx-auto max-w-2xl">
               <div className="flex flex-row flex-wrap justify-center">
                 {sponsorsList.map((item, index) => (

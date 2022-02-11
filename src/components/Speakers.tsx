@@ -31,9 +31,9 @@ const Speakers = () => {
   return (
     <section id="speakers" className="bg-white">
       <div className="container py-9 md:py-12 lg:py-16">
-        <h4 className="mb-8 text-center text-2xl font-black leading-normal text-primary lg:text-4xl">
+        <h3 className="mb-5 text-center text-2xl font-black leading-normal text-primary md:mb-7 md:text-28 lg:mb-9 lg:text-4xl">
           ارائه دهندگان
-        </h4>
+        </h3>
         <div className="flex justify-center">
           <div className="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-8 md:gap-y-16 md:gap-x-16 lg:gap-x-6 xl:gap-x-8">
             {speakersList.map((item, index) => (

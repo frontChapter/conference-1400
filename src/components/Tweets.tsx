@@ -9,7 +9,7 @@ const Tweets: React.FC<{ tweets: false | Tweet[] }> = ({ tweets }) => {
   return (
     <section className="py-9 md:py-12 lg:py-16">
       <div className="container flex flex-col items-center justify-between sm:flex-row">
-        <h2 className="text-2xl font-bold text-gray-600 md:text-2rem">
+        <h2 className="text-2xl font-bold leading-normal text-gray-600 md:text-28 lg:text-4xl">
           <span>درباره</span>
           <span className="text-primary"> فرانت چپتر </span>
           <span>چی‌میگن؟</span>
