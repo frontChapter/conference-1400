@@ -12,6 +12,7 @@ import Schedule from "components/Schedule";
 import EventPlace from "components/EventPlace";
 import Tweets from "components/Tweets";
 import Footer from "components/Footer";
+import TripSights from "components/TripSights";
 
 export default function Home({ tweets }: { tweets: false | Tweet[] }) {
   return (
@@ -31,6 +32,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
         <Schedule />
         <Sponsors />
         <EventPlace />
+        <TripSights />
         <TripSteps />
         <Subscribe />
         <Tweets tweets={tweets} />
