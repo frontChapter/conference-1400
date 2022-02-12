@@ -1,9 +1,9 @@
 import miladMoafi from "assets/images/speakers/milad-moafi.png";
 import miladAzami from "assets/images/speakers/milad-azami.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
-import mohammadRezaAla from "assets/images/speakers/mohammadreza_ala.jpg";
+import mohammadRezaAla from "assets/images/speakers/mohammadreza-ala.jpg";
 import sobhanAminNejad from "assets/images/speakers/sobhan.jpg";
-import mohammadMahmoodi from "assets/images/speakers/mohammad_mahmoodi.jpg";
+import mohammadMahmoodi from "assets/images/speakers/mohammad-mahmoodi.jpg";
 import speaker3 from "assets/images/speakers/speaker-3.jpg";
 
 export const itemsData: item[] = [
@@ -123,9 +123,7 @@ export const itemsData: item[] = [
       name: "محمدرضا اعلا",
       avatar: mohammadRezaAla,
       links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
+        linkedin: "https://www.linkedin.com/in/mohammadrezala/",
       },
     },
   },
@@ -145,9 +143,7 @@ export const itemsData: item[] = [
       name: "محمد محمودی",
       avatar: mohammadMahmoodi,
       links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
+        linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
       },
     },
   },
@@ -168,9 +164,7 @@ export const itemsData: item[] = [
       name: "سبحان امین‌نژاد",
       avatar: sobhanAminNejad,
       links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
+        linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
       },
     },
   },
