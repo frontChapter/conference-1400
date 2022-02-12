@@ -123,9 +123,7 @@ export const itemsData: item[] = [
       name: "محمدرضا اعلا",
       avatar: mohammadRezaAla,
       links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
+        linkedin: "https://www.linkedin.com/in/mohammadrezala/",
       },
     },
   },
@@ -145,9 +143,7 @@ export const itemsData: item[] = [
       name: "محمد محمودی",
       avatar: mohammadMahmoodi,
       links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
+        linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
       },
     },
   },
@@ -168,9 +164,7 @@ export const itemsData: item[] = [
       name: "سبحان امین‌نژاد",
       avatar: sobhanAminNejad,
       links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
+        linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
       },
     },
   },
