@@ -17,6 +17,10 @@ export const speakersList: speaker[] = [
     position: "توسعه دهنده‌ی جاوااسکریپت",
     companyName: "لیارا",
     companyLogo: liaraLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/gholi-dev",
+      github: "https://github.com/gholi-dev",
+    },
   },
   {
     photo: sobhanAvatar,
@@ -24,6 +28,9 @@ export const speakersList: speaker[] = [
     position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
     companyName: "اسنپ مارکت",
     companyLogo: snappMarketLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
+    },
   },
   {
     name: "میلاد اعظمی",
@@ -32,6 +39,10 @@ export const speakersList: speaker[] = [
     photo: miladAzamiAvatar,
     brandClass: "from-[#02abdf] to-[#01bd9c] bg-gradient-to-r bg-clip-text text-transparent",
     hideCompanyPrefix: true,
+    links: {
+      linkedin: "https://www.linkedin.com/in/milad-azami-b226631b5/",
+      instagram: "https://www.instagram.com/javascript.front/",
+    },
   },
   {
     name: "محمدرضا اعلا",
@@ -39,6 +50,9 @@ export const speakersList: speaker[] = [
     companyName: "اسنپ",
     photo: mrAlaAvatar,
     companyLogo: snappLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/mohammadrezala/",
+    },
   },
   {
     name: "محمود محمودی",
@@ -46,6 +60,9 @@ export const speakersList: speaker[] = [
     companyName: "پیام‌رسان بانکی بله",
     photo: mohammadMahmoodiAvatar,
     companyLogo: balehLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
+    },
   },
 ];
 
@@ -57,4 +74,19 @@ export interface speaker {
   brandClass?: string;
   companyLogo?: StaticImageData;
   hideCompanyPrefix?: boolean;
+  links?: links;
 }
+
+export type links = {
+  [key in keyof typeof socialMediaIcons]?: string;
+};
+
+export const socialMediaIcons = {
+  github: "ri-github-fill",
+  twitter: "ri-twitter-fill",
+  linkedin: "ri-linkedin-fill",
+  instagram: "ri-instagram-fill",
+  facebook: "ri-facebook-fill",
+  website: "ri-earth-fill",
+  mastodon: "ri-mastodon-fill",
+};
