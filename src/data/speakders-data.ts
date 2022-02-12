@@ -1,13 +1,14 @@
-// import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
 import balehLogo from "assets/images/companies/baleh.png";
 import liaraLogo from "assets/images/companies/liara.png";
 import snappLogo from "assets/images/companies/snapp.png";
 import snappMarketLogo from "assets/images/companies/snapp-market.png";
+
+// import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
 import sobhanAvatar from "assets/images/speakers/sobhan.jpg";
 import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.png";
-import mrAlaAvatar from "assets/images/speakers/mohammadreza_ala.jpg";
-import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad_mahmoodi.jpg";
+import mrAlaAvatar from "assets/images/speakers/mohammadreza-ala.jpg";
+import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.jpg";
 
 export const speakersList: speaker[] = [
   {
