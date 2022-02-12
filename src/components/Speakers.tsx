@@ -8,7 +8,7 @@ const Speakers = () => {
         ارائه دهندگان
       </h3>
       <div className="flex justify-center">
-        <div className="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-8 md:gap-y-16 md:gap-x-16 lg:gap-x-6 xl:gap-x-8">
+        <div className="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-8 sm:gap-x-6 sm:gap-y-6 md:gap-y-12 md:gap-x-12 lg:gap-x-20 xl:gap-x-10 2xl:gap-x-20">
           {speakersList.map((speaker, index) => (
             <ListItem key={index} {...speaker} />
           ))}
