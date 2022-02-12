@@ -1,23 +1,24 @@
-import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
+// import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
+import sobhanAvatar from "assets/images/speakers/sobhan.jpg";
 import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.png";
-import speaker4Avatar from "assets/images/speakers/speaker-4.jpg";
-import speaker5Avatar from "assets/images/speakers/speaker-5.jpg";
+import mrAlaAvatar from "assets/images/speakers/mohammadreza_ala.jpg";
+import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad_mahmoodi.jpg";
 
 export const speakersList: speaker[] = [
-  {
-    name: "میلاد معافی",
-    position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
-    company: "بانک سامان",
-    photo: miladMoafiAvatar,
-    brandClass: "text-[#017be6]",
-  },
   {
     name: "امیرعلی قلی",
     position: "توسعه دهنده‌ی جاوااسکریپت",
     company: "لیارا",
     photo: amirAliGholiAvatar,
     brandClass: "text-[#303030]",
+  },
+  {
+    name: "سبحان امین‌نژاد",
+    position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
+    company: "اسنپ مارکت",
+    photo: sobhanAvatar,
+    brandClass: "text-[#3a52ff]",
   },
   {
     name: "میلاد اعظمی",
@@ -27,18 +28,18 @@ export const speakersList: speaker[] = [
     brandClass: "from-[#02abdf] to-[#01bd9c] bg-gradient-to-r bg-clip-text text-transparent",
   },
   {
-    name: "رعنا خوشه",
-    position: "مدیر فنی",
-    company: "لیارا",
-    photo: speaker4Avatar,
-    brandClass: "",
+    name: "محمدرضا اعلا",
+    position: "مهندس فرانت‌اند",
+    company: "اسنپ",
+    photo: mrAlaAvatar,
+    brandClass: "text-[#00d170]",
   },
   {
-    name: "جواد جوادی",
-    position: "مدیر تیم پشتیبانی",
-    company: "جابینجا",
-    photo: speaker5Avatar,
-    brandClass: "from-[#02abdf] to-[#01bd9c] bg-gradient-to-r bg-clip-text text-transparent",
+    name: "محمود محمودی",
+    position: "راهبر تیم فنی",
+    company: "پیام‌رسان بانکی بله",
+    photo: mohammadMahmoodiAvatar,
+    brandClass: "from-[#335280] to-[#4cebb4] bg-gradient-to-r bg-clip-text text-transparent",
   },
 ];
 
