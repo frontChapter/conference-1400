@@ -70,7 +70,7 @@ const Links: React.FC<{
 }> = ({ links }) => {
   return (
     <div
-      className="flex items-center justify-center space-x-3 space-x-reverse"
+      className="flex items-center justify-center space-x-6 space-x-reverse"
       onClick={(e) => e.stopPropagation()}
     >
       {Object.keys(links).map((key) => {
@@ -80,7 +80,7 @@ const Links: React.FC<{
         return (
           <a key={key} href={link} target="_blank" rel="noreferrer">
             <i
-              className={`${icon} transi block text-xl leading-none text-gray-400 transition-colors hover:text-gray-500`}
+              className={`${icon} transi block text-2xl leading-none text-gray-400 transition-colors hover:text-gray-500 lg:text-base`}
             />
           </a>
         );
