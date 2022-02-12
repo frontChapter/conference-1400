@@ -34,7 +34,7 @@ const Jumbotron: React.FC<{}> = () => {
 
           <div className="mt-6 md:mt-12">
             <h1 className="text-center font-heading text-4xl text-white md:text-[64px] md:leading-tight">
-              {`بزرگ ترین `}
+              {`اولین `}
               <br className="lg:hidden" />
               {`همایش `}
               <span className="text-primary">فرانت‌اند</span>
