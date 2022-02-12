@@ -164,13 +164,8 @@ const Item: React.FC<{
               }}
             >
               <div className="pt-4 md:pt-3" ref={contentRef}>
-                <div className="flex items-start justify-between border-t-2 border-gray-200 pt-4 md:border-t-0 md:pt-0">
+                <div className="border-t-2 border-gray-200 pt-4 md:border-t-0 md:pt-0">
                   <div className="whitespace-pre-wrap leading-7 text-gray-500">{item.content}</div>
-                  {item.speaker?.links && (
-                    <div className="mr-2 md:hidden">
-                      <Links links={item.speaker.links} />
-                    </div>
-                  )}
                 </div>
               </div>
             </div>
