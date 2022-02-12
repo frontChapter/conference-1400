@@ -8,24 +8,24 @@ const items = [
     href: "/",
   },
   {
-    title: "سخنران‌ها",
+    title: "ارائه دهندگان",
     href: "/#speakers",
-  },
-  {
-    title: "برنامه سفر",
-    href: "/#trip",
   },
   {
     title: "برنامه همایش",
     href: "/#schedule",
   },
   {
-    title: "حامیان",
-    href: "/#sponsors",
-  },
-  {
     title: "محل برگزاری",
     href: "/#place",
+  },
+  {
+    title: "برنامه سفر",
+    href: "/#trip",
+  },
+  {
+    title: "حامیان",
+    href: "/#sponsors",
   },
   // {
   //   title: "تیم برگزاری",
