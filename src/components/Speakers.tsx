@@ -1,5 +1,5 @@
-import { speaker, speakersList } from "data/speakders-data";
 import Image from "next/image";
+import { speaker, speakersList } from "data/speakders-data";
 
 const Speakers = () => {
   return (
@@ -18,8 +18,16 @@ const Speakers = () => {
   );
 };
 
-const ListItem = ({ photo, name, position, company, brandClass }: speaker) => (
-  <div className={"flex w-44 flex-col items-center"}>
+const ListItem = ({
+  photo,
+  name,
+  position,
+  companyName,
+  companyLogo,
+  brandClass,
+  hideCompanyPrefix,
+}: speaker) => (
+  <div className="flex w-44 flex-col items-center space-y-4 rounded-3xl bg-white px-3 py-6">
     <figure className="h-32 w-32">
       <Image
         src={photo}
@@ -30,17 +38,28 @@ const ListItem = ({ photo, name, position, company, brandClass }: speaker) => (
         className="rounded-2xl bg-slate-200 text-transparent"
       />
     </figure>
-    <strong className="my-2 max-w-full truncate text-center text-lg font-medium text-gray-600">
-      {name}
-    </strong>
-    <span className="truncate text-center font-medium text-gray-500">{position}</span>
-    <span
-      className={
-        "mt-1 truncate text-center font-medium " + (brandClass ? brandClass : "text-gray-500")
-      }
-    >
-      {company}
-    </span>
+    <strong className="w-full truncate text-center text-lg font-bold text-gray-600">{name}</strong>
+    <div className="flex w-full flex-col space-y-2">
+      <span className="truncate text-center font-medium text-gray-500">{position}</span>
+      <div className="flex items-center justify-center">
+        {!hideCompanyPrefix && (
+          <span className="ml-2 text-center font-medium text-gray-500">در</span>
+        )}
+        {companyLogo ? (
+          <figure className="flex">
+            <Image src={companyLogo} alt={companyName} />
+          </figure>
+        ) : (
+          <span
+            className={
+              "truncate text-center font-medium " + (brandClass ? brandClass : "text-gray-500")
+            }
+          >
+            {companyName}
+          </span>
+        )}
+      </div>
+    </div>
   </div>
 );
 
