@@ -28,7 +28,7 @@ const ListItem = ({
   hideCompanyPrefix,
   links,
 }: speaker) => (
-  <div className="flex w-48 flex-col items-center space-y-4 rounded-3xl bg-white px-3 py-6">
+  <div className="flex w-48 flex-col items-center space-y-3 rounded-3xl bg-white py-5 px-3 md:w-52 lg:space-y-4 lg:py-6">
     <figure className="h-32 w-32">
       <Image
         src={photo}
@@ -39,16 +39,20 @@ const ListItem = ({
         className="rounded-2xl bg-slate-200 text-transparent"
       />
     </figure>
-    <strong className="w-full truncate text-center text-lg font-bold text-gray-600">{name}</strong>
+    <strong className="w-full truncate text-center font-bold text-gray-600 md:text-lg">
+      {name}
+    </strong>
     <div className="flex w-full flex-col space-y-2">
-      <span className="truncate text-center font-medium text-gray-500">{position}</span>
-      <div className="flex items-center justify-center">
+      <span className="truncate text-center text-sm font-medium text-gray-500 md:text-base">
+        {position}
+      </span>
+      <div className="flex items-center justify-center text-sm md:text-base">
         {!hideCompanyPrefix && (
           <span className="ml-2 text-center font-medium text-gray-500">در</span>
         )}
         {companyLogo ? (
-          <figure className="flex">
-            <Image src={companyLogo} alt={companyName} title={companyName} />
+          <figure className="flex h-[18px] md:h-5">
+            <Image src={companyLogo} objectFit="contain" alt={companyName} title={companyName} />
           </figure>
         ) : (
           <span
