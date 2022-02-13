@@ -1,52 +1,92 @@
+import balehLogo from "assets/images/companies/baleh.png";
+import liaraLogo from "assets/images/companies/liara.png";
+import snappLogo from "assets/images/companies/snapp.png";
+import snappMarketLogo from "assets/images/companies/snapp-market.png";
+
 // import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
 import sobhanAvatar from "assets/images/speakers/sobhan.jpg";
 import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.png";
-import mrAlaAvatar from "assets/images/speakers/mohammadreza_ala.jpg";
-import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad_mahmoodi.jpg";
+import mrAlaAvatar from "assets/images/speakers/mohammadreza-ala.jpg";
+import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.png";
 
 export const speakersList: speaker[] = [
   {
+    photo: amirAliGholiAvatar,
     name: "امیرعلی قلی",
     position: "توسعه دهنده‌ی جاوااسکریپت",
-    company: "لیارا",
-    photo: amirAliGholiAvatar,
-    brandClass: "text-[#303030]",
+    companyName: "لیارا",
+    companyLogo: liaraLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/gholi-dev",
+      github: "https://github.com/gholi-dev",
+    },
   },
   {
+    photo: sobhanAvatar,
     name: "سبحان امین‌نژاد",
     position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
-    company: "اسنپ مارکت",
-    photo: sobhanAvatar,
-    brandClass: "text-[#3a52ff]",
+    companyName: "اسنپ مارکت",
+    companyLogo: snappMarketLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
+    },
   },
   {
     name: "میلاد اعظمی",
     position: "اینفولوئنسر فرانت‌اند",
-    company: "فریلنسر",
+    companyName: "فریلنسر",
     photo: miladAzamiAvatar,
     brandClass: "from-[#02abdf] to-[#01bd9c] bg-gradient-to-r bg-clip-text text-transparent",
+    hideCompanyPrefix: true,
+    links: {
+      linkedin: "https://www.linkedin.com/in/milad-azami-b226631b5/",
+      instagram: "https://www.instagram.com/javascript.front/",
+    },
   },
   {
     name: "محمدرضا اعلا",
     position: "مهندس فرانت‌اند",
-    company: "اسنپ",
+    companyName: "اسنپ",
     photo: mrAlaAvatar,
-    brandClass: "text-[#00d170]",
+    companyLogo: snappLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/mohammadrezala/",
+    },
   },
   {
     name: "محمد محمودی",
     position: "راهبر تیم فنی",
-    company: "پیام‌رسان بانکی بله",
+    companyName: "پیام‌رسان بانکی بله",
     photo: mohammadMahmoodiAvatar,
-    brandClass: "from-[#335280] to-[#4cebb4] bg-gradient-to-r bg-clip-text text-transparent",
+    companyLogo: balehLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
+    },
   },
 ];
 
 export interface speaker {
+  photo: StaticImageData;
   name: string;
   position: string;
-  company: string;
+  companyName?: string;
   brandClass?: string;
-  photo: StaticImageData;
+  companyLogo?: StaticImageData;
+  hideCompanyPrefix?: boolean;
+  links?: links;
 }
+
+export type links = {
+  [key in keyof typeof socialMediaIcons]?: string;
+};
+
+export const socialMediaIcons = {
+  github: "ri-github-fill",
+  twitter: "ri-twitter-fill",
+  linkedin: "ri-linkedin-fill",
+  instagram: "ri-instagram-fill",
+  facebook: "ri-facebook-fill",
+  website: "ri-earth-fill",
+  mastodon: "ri-mastodon-fill",
+};

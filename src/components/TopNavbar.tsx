@@ -11,31 +11,30 @@ const TopNavbar: React.FC<{}> = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-40 bg-white">
       <div className="container flex flex-row flex-wrap items-center justify-between py-3 lg:justify-start">
-        <div className="order-1 h-9 w-9 lg:hidden">
+        <div className="order-1 h-9 w-9 basis-1/3 lg:hidden">
           <HamburgerButton collapsed={navCollapsed} setNavCollapse={setNavCollapse} />
         </div>
-        <div className="order-2 lg:ml-6">
+        <div className="order-2 basis-1/3 lg:ml-6 lg:basis-auto">
           <Link href="/">
             <a
+              className="flex items-center justify-center"
               onClick={(e) => {
                 e.preventDefault();
                 window.jump("body");
               }}
             >
-              <figure className="h-12 w-12">
-                <Image
-                  src={logo}
-                  priority
-                  objectFit="contain"
-                  width={48}
-                  height={48}
-                  alt="فرانت چپتر"
-                />
-              </figure>
+              <Image
+                src={logo}
+                priority
+                objectFit="contain"
+                width={48}
+                height={48}
+                alt="فرانت چپتر"
+              />
             </a>
           </Link>
         </div>
-        <div className="order-3 lg:order-4 lg:mr-auto">
+        <div className="order-3 basis-1/3 text-left lg:order-4 lg:mr-auto lg:basis-auto">
           <a
             href="https://evand.com/events/frontchapter-1400"
             target="_blank"
