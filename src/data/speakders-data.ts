@@ -55,7 +55,7 @@ export const speakersList: speaker[] = [
     },
   },
   {
-    name: "محمود محمودی",
+    name: "محمد محمودی",
     position: "راهبر تیم فنی",
     companyName: "پیام‌رسان بانکی بله",
     photo: mohammadMahmoodiAvatar,
