@@ -4,6 +4,7 @@ const Liara = "/images/sponsors/liara.png";
 const Quera = "/images/sponsors/quera.png";
 const Shab = "/images/sponsors/shab.png";
 const A4Zi = "/images/sponsors/a4zi.png";
+const Rokla = "/images/sponsors/rokla.jpg";
 
 const sponsorsList = [
   {
@@ -17,14 +18,19 @@ const sponsorsList = [
     logo: Quera,
   },
   {
-    title: "ای فور زی",
-    link: "https://a4zi.com/",
-    logo: A4Zi,
-  },
-  {
     title: "شب",
     link: "https://shab.ir/",
     logo: Shab,
+  },
+  {
+    title: "رکلا",
+    link: "https://rokla.ir/",
+    logo: Rokla,
+  },
+  {
+    title: "ای فور زی",
+    link: "https://a4zi.com/",
+    logo: A4Zi,
   },
 ];
 
@@ -58,8 +64,9 @@ const Sponsors = () => {
                 ))}
               </div>
               <p className="mt-8 text-sm text-gray-500">
-                فرانت چپتر برای ادامه و گسترش فعالیت های خود در جهت افزایش آگاهی جامعه فرانت اند و
-                همچنین برگزاری چنین رویداد هایی نیاز به حمایت های شما دارد.
+                از اونجایی که همایش فرانت چپتر یه رویداد نوپاست و در جهت گسترش آگاهی جامعه فرانت‌اند
+                فعالیت می‌کنه، پس به حمایت‌ها و پشتیبانی شما برای پیشرفت و ارتقا این جامعه
+                نیازمندیم.
               </p>
               <div className="mt-8 justify-items-center text-center">
                 <a
