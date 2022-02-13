@@ -8,7 +8,7 @@ import sobhanAvatar from "assets/images/speakers/sobhan.jpg";
 import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.png";
 import mrAlaAvatar from "assets/images/speakers/mohammadreza-ala.jpg";
-import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.jpg";
+import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.png";
 
 export const speakersList: speaker[] = [
   {
