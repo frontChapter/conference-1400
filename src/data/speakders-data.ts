@@ -35,7 +35,7 @@ export const speakersList: speaker[] = [
     brandClass: "text-[#00d170]",
   },
   {
-    name: "محمود محمودی",
+    name: "محمد محمودی",
     position: "راهبر تیم فنی",
     company: "پیام‌رسان بانکی بله",
     photo: mohammadMahmoodiAvatar,
