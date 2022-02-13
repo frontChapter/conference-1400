@@ -4,6 +4,7 @@ const Liara = "/images/sponsors/liara.png";
 const Quera = "/images/sponsors/quera.png";
 const Shab = "/images/sponsors/shab.png";
 const A4Zi = "/images/sponsors/a4zi.png";
+const Yektanet = "/images/sponsors/yektanet.png";
 
 const sponsorsList = [
   {
@@ -25,6 +26,11 @@ const sponsorsList = [
     title: "شب",
     link: "https://shab.ir/",
     logo: Shab,
+  },
+  {
+    title: "یکتانت",
+    link: "https://yektanet.com/",
+    logo: Yektanet,
   },
 ];
 
