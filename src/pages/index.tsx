@@ -2,6 +2,7 @@ import Head from "next/head";
 import { GetStaticProps } from "next";
 import getTweets, { Tweet } from "utils/getTweets";
 import Jumbotron from "components/Jumbotron";
+import About from "components/About";
 import Speakers from "components/Speakers";
 import Sponsors from "components/Sponsors";
 import TopNavbar from "components/TopNavbar";
@@ -28,6 +29,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
           <Jumbotron />
           <Countdown />
         </section>
+        <About />
         <Speakers />
         <Schedule />
         <EventPlace />
