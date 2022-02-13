@@ -80,6 +80,7 @@ module.exports = {
         heading: ["Lalezar", "Vazir", "cursive"],
       },
       fontSize: {
+        "28": "1.75rem",
         "2rem": "2rem",
       },
       rotate: {

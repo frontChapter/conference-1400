@@ -5,6 +5,7 @@ const Quera = "/images/sponsors/quera.png";
 const Shab = "/images/sponsors/shab.png";
 const A4Zi = "/images/sponsors/a4zi.png";
 const Yektanet = "/images/sponsors/yektanet.png";
+const Rokla = "/images/sponsors/rokla.jpg";
 
 const sponsorsList = [
   {
@@ -18,11 +19,6 @@ const sponsorsList = [
     logo: Quera,
   },
   {
-    title: "ای فور زی",
-    link: "https://a4zi.com/",
-    logo: A4Zi,
-  },
-  {
     title: "شب",
     link: "https://shab.ir/",
     logo: Shab,
@@ -31,6 +27,16 @@ const sponsorsList = [
     title: "یکتانت",
     link: "https://yektanet.com/",
     logo: Yektanet,
+  },
+  {
+    title: "رکلا",
+    link: "https://rokla.ir/",
+    logo: Rokla,
+  },
+  {
+    title: "ای فور زی",
+    link: "https://a4zi.com/",
+    logo: A4Zi,
   },
 ];
 
@@ -50,13 +56,13 @@ const ListItem = ({ link, title, logo }: IListItemType) => (
 
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="container">
+    <section id="sponsors" className="container py-9 md:py-12 lg:py-16">
       <div className="sponsors">
         <div className="container">
-          <div className="my-14">
-            <h1 className="mb-8 text-center text-4xl font-bold leading-loose text-primary">
-              حامی های مالی و معنوی فرانت چپتر
-            </h1>
+          <div className="">
+            <h3 className="mb-5 text-center text-2xl font-black leading-normal text-primary md:mb-7 md:text-28 lg:mb-9 lg:text-4xl">
+              حامیان مالی و معنوی فرانت چپتر
+            </h3>
             <div className="mx-auto max-w-2xl">
               <div className="flex flex-row flex-wrap justify-center">
                 {sponsorsList.map((item, index) => (
@@ -64,8 +70,9 @@ const Sponsors = () => {
                 ))}
               </div>
               <p className="mt-8 text-sm text-gray-500">
-                فرانت چپتر برای ادامه و گسترش فعالیت های خود در جهت افزایش آگاهی جامعه فرانت اند و
-                همچنین برگزاری چنین رویداد هایی نیاز به حمایت های شما دارد.
+                از اونجایی که همایش فرانت چپتر یه رویداد نوپاست و در جهت گسترش آگاهی جامعه فرانت‌اند
+                فعالیت می‌کنه، پس به حمایت‌ها و پشتیبانی شما برای پیشرفت و ارتقا این جامعه
+                نیازمندیم.
               </p>
               <div className="mt-8 justify-items-center text-center">
                 <a

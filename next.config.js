@@ -2,7 +2,8 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['pbs.twimg.com'],
+    domains: ["pbs.twimg.com", "www.shab.ir"],
+    deviceSizes: [640, 768, 1024, 1280, 1536],
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -11,15 +12,15 @@ module.exports = {
       oneOf: [
         {
           resourceQuery: /inline/,
-          use: ["@svgr/webpack"]
+          use: ["@svgr/webpack"],
         },
         {
-          loader: 'next-image-loader',
-          options: { isServer: true, isDev: true, basePath: '', assetPrefix: '' }
-        }
+          loader: "next-image-loader",
+          options: { isServer: true, isDev: true, basePath: "", assetPrefix: "" },
+        },
       ],
     });
 
     return config;
-  }
+  },
 };

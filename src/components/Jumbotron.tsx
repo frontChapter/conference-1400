@@ -5,7 +5,7 @@ import WaveSvg from "assets/images/jumbotron-wave.svg?inline";
 
 const Jumbotron: React.FC<{}> = () => {
   return (
-    <div className="container py-6 md:py-8">
+    <div className="container py-9 md:py-12 lg:py-16">
       <div className="relative overflow-hidden rounded-[20px] py-8 px-4 sm:rounded-[75px] md:pt-20 md:pb-28">
         <Image
           alt="تصویر همایش"
@@ -34,7 +34,7 @@ const Jumbotron: React.FC<{}> = () => {
 
           <div className="mt-6 md:mt-12">
             <h1 className="text-center font-heading text-4xl text-white md:text-[64px] md:leading-tight">
-              {`بزرگ ترین `}
+              {`اولین `}
               <br className="lg:hidden" />
               {`همایش `}
               <span className="text-primary">فرانت‌اند</span>
