@@ -1,7 +1,7 @@
 import miladMoafi from "assets/images/speakers/milad-moafi.png";
 import miladAzami from "assets/images/speakers/milad-azami.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
-import mohammadRezaAla from "assets/images/speakers/mohammadreza_ala.jpg";
+import mohammadRezaAla from "assets/images/speakers/mohammadreza-ala.jpg";
 import sobhanAminNejad from "assets/images/speakers/sobhan.jpg";
 import mohammadMahmoodi from "assets/images/speakers/mohammad_mahmoodi.jpg";
 import speaker3 from "assets/images/speakers/speaker-3.jpg";
@@ -114,11 +114,11 @@ export const itemsData: item[] = [
   {
     time: "16:00",
     type: "presentation",
-    title: "پرفورمنس در وب اپ اسنپ",
+    title: "پیاده سازی ایزومرفیک وب اپلیکیشن با رندرترون",
     showByDefault: true,
     expandable: true,
     content:
-      "محمدرضا از شگردهایی که طراحی کردند برای بهتر شدن پرفورمنس وب اپ اسنپ رو باهامون به اشتراک میگذاره و از تجربه‌هاش در این زمینه برامون میگه",
+      "استفاده از از رندرترون به عنوان استاتیک رندرینگین انجین برای بهبود پرفرمنس و سئو ی وب اپلییکیشن های تک صفحه ای",
     speaker: {
       name: "محمدرضا اعلا",
       avatar: mohammadRezaAla,
