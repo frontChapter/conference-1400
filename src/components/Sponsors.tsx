@@ -56,37 +56,32 @@ const ListItem = ({ link, title, logo }: IListItemType) => (
 
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="container py-9 md:py-12 lg:py-16">
-      <div className="sponsors">
-        <div className="container">
-          <div className="">
-            <h3 className="mb-5 text-center text-2xl font-black leading-normal text-primary md:mb-7 md:text-28 lg:mb-9 lg:text-4xl">
-              حامیان مالی و معنوی فرانت چپتر
-            </h3>
-            <div className="mx-auto max-w-2xl">
-              <div className="flex flex-row flex-wrap justify-center">
-                {sponsorsList.map((item, index) => (
-                  <ListItem key={index} {...item} />
-                ))}
-              </div>
-              <p className="mt-8 text-sm text-gray-500">
-                از اونجایی که همایش فرانت چپتر یه رویداد نوپاست و در جهت گسترش آگاهی جامعه فرانت‌اند
-                فعالیت می‌کنه، پس به حمایت‌ها و پشتیبانی شما برای پیشرفت و ارتقا این جامعه
-                نیازمندیم.
-              </p>
-              <div className="mt-8 justify-items-center text-center">
-                <a
-                  href="https://t.me/ordinarySaleh"
-                  target="_blank"
-                  className="hover:bg-primary-500 cursor-pointer rounded border border-primary bg-transparent px-4 py-2 text-primary hover:border-transparent hover:bg-primary hover:text-white"
-                  rel="noreferrer"
-                >
-                  حامی میشوم
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section id="sponsors" className="py-9 md:py-12 lg:py-16">
+      <div className="container">
+        <h3 className="mb-5 text-center text-2xl font-black leading-normal text-primary md:mb-7 md:text-28 lg:mb-9 lg:text-4xl">
+          حامیان مالی و معنوی فرانت چپتر
+        </h3>
+      </div>
+      <div className="my-9 bg-white py-9">
+        {/* {sponsorsList.map((item, index) => (
+                <ListItem key={index} {...item} />
+              ))} */}
+        slideeeer
+      </div>
+      <div className="container flex flex-col items-center">
+        <p className="mb-9 max-w-3xl text-center text-gray-500 sm:w-2/3">
+          از اونجایی که همایش فرانت چپتر یه رویداد نوپاست و در جهت گسترش آگاهی جامعه فرانت‌اند
+          فعالیت می‌کنه، پس به حمایت‌ها و پشتیبانی شما برای پیشرفت و ارتقا این جامعه نیازمندیم.
+        </p>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://t.me/ordinarySaleh"
+          className="flex items-center justify-center rounded border border-primary py-2 px-3 text-primary transition hover:bg-primary hover:text-white"
+        >
+          <i className="ri-hand-heart-fill ml-1 text-xl leading-none" />
+          <span className="font-medium">حامی میشوم</span>
+        </a>
       </div>
     </section>
   );
