@@ -1,4 +1,4 @@
-import a4z from "assets/images/sponsors/a4z.png";
+import a4zi from "assets/images/sponsors/a4zi.png";
 import liara from "assets/images/sponsors/liara.png";
 import quera from "assets/images/sponsors/quera.png";
 import rokla from "assets/images/sponsors/rokla.png";
@@ -34,7 +34,7 @@ export const sponsorsList: Sponsor[] = [
   {
     title: "ای فور زی",
     link: "https://a4zi.com/",
-    logo: a4z,
+    logo: a4zi,
   },
 ];
 
