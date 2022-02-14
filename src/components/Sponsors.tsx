@@ -1,58 +1,7 @@
 import Image from "next/image";
-
-const Liara = "/images/sponsors/liara.png";
-const Quera = "/images/sponsors/quera.png";
-const Shab = "/images/sponsors/shab.png";
-const A4Zi = "/images/sponsors/a4zi.png";
-const Yektanet = "/images/sponsors/yektanet.png";
-const Rokla = "/images/sponsors/rokla.jpg";
-
-const sponsorsList = [
-  {
-    title: "لیارا",
-    link: "https://liara.ir/",
-    logo: Liara,
-  },
-  {
-    title: "کوئرا",
-    link: "https://quera.ir/",
-    logo: Quera,
-  },
-  {
-    title: "شب",
-    link: "https://shab.ir/",
-    logo: Shab,
-  },
-  {
-    title: "یکتانت",
-    link: "https://yektanet.com/",
-    logo: Yektanet,
-  },
-  {
-    title: "رکلا",
-    link: "https://rokla.ir/",
-    logo: Rokla,
-  },
-  {
-    title: "ای فور زی",
-    link: "https://a4zi.com/",
-    logo: A4Zi,
-  },
-];
-
-type IListItemType = {
-  link: string;
-  title: string;
-  logo: string | StaticImageData;
-};
-
-const ListItem = ({ link, title, logo }: IListItemType) => (
-  <div className="basis-1/4 px-3">
-    <a href={link} target="_blank" rel="noreferrer">
-      <Image objectFit="contain" width={200} height={100} src={logo} alt={title} title={title} />
-    </a>
-  </div>
-);
+import { Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Sponsor, sponsorsList } from "data/sponsors-data";
 
 const Sponsors = () => {
   return (
@@ -63,10 +12,7 @@ const Sponsors = () => {
         </h3>
       </div>
       <div className="my-9 bg-white py-9">
-        {/* {sponsorsList.map((item, index) => (
-                <ListItem key={index} {...item} />
-              ))} */}
-        slideeeer
+        <Slider sponsors={sponsorsList} />
       </div>
       <div className="container flex flex-col items-center">
         <p className="mb-9 max-w-3xl text-center text-gray-500 sm:w-2/3">
@@ -86,5 +32,48 @@ const Sponsors = () => {
     </section>
   );
 };
+
+const Slider: React.FC<{ sponsors: Sponsor[] }> = ({ sponsors }) => {
+  return (
+    <Swiper
+      speed={1500}
+      loop={true}
+      modules={[Autoplay]}
+      slidesPerView={"auto"}
+      loopedSlides={sponsors.length}
+      centeredSlides={true}
+      autoplay={{
+        delay: 2000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      }}
+    >
+      {sponsors.map((sponsor, index) => (
+        <SwiperSlide key={index} style={{ width: "auto !important" }}>
+          <Sponsor {...sponsor} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
+
+const Sponsor: React.FC<Sponsor> = ({ link, title, logo }: Sponsor) => (
+  <div className="flex h-16 items-center px-12">
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className="flex grayscale transition hover:grayscale-0"
+    >
+      <Image
+        src={logo}
+        objectFit="contain"
+        alt={title}
+        title={title}
+        className="text-transparent"
+      />
+    </a>
+  </div>
+);
 
 export default Sponsors;
