@@ -30,7 +30,7 @@ const About: React.FC = () => {
               <span className="font-medium">کانال تلگرام فرانت چپتر</span>
             </a>
             <a
-              href="https://t.me/FrontChapter"
+              href="https://instagram.com/FrontChapter"
               target="_blank"
               rel="noreferrer"
               className="group relative m-4 flex w-52 items-center justify-center overflow-hidden rounded bg-gradient-to-tr from-[#ff9504] via-[#e30c81] to-[#7600f8] py-2 text-white sm:m-0"

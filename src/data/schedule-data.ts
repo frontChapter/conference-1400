@@ -1,10 +1,10 @@
-import miladMoafi from "assets/images/speakers/milad-moafi.png";
+// import miladMoafi from "assets/images/speakers/milad-moafi.png";
 import miladAzami from "assets/images/speakers/milad-azami.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
-import mohammadRezaAla from "assets/images/speakers/mohammadreza-ala.jpg";
 import sobhanAminNejad from "assets/images/speakers/sobhan.jpg";
 import mohammadMahmoodi from "assets/images/speakers/mohammad_mahmoodi.jpg";
 import speaker3 from "assets/images/speakers/speaker-3.jpg";
+import mrAla from "assets/images/speakers/mohammadreza-ala.png";
 
 export const itemsData: item[] = [
   {
@@ -43,7 +43,7 @@ export const itemsData: item[] = [
     content:
       "یادگیری برنامه نویسی چقدر طول میکشه؟ پیدا کردن کار راحته؟ تو شهرستان هم میتونم کار بکنم؟ اصلا حقوق برنامه نویسی چقدره؟",
     speaker: {
-      name: "میلاد اعظمی",
+      name: "میلاد عظمی",
       avatar: miladAzami,
       links: {
         linkedin: "https://www.linkedin.com/in/milad-azami-b226631b5/",
@@ -54,16 +54,17 @@ export const itemsData: item[] = [
   {
     time: "11:30",
     type: "presentation",
-    title: "چطور یک پروژه مقیاس‌پذیر رو شروع کنیم",
+    title: "پیاده سازی ایزومرفیک وب اپلیکیشن با رندرترون",
     showByDefault: true,
     expandable: true,
-    content: "تجربه‌های ری‌فکتور کردن و نگهداری از یک پروژه تجاری با میلیون‌ها کاربر",
+    content:
+      "استفاده از از رندرترون به عنوان استاتیک رندرینگین انجین برای بهبود پرفرمنس و سئو ی وب اپلییکیشن های تک صفحه‌ای",
     speaker: {
-      name: "میلاد معافی",
-      avatar: miladMoafi,
+      name: "محمد رضا اعلا",
+      avatar: mrAla,
       links: {
-        linkedin: "https://www.linkedin.com/in/milixov",
-        twitter: "https://twitter.com/milixof/",
+        linkedin: "https://www.linkedin.com/in/mohammadrezala/",
+        instagram: "https://www.instagram.com/mhmdrz_a/",
       },
     },
   },
@@ -75,10 +76,9 @@ export const itemsData: item[] = [
   {
     time: "12:30",
     type: "talk",
-    title: "پنل گفت‌وگو مشارک تیمی در شرکت‌های بزرگ با مشارکت میهمانان",
+    title: "ورک‌شاپ تخصصی زیر کاپوت جاوااسکریپت",
     expandable: true,
-    content:
-      "شرکت‌های بزرگ فناوری مثل دیوار و اسنپ و باسلام از تجربه‌هاشون درمورد اینکه تیم‌های نامتمرکز توی یک شرکت چطوری با هم دیگه کار می‌کنند و کارها چطوری تقسیم میشه و پیش میره برامون میگن و ما هم هر پرسشی داشتیم در این مورد باهاشون مطرح می‌کنیم",
+    content: "",
     speaker: {
       name: "مجری پنل",
       avatar: speaker3,
@@ -114,18 +114,17 @@ export const itemsData: item[] = [
   {
     time: "16:00",
     type: "presentation",
-    title: "پیاده سازی ایزومرفیک وب اپلیکیشن با رندرترون",
+    title: "JAMStack",
     showByDefault: true,
     expandable: true,
     content:
-      "استفاده از از رندرترون به عنوان استاتیک رندرینگین انجین برای بهبود پرفرمنس و سئو ی وب اپلییکیشن های تک صفحه ای",
+      "بررسی معماری جدید توسعه وب بر پایه جاوااسکریپت سمت کاربر، Api های قابل استفاده مجدد و markup های از پیش ساخته",
     speaker: {
-      name: "محمدرضا اعلا",
-      avatar: mohammadRezaAla,
+      name: "سبحان امین‌نژاد",
+      avatar: sobhanAminNejad,
       links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
+        instagram: "https://www.instagram.com/aminnejads/",
+        linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
       },
     },
   },
@@ -140,7 +139,8 @@ export const itemsData: item[] = [
     title: "پرفورمنس وب",
     showByDefault: true,
     expandable: true,
-    content: "نکاتی درمورد web vitals و بهینه‌سازی عملکرد وب",
+    content:
+      "پرفورمنس نرم‌افزار همیشه مورد توجه برنامه‌نویس ها بوده. بهینه‌سازی و بالا بردن بهره‌وری کد و در نهایت خلق تجربه‌ی کاربری بهتر. در این ارائه به طور کلی به پرفورمنس در وب نوین پرداخته میشه. در مورد اینکه کی پرفورمنس برای ما مهم میشه؟ چه پارامترها و متریک هایی رو باید محاسبه کینم؟ نیازمندی‌ها، چالش‌های فنی محاسبه‌ی پرفورمنس و استفاده از ابزار های مانیتورینگ صحبت می‌کنیم",
     speaker: {
       name: "محمد محمودی",
       avatar: mohammadMahmoodi,
@@ -159,19 +159,14 @@ export const itemsData: item[] = [
   {
     time: "17:30",
     type: "talk",
-    title: "ورک‌شاپ تخصصی زیر کاپوت جاوااسکریپت",
+    title: "پنل گفت‌وگو مشارک تیمی در شرکت‌های بزرگ با مشارکت میهمانان",
     showByDefault: true,
     expandable: true,
     content:
-      "سبحان به صورت کامل از زیر کاپوت جاوااسکریپت و انجین‌هایی که جاوااسکریپت رو اجرا میکنن بهمون میگه و درک دقیق‌تری از اینکه جاوااسکریپت واقعا چطوری داره کار میکنه بهمون میده",
+      "بچه‌های شرکت‌های دیوار، اسنپ و باسلام از تجربه‌هاشون درمورد اینکه تیم‌های نامتمرکز توی یک شرکت چطوری با هم دیگه کار می‌کنند و کارها چطوری تقسیم میشه و پیش میره برامون میگن و ما هم هر پرسشی داشتیم در این مورد باهاشون مطرح می‌کنیم",
     speaker: {
-      name: "سبحان امین‌نژاد",
-      avatar: sobhanAminNejad,
-      links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
-      },
+      name: "محمد ایرانمنش - محمدعلی سلطانی‌پور - محمدرضا اعلا",
+      avatar: speaker3,
     },
   },
   {

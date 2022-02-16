@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { socialMedia, socialMediaIcons } from "data/social-media";
 import logo from "assets/images/logo-vertical-dark.png";
+import { RiPhoneLine } from "react-icons/ri";
+
+const supportNumber = process.env.NEXT_PUBLIC_SUPPORT_NUMBER;
 
 const Footer: React.FC<{}> = () => {
   return (
@@ -12,6 +15,15 @@ const Footer: React.FC<{}> = () => {
         <span>طراحی و توسعه با</span>
         <i className="ri-heart-fill mx-2 block animate-heartbeat align-middle text-xl leading-none text-red-500" />
         <span>در فرانت چپتر</span>
+      </div>
+      <div className="flex items-center">
+        <a
+          className="flex items-center gap-1 rounded border px-2 py-1 font-bold text-white"
+          href={`tel:${supportNumber}`}
+        >
+          <RiPhoneLine />
+          <span>پشتیبان تلفنی</span>
+        </a>
       </div>
       <div className="flex items-center gap-6">
         {socialMedia.map(({ name, url }, index) => (
