@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-script-in-head */
 import Head from "next/head";
 import { GetStaticProps } from "next";
 import getTweets, { Tweet } from "utils/getTweets";
@@ -21,8 +20,8 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
     <div className="min-h-screen bg-gray-50">
       <Head>
         <title>همایش فرانت‌اند ۱۴۰۰ | فرانت چپتر</title>
-        <Script src="../assets/js/yektanet.js" />
       </Head>
+      <Script src="/js/yektanet.js" strategy="beforeInteractive" />
       <TopNavbar />
       <main className="pt-[72px]">
         <section className="relative overflow-hidden">
