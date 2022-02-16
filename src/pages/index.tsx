@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-script-in-head */
 import Head from "next/head";
 import { GetStaticProps } from "next";
 import getTweets, { Tweet } from "utils/getTweets";
@@ -13,12 +14,14 @@ import Schedule from "components/Schedule";
 import EventPlace from "components/EventPlace";
 import Tweets from "components/Tweets";
 import Footer from "components/Footer";
+import Script from "next/script";
 
 export default function Home({ tweets }: { tweets: false | Tweet[] }) {
   return (
     <div className="min-h-screen bg-gray-50">
       <Head>
         <title>همایش فرانت‌اند ۱۴۰۰ | فرانت چپتر</title>
+        <Script src="../assets/js/yektanet.js" />
       </Head>
       <TopNavbar />
       <main className="pt-[72px]">
