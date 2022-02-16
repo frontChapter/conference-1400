@@ -1,4 +1,6 @@
 import balehLogo from "assets/images/companies/baleh.png";
+import basalamLogo from "assets/images/companies/basalam.png";
+import divarLogo from "assets/images/companies/divar.png";
 import liaraLogo from "assets/images/companies/liara.png";
 import snappLogo from "assets/images/companies/snapp.png";
 import snappMarketLogo from "assets/images/companies/snapp-market.png";
@@ -7,8 +9,11 @@ import snappMarketLogo from "assets/images/companies/snapp-market.png";
 import sobhanAvatar from "assets/images/speakers/sobhan.jpg";
 import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.png";
-import mrAlaAvatar from "assets/images/speakers/mohammadreza-ala.jpg";
+import mrAlaAvatar from "assets/images/speakers/mohammadreza-ala.png";
 import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.png";
+import mrIranmaneshAvatar from "assets/images/speakers/mohammadreza-iranmanesh.jpg";
+import rezaMosaviAvatar from "assets/images/speakers/reza-mosavi.jpg";
+import aliSoltanipourAvatar from "assets/images/speakers/mohammad-ali-soltanipour.jpg";
 
 export const speakersList: speaker[] = [
   {
@@ -30,10 +35,11 @@ export const speakersList: speaker[] = [
     companyLogo: snappMarketLogo,
     links: {
       linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
+      instagram: "https://www.instagram.com/aminnejads/",
     },
   },
   {
-    name: "میلاد اعظمی",
+    name: "میلاد عظمی",
     position: "اینفولوئنسر فرانت‌اند",
     companyName: "فریلنسر",
     photo: miladAzamiAvatar,
@@ -52,6 +58,7 @@ export const speakersList: speaker[] = [
     companyLogo: snappLogo,
     links: {
       linkedin: "https://www.linkedin.com/in/mohammadrezala/",
+      instagram: "https://www.instagram.com/mhmdrz_a/",
     },
   },
   {
@@ -60,6 +67,40 @@ export const speakersList: speaker[] = [
     companyName: "پیام‌رسان بانکی بله",
     photo: mohammadMahmoodiAvatar,
     companyLogo: balehLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
+    },
+  },
+  {
+    name: "سید رضا موسوی",
+    position: "توسعه‌دهنده‌ی فرانت‌اند",
+    companyName: "باسلام",
+    photo: rezaMosaviAvatar,
+    companyLogo: basalamLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
+    },
+  },
+  {
+    name: "محمدرضا ایرانمنش",
+    position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
+    companyName: "دیوار",
+    photo: mrIranmaneshAvatar,
+    companyLogo: divarLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
+      twitter: "https://twitter.com/iMohammadReza_",
+      instagram: "https://www.instagram.com/imohammadreza.ir/",
+      website: "https://imohammadreza.ir",
+      github: "https://github.com/iMohammadReza",
+    },
+  },
+  {
+    name: "محمدعلی سلطانی پور",
+    position: "چپترلید فرانت‌اند",
+    companyName: "باسلام",
+    photo: aliSoltanipourAvatar,
+    companyLogo: basalamLogo,
     links: {
       linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
     },
