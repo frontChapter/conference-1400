@@ -17,7 +17,12 @@ const Schedule: React.FC<{}> = () => {
           <div
             role="button"
             className="mt-6 flex items-center justify-center py-2 text-gray-700 md:mt-8 md:py-0"
-            onClick={() => setShowAll(true)}
+            onClick={() => {
+              setShowAll(true);
+              window.jump("#schedule", {
+                duration: 1000,
+              });
+            }}
           >
             <i className="ri-arrow-down-s-line block leading-none md:text-lg" />
             <div className="mx-2 font-bold md:text-base">برنامه کامل</div>
@@ -63,7 +68,7 @@ const Item: React.FC<{
   const icon = planIcons[item.type];
 
   return (
-    <div className={"collapse duration-1000 " + (visible ? "collapsed" : "")}>
+    <div className={"collapse duration-[3s] " + (visible ? "collapsed" : "")}>
       <div className="relative flex flex-nowrap items-start py-3">
         {/* Right side */}
         <div className="ml-6 hidden w-28 shrink-0 items-center justify-end pt-[10px] md:flex">
