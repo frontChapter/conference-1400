@@ -97,7 +97,9 @@ const Item: React.FC<{
           }}
         >
           {/* Header */}
-          <div className={"flex grow items-center" + (item.speaker ? " flex-wrap" : "")}>
+          <div
+            className={"flex grow items-start md:items-center" + (item.speaker ? " flex-wrap" : "")}
+          >
             <div
               className={
                 "md:order-1 " + (item.speaker ? "order-4 w-10/12 md:w-auto" : "order-1 grow")
@@ -107,7 +109,7 @@ const Item: React.FC<{
             </div>
 
             {/* Time & Icon */}
-            <div className={"order-2 mr-auto flex pr-2 md:hidden" + (item.speaker ? " mb-4" : "")}>
+            <div className="order-2 mr-auto flex pr-2 md:hidden">
               <div className="ml-2 text-left text-lg font-medium text-secondary">
                 {digitsEnToFa(item.time)}
               </div>
@@ -116,11 +118,11 @@ const Item: React.FC<{
               ></i>
             </div>
 
-            {item.speaker && <div className="order-3 w-full md:hidden"></div>}
+            {item.speaker && <div className="order-3 mb-4 w-full md:hidden"></div>}
 
             {/* Speaker */}
             {item.speaker && (
-              <div className="order-1 mb-4 flex md:order-2 md:mb-0">
+              <div className="order-1 flex md:order-2">
                 {divider}
                 <div className="h-7 w-7">
                   <Image
@@ -146,16 +148,19 @@ const Item: React.FC<{
             )}
 
             {/* Expand arrow */}
-            {item.expandable && (
-              <div className={"shrink-0 " + (item.speaker ? "order-4 mr-auto" : "order-2 mr-2")}>
-                <i
-                  className={
-                    "ri-arrow-down-s-line block leading-none text-gray-600 transition-transform duration-500" +
-                    (expanded ? " rotate-180" : "")
-                  }
-                ></i>
-              </div>
-            )}
+            <div
+              className={
+                "order-2 mr-2 flex h-7 shrink-0 items-center md:order-4 md:mr-auto" +
+                (item.expandable ? "" : " invisible")
+              }
+            >
+              <i
+                className={
+                  "ri-arrow-down-s-line block leading-none text-gray-600 transition-transform duration-500" +
+                  (expanded ? " rotate-180" : "")
+                }
+              ></i>
+            </div>
           </div>
 
           {/* Content */}
