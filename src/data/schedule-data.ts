@@ -76,17 +76,7 @@ export const itemsData: item[] = [
   {
     time: "12:30",
     type: "talk",
-    title: "ورک‌شاپ تخصصی زیر کاپوت جاوااسکریپت",
-    expandable: true,
-    content: "",
-    speaker: {
-      name: "مجری پنل",
-      avatar: speaker3,
-      links: {
-        twitter: "",
-        linkedin: "",
-      },
-    },
+    title: "ورک‌شاپ تخصصی زیر کاپوت جاوا اسکریپت",
   },
   {
     time: "13:30",

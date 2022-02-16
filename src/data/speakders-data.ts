@@ -91,7 +91,6 @@ export const speakersList: speaker[] = [
       linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
       twitter: "https://twitter.com/iMohammadReza_",
       instagram: "https://www.instagram.com/imohammadreza.ir/",
-      website: "https://imohammadreza.ir",
       github: "https://github.com/iMohammadReza",
     },
   },
