@@ -17,7 +17,12 @@ const Schedule: React.FC<{}> = () => {
           <div
             role="button"
             className="mt-6 flex items-center justify-center py-2 text-gray-700 md:mt-8 md:py-0"
-            onClick={() => setShowAll(true)}
+            onClick={() => {
+              setShowAll(true);
+              window.jump("#schedule", {
+                duration: 1000,
+              });
+            }}
           >
             <i className="ri-arrow-down-s-line block leading-none md:text-lg" />
             <div className="mx-2 font-bold md:text-base">برنامه کامل</div>
@@ -63,7 +68,7 @@ const Item: React.FC<{
   const icon = planIcons[item.type];
 
   return (
-    <div className={"collapse duration-1000 " + (visible ? "collapsed" : "")}>
+    <div className={"collapse duration-[3s] " + (visible ? "collapsed" : "")}>
       <div className="relative flex flex-nowrap items-start py-3">
         {/* Right side */}
         <div className="ml-6 hidden w-28 shrink-0 items-center justify-end pt-[10px] md:flex">
@@ -92,19 +97,19 @@ const Item: React.FC<{
           }}
         >
           {/* Header */}
-          <div className="flex grow flex-wrap items-center">
+          <div
+            className={"flex grow items-start md:items-center" + (item.speaker ? " flex-wrap" : "")}
+          >
             <div
               className={
-                "md:order-1 " + (item.expandable ? "order-4 w-10/12 md:w-auto" : "order-1")
+                "md:order-1 " + (item.speaker ? "order-4 w-10/12 md:w-auto" : "order-1 grow")
               }
             >
               <div className="text-lg font-medium text-gray-600">{item.title}</div>
             </div>
 
             {/* Time & Icon */}
-            <div
-              className={"order-2 mr-auto flex pr-2 md:hidden" + (item.expandable ? " mb-4" : "")}
-            >
+            <div className="order-2 mr-auto flex pr-2 md:hidden">
               <div className="ml-2 text-left text-lg font-medium text-secondary">
                 {digitsEnToFa(item.time)}
               </div>
@@ -113,11 +118,11 @@ const Item: React.FC<{
               ></i>
             </div>
 
-            <div className="order-3 w-full md:hidden"></div>
+            {item.speaker && <div className="order-3 mb-4 w-full md:hidden"></div>}
 
             {/* Speaker */}
             {item.speaker && (
-              <div className="order-1 mb-4 flex md:order-2 md:mb-0">
+              <div className="order-1 flex md:order-2">
                 {divider}
                 <div className="h-7 w-7">
                   <Image
@@ -143,16 +148,19 @@ const Item: React.FC<{
             )}
 
             {/* Expand arrow */}
-            {item.expandable && (
-              <div className="order-4 mr-auto shrink-0">
-                <i
-                  className={
-                    "ri-arrow-down-s-line block leading-none text-gray-600 transition-transform duration-500" +
-                    (expanded ? " rotate-180" : "")
-                  }
-                ></i>
-              </div>
-            )}
+            <div
+              className={
+                "order-2 mr-2 flex h-7 shrink-0 items-center md:order-4 md:mr-auto" +
+                (item.expandable ? "" : " invisible")
+              }
+            >
+              <i
+                className={
+                  "ri-arrow-down-s-line block leading-none text-gray-600 transition-transform duration-500" +
+                  (expanded ? " rotate-180" : "")
+                }
+              ></i>
+            </div>
           </div>
 
           {/* Content */}

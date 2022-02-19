@@ -25,6 +25,7 @@ export const speakersList: speaker[] = [
     links: {
       linkedin: "https://www.linkedin.com/in/gholi-dev",
       github: "https://github.com/gholi-dev",
+      instagram: "https://www.instagram.com/gholi_dev",
     },
   },
   {
@@ -73,12 +74,12 @@ export const speakersList: speaker[] = [
   },
   {
     name: "سید رضا موسوی",
-    position: "توسعه‌دهنده‌ی فرانت‌اند",
+    position: "چپترلید فرانت‌اند",
     companyName: "باسلام",
     photo: rezaMosaviAvatar,
     companyLogo: basalamLogo,
     links: {
-      linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
+      linkedin: "https://www.linkedin.com/in/rmoosavi/",
     },
   },
   {
@@ -88,21 +89,20 @@ export const speakersList: speaker[] = [
     photo: mrIranmaneshAvatar,
     companyLogo: divarLogo,
     links: {
-      linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
       twitter: "https://twitter.com/iMohammadReza_",
       instagram: "https://www.instagram.com/imohammadreza.ir/",
-      website: "https://imohammadreza.ir",
       github: "https://github.com/iMohammadReza",
+      website: "https://imohammadreza.ir",
     },
   },
   {
     name: "محمدعلی سلطانی پور",
-    position: "چپترلید فرانت‌اند",
+    position: "مدیر فنی",
     companyName: "باسلام",
     photo: aliSoltanipourAvatar,
     companyLogo: basalamLogo,
     links: {
-      linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
+      linkedin: "https://www.linkedin.com/in/soltanipour/",
     },
   },
 ];

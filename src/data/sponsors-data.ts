@@ -4,8 +4,14 @@ import quera from "assets/images/sponsors/quera.png";
 import rokla from "assets/images/sponsors/rokla.png";
 import shab from "assets/images/sponsors/shab.png";
 import yektanet from "assets/images/sponsors/yektanet.png";
+import parscoders from "assets/images/sponsors/parscoders.png";
 
 export const sponsorsList: Sponsor[] = [
+  {
+    title: "پارسکدرز",
+    link: "https://parscoders.com/",
+    logo: parscoders,
+  },
   {
     title: "لیارا",
     link: "https://liara.ir/",
