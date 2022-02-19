@@ -3,7 +3,6 @@ import miladAzami from "assets/images/speakers/milad-azami.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
 import sobhanAminNejad from "assets/images/speakers/sobhan.jpg";
 import mohammadMahmoodi from "assets/images/speakers/mohammad_mahmoodi.jpg";
-import speaker3 from "assets/images/speakers/speaker-3.jpg";
 import mrAla from "assets/images/speakers/mohammadreza-ala.png";
 
 export const itemsData: item[] = [
@@ -31,6 +30,7 @@ export const itemsData: item[] = [
       links: {
         linkedin: "https://www.linkedin.com/in/gholi-dev",
         github: "https://github.com/gholi-dev",
+        instagram: "https://instagram.com/gholi-dev",
       },
     },
   },
@@ -76,7 +76,7 @@ export const itemsData: item[] = [
   {
     time: "12:30",
     type: "talk",
-    title: "ورک‌شاپ تخصصی زیر کاپوت جاوا اسکریپت",
+    title: "ورک‌شاپ تخصصی زیر کاپوت جاوااسکریپت",
   },
   {
     time: "13:30",
@@ -149,11 +149,11 @@ export const itemsData: item[] = [
   {
     time: "17:30",
     type: "talk",
-    title: "پنل گفت‌وگو مشارک تیمی در شرکت‌های بزرگ",
+    title: "پنل گفت‌وگو مشارکت تیمی در شرکت‌های بزرگ",
     showByDefault: true,
     expandable: true,
     content:
-      "بچه‌های شرکت‌های دیوار، اسنپ و باسلام از تجربه‌هاشون درمورد اینکه تیم‌های نامتمرکز توی یک شرکت چطوری با هم دیگه کار می‌کنند و کارها چطوری تقسیم میشه و پیش میره برامون میگن و ما هم هر پرسشی داشتیم در این مورد باهاشون مطرح می‌کنیم",
+      "بچه‌های شرکت‌های دیوار، کوئرا و باسلام از تجربه‌هاشون درمورد اینکه تیم‌های نامتمرکز توی یک شرکت چطوری با هم دیگه کار می‌کنند و کارها چطوری تقسیم میشه و پیش میره برامون میگن و ما هم هر پرسشی داشتیم در این مورد باهاشون مطرح می‌کنیم",
     // speaker: {
     //   name: "محمد ایرانمنش - محمدعلی سلطانی‌پور - محمدرضا اعلا",
     //   avatar: speaker3,
