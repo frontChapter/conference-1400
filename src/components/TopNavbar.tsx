@@ -43,7 +43,7 @@ const TopNavbar: React.FC<{}> = () => {
             className="ml-6 hidden items-center gap-1 rounded-full font-medium text-gray-700 lg:flex"
           >
             <RiPhoneLine className="text-xl" />
-            <span>پشتیبان تلفنی</span>
+            <span>پشتیبانی تلفنی</span>
           </a>
           <a
             href="https://evand.com/events/frontchapter-1400"

@@ -21,7 +21,7 @@ const Footer: React.FC<{}> = () => {
         className="flex items-center gap-1 rounded border px-3 py-2 text-sm font-bold text-white transition hover:bg-white hover:text-gray-900"
       >
         <RiPhoneLine />
-        <span>پشتیبان تلفنی</span>
+        <span>پشتیبانی تلفنی</span>
       </a>
       <div className="flex items-center gap-6">
         {socialMedia.map(({ name, url }, index) => (

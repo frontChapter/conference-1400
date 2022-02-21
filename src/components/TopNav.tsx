@@ -81,7 +81,7 @@ const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
           className="flex items-center gap-1 rounded-full border-2 border-gray-600 px-3 py-2 font-medium text-gray-600"
         >
           <RiPhoneLine className="text-xl" />
-          <span>پشتیبان تلفنی</span>
+          <span>پشتیبانی تلفنی</span>
         </a>
       </div>
     </nav>
