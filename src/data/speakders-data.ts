@@ -19,7 +19,7 @@ export const speakersList: speaker[] = [
   {
     photo: amirAliGholiAvatar,
     name: "امیرعلی قلی",
-    position: "توسعه دهنده‌ی جاوااسکریپت",
+    position: "توسعه‌دهنده‌ جاوا اسکریپت",
     companyName: "لیارا",
     companyLogo: liaraLogo,
     links: {
@@ -31,7 +31,7 @@ export const speakersList: speaker[] = [
   {
     photo: sobhanAminNejadAvatar,
     name: "سبحان امین‌نژاد",
-    position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
+    position: "توسعه‌دهنده‌ ارشد فرانت‌اند",
     companyName: "اسنپ مارکت",
     companyLogo: snappMarketLogo,
     links: {
@@ -74,7 +74,7 @@ export const speakersList: speaker[] = [
   },
   {
     name: "سید رضا موسوی",
-    position: "چپترلید فرانت‌اند",
+    position: "چپتر لید فرانت‌اند",
     companyName: "باسلام",
     photo: rezaMosaviAvatar,
     companyLogo: basalamLogo,
@@ -84,7 +84,7 @@ export const speakersList: speaker[] = [
   },
   {
     name: "محمدرضا ایرانمنش",
-    position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
+    position: "توسعه‌دهنده‌ ارشد فرانت‌اند",
     companyName: "دیوار",
     photo: mrIranmaneshAvatar,
     companyLogo: divarLogo,
