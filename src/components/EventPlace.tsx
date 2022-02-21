@@ -5,7 +5,7 @@ import MizbanHotelMap from "assets/images/mizban-hotel-map.jpg";
 
 const EventPlace: React.FC<{}> = () => {
   return (
-    <section id="place" className="bg-[#eef9ef] py-9 md:py-12 lg:py-16">
+    <section id="place" className="bg-light-green py-9 md:py-12 lg:py-16">
       <div className="container flex flex-col items-center space-y-4 md:space-y-6 lg:space-y-9">
         <div className="flex items-center justify-center">
           <i className="ri-map-pin-2-fill block text-2xl leading-none text-secondary"></i>
