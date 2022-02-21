@@ -6,14 +6,14 @@ import snappLogo from "assets/images/companies/snapp.png";
 import snappMarketLogo from "assets/images/companies/snapp-market.png";
 
 // import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
-import sobhanAvatar from "assets/images/speakers/sobhan.jpg";
+import sobhanAminNejadAvatar from "assets/images/speakers/sobhan-amin-nejad.png";
 import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.png";
 import mrAlaAvatar from "assets/images/speakers/mohammadreza-ala.png";
 import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.png";
-import mrIranmaneshAvatar from "assets/images/speakers/mohammadreza-iranmanesh.jpg";
-import rezaMosaviAvatar from "assets/images/speakers/reza-mosavi.jpg";
-import aliSoltanipourAvatar from "assets/images/speakers/mohammad-ali-soltanipour.jpg";
+import mrIranmaneshAvatar from "assets/images/speakers/mohammadreza-iranmanesh.png";
+import rezaMosaviAvatar from "assets/images/speakers/reza-mosavi.png";
+import aliSoltanipourAvatar from "assets/images/speakers/mohammad-ali-soltanipour.png";
 
 export const speakersList: speaker[] = [
   {
@@ -29,7 +29,7 @@ export const speakersList: speaker[] = [
     },
   },
   {
-    photo: sobhanAvatar,
+    photo: sobhanAminNejadAvatar,
     name: "سبحان امین‌نژاد",
     position: "توسعه‌دهنده‌ی ارشد فرانت‌اند",
     companyName: "اسنپ مارکت",
