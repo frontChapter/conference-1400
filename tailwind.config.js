@@ -40,6 +40,7 @@ module.exports = {
         "secondary": "#0CC455",
         "secondary-hover": "#039E41",
         "secondary-active": "#039E41",
+        "light-green": "#eef9ef",
       },
       fontFamily: {
         sans: [
