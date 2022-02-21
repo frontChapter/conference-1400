@@ -16,15 +16,13 @@ const Footer: React.FC<{}> = () => {
         <i className="ri-heart-fill mx-2 block animate-heartbeat align-middle text-xl leading-none text-red-500" />
         <span>در فرانت چپتر</span>
       </div>
-      <div className="flex items-center">
-        <a
-          className="flex items-center gap-1 rounded border px-2 py-1 font-bold text-white"
-          href={`tel:${supportNumber}`}
-        >
-          <RiPhoneLine />
-          <span>پشتیبان تلفنی</span>
-        </a>
-      </div>
+      <a
+        href={`tel:${supportNumber}`}
+        className="flex items-center gap-1 rounded border px-3 py-2 text-sm font-bold text-white transition hover:bg-white hover:text-gray-900"
+      >
+        <RiPhoneLine />
+        <span>پشتیبان تلفنی</span>
+      </a>
       <div className="flex items-center gap-6">
         {socialMedia.map(({ name, url }, index) => (
           <a key={index} href={url} target="_blank" rel="noreferrer" className="text-gray-200">
