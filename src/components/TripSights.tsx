@@ -110,7 +110,7 @@ const TripSights = () => {
     `sights-tab ${activeTab === type ? "active" : ""}`;
 
   return (
-    <section id="trip-sights" className="bg-[#eef9ef] pt-8 pb-16">
+    <section id="trip-sights" className="bg-light-green pt-8 pb-16">
       <div className="container flex flex-col items-center space-y-9">
         <div className="w-[100%] rounded-3xl bg-white p-5 sm:p-9 xl:py-16 xl:px-20">
           <div className="flex flex-col justify-center">

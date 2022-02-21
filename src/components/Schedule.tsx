@@ -7,7 +7,7 @@ const Schedule: React.FC<{}> = () => {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <section id="schedule" className="bg-[#eef9ef] py-9 md:py-12 lg:py-16">
+    <section id="schedule" className="bg-light-green py-9 md:py-12 lg:py-16">
       <div className="container flex flex-col items-center">
         <h3 className="text-center text-2xl font-black leading-normal text-secondary md:text-28 lg:text-4xl">
           برنامه همایش
@@ -81,7 +81,7 @@ const Item: React.FC<{
 
           {/* Cover last item dotted line to hide */}
           {lastItem && (
-            <div className="absolute top-7 right-[91px] z-20 h-full border-l-2 border-[#eef9ef]"></div>
+            <div className="absolute top-7 right-[91px] z-20 h-full border-l-2 border-light-green"></div>
           )}
         </div>
 
