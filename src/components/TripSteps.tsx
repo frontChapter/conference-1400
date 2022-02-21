@@ -5,9 +5,12 @@ const TripSteps: React.FC<{}> = () => {
         <h3 className="mb-5 text-center text-2xl font-black leading-normal text-gray-700 md:mb-7 md:text-28 lg:mb-9 lg:text-4xl">
           نگران مسیر و محل اقامت نباشید!
         </h3>
-        <p className="mb-5 text-center font-medium leading-relaxed text-gray-500 sm:w-5/6 md:mb-0 md:text-lg lg:w-3/5">
-          اگه بابت رفت و آمد و محل اقامتت نگرانی، خیالت راحت باشه. ما یه سری امکانات ویژه برات در
-          نظر گرفتیم تا بتونی با خیالی آسوده تو رویداد حضور داشته باشی.
+        <p className="mb-5 text-center font-medium leading-relaxed text-gray-500 sm:w-5/6 md:mb-0 md:w-full md:text-lg">
+          اگه بابت رفت و آمد و محل اقامتت نگرانی، خیالت راحت باشه.
+          <br className="hidden md:block" />
+          <span className="mr-1 md:hidden" />
+          ما یه سری امکانات ویژه برات در نظر گرفتیم تا بتونی با خیالی آسوده تو رویداد حضور داشته
+          باشی.
         </p>
         <Lines />
         <div className="flex flex-wrap justify-center self-stretch">
