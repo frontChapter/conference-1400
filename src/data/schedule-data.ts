@@ -1,8 +1,8 @@
 // import miladMoafi from "assets/images/speakers/milad-moafi.png";
 import miladAzami from "assets/images/speakers/milad-azami.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
-import sobhanAminNejad from "assets/images/speakers/sobhan.jpg";
-import mohammadMahmoodi from "assets/images/speakers/mohammad_mahmoodi.jpg";
+import sobhanAminNejad from "assets/images/speakers/sobhan-amin-nejad.png";
+import mohammadMahmoodi from "assets/images/speakers/mohammad-mahmoodi.png";
 import mrAla from "assets/images/speakers/mohammadreza-ala.png";
 
 export const itemsData: item[] = [
