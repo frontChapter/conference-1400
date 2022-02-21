@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import Gumshoe from "gumshoejs";
+import { RiPhoneLine } from "react-icons/ri";
+
+const supportNumber = process.env.NEXT_PUBLIC_SUPPORT_NUMBER;
 
 const items = [
   {
@@ -72,6 +75,15 @@ const TopNav: React.FC<Props> = ({ collapsed, setNavCollapse }) => {
           </li>
         ))}
       </ul>
+      <div className="flex flex-col items-center pb-4 lg:hidden">
+        <a
+          href={`tel:${supportNumber}`}
+          className="flex items-center gap-1 rounded-full border-2 border-gray-600 px-3 py-2 font-medium text-gray-600"
+        >
+          <RiPhoneLine className="text-xl" />
+          <span>پشتیبان تلفنی</span>
+        </a>
+      </div>
     </nav>
   );
 };
