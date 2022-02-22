@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { links, socialMediaIcons, speaker, speakersList } from "data/speakders-data";
+import { links, socialMediaIcons, speaker, speakersList } from "data/speakers-data";
 
 const Speakers = () => {
   return (
