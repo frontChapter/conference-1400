@@ -103,6 +103,7 @@ export const speakersList: speaker[] = [
     companyName: "باسلام",
     photo: aliSoltanipourAvatar,
     companyLogo: basalamLogo,
+    talk: true,
     links: {
       linkedin: "https://www.linkedin.com/in/soltanipour/",
     },
@@ -113,6 +114,7 @@ export const speakersList: speaker[] = [
     companyName: "کوئرا",
     photo: mohammadJafariAvatar,
     companyLogo: queraLogo,
+    talk: true,
     links: {
       linkedin: "https://www.linkedin.com/in/mjafari98/",
       twitter: "https://twitter.com/soften98/",
@@ -128,6 +130,7 @@ export interface speaker {
   brandClass?: string;
   companyLogo?: StaticImageData;
   hideCompanyPrefix?: boolean;
+  talk?: boolean;
   links?: links;
 }
 
