@@ -2,7 +2,7 @@ import Image from "next/image";
 import talkHeader from "assets/images/talk-header.png";
 import queraLogo from "assets/images/talk-quera.png";
 import basalamLogo from "assets/images/talk-basalam.png";
-import { links, socialMediaIcons, speaker, speakersList } from "data/speakders-data";
+import { links, socialMediaIcons, speaker, speakersList } from "data/speakers-data";
 
 const Speakers = speakersList.filter((speaker) => speaker.talk);
 
