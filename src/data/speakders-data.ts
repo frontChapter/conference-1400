@@ -4,6 +4,7 @@ import divarLogo from "assets/images/companies/divar.png";
 import liaraLogo from "assets/images/companies/liara.png";
 import snappLogo from "assets/images/companies/snapp.png";
 import snappMarketLogo from "assets/images/companies/snapp-market.png";
+import queraLogo from "assets/images/companies/quera.png";
 
 // import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
 import sobhanAminNejadAvatar from "assets/images/speakers/sobhan-amin-nejad.png";
@@ -14,6 +15,7 @@ import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.png
 import mrIranmaneshAvatar from "assets/images/speakers/mohammadreza-iranmanesh.png";
 import rezaMosaviAvatar from "assets/images/speakers/reza-mosavi.png";
 import aliSoltanipourAvatar from "assets/images/speakers/mohammad-ali-soltanipour.png";
+import mohammadJafariAvatar from "assets/images/speakers/mohammad-jafari.png";
 
 export const speakersList: speaker[] = [
   {
@@ -103,6 +105,17 @@ export const speakersList: speaker[] = [
     companyLogo: basalamLogo,
     links: {
       linkedin: "https://www.linkedin.com/in/soltanipour/",
+    },
+  },
+  {
+    name: "محمد جعفری",
+    position: "توسعه‌دهنده‌ فول‌استک",
+    companyName: "کوئرا",
+    photo: mohammadJafariAvatar,
+    companyLogo: queraLogo,
+    links: {
+      linkedin: "https://www.linkedin.com/in/mjafari98/",
+      twitter: "https://twitter.com/soften98/",
     },
   },
 ];
