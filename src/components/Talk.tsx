@@ -32,7 +32,7 @@ const Talk: React.FC = () => {
 };
 
 const Speaker = ({ photo, name, position, companyName, links }: speaker) => (
-  <div className="flex w-full max-w-[430px] items-center gap-4 rounded-3xl bg-gray-800 p-4 sm:gap-8 sm:px-8 sm:py-6">
+  <div className="flex w-full max-w-[430px] items-center gap-4 rounded-3xl bg-gray-800 p-4 sm:gap-8 sm:p-8">
     <figure className="h-24 w-24 shrink-0 sm:h-32 sm:w-32">
       <Image
         src={photo}
