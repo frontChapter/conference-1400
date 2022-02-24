@@ -17,7 +17,7 @@ const About: React.FC = () => {
             میشیم و درمورد چالش هایی که بهشون برخوردیم گپ و گفت میکنیم.
             <br />
             تا الان تونستیم بالای ۴۰ ساعت جلسات آنلاین داشته باشیم و چالش‌های فرانت‌اند مختلف رو
-            باهم بررسی کردیم
+            باهم بررسی کردیم.
           </p>
           <div className="flex flex-wrap items-center justify-center sm:space-x-6 sm:space-x-reverse md:justify-start">
             <a

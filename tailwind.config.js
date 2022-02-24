@@ -31,7 +31,7 @@ module.exports = {
     },
     extend: {
       transitionDuration: {
-        DEFAULT: '250ms'
+        DEFAULT: "250ms",
       },
       colors: {
         "primary": "#ff802e",
@@ -40,6 +40,7 @@ module.exports = {
         "secondary": "#0CC455",
         "secondary-hover": "#039E41",
         "secondary-active": "#039E41",
+        "light-green": "#eef9ef",
       },
       fontFamily: {
         sans: [
@@ -59,14 +60,7 @@ module.exports = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
-        serif: [
-          "ui-serif",
-          "Georgia",
-          "Cambria",
-          '"Times New Roman"',
-          "Times",
-          "serif",
-        ],
+        serif: ["ui-serif", "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
         mono: [
           "ui-monospace",
           "SFMono-Regular",
@@ -84,10 +78,10 @@ module.exports = {
         "2rem": "2rem",
       },
       rotate: {
-        "135": "135deg",
+        135: "135deg",
       },
       animation: {
-        heartbeat: 'heartbeat 2s linear infinite',
+        heartbeat: "heartbeat 2s linear infinite",
       },
       keyframes: {
         heartbeat: {
@@ -96,11 +90,9 @@ module.exports = {
           "14%": { transform: "scale(1)" },
           "21%": { transform: "scale(1.2)" },
           "35%": { transform: "scale(1)" },
-        }
-      }
+        },
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-  ],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

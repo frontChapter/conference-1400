@@ -4,6 +4,9 @@ import { useState } from "react";
 import logo from "assets/images/logo.png";
 import HamburgerButton from "./HamburgerButton";
 import TopNav from "./TopNav";
+import { RiPhoneLine } from "react-icons/ri";
+
+const supportNumber = process.env.NEXT_PUBLIC_SUPPORT_NUMBER;
 
 const TopNavbar: React.FC<{}> = () => {
   let [navCollapsed, setNavCollapse] = useState<boolean>(false);
@@ -34,7 +37,14 @@ const TopNavbar: React.FC<{}> = () => {
             </a>
           </Link>
         </div>
-        <div className="order-3 basis-1/3 text-left lg:order-4 lg:mr-auto lg:basis-auto">
+        <div className="order-3 flex basis-1/3 items-center justify-end lg:order-4 lg:mr-auto lg:basis-auto">
+          <a
+            href={`tel:${supportNumber}`}
+            className="ml-6 hidden items-center gap-1 rounded-full font-medium text-gray-700 lg:flex"
+          >
+            <RiPhoneLine className="text-xl" />
+            <span>پشتیبانی تلفنی</span>
+          </a>
           <a
             href="https://evand.com/events/frontchapter-1400"
             target="_blank"

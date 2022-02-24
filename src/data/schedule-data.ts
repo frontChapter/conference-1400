@@ -1,8 +1,8 @@
 // import miladMoafi from "assets/images/speakers/milad-moafi.png";
 import miladAzami from "assets/images/speakers/milad-azami.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
-import sobhanAminNejad from "assets/images/speakers/sobhan.jpg";
-import mohammadMahmoodi from "assets/images/speakers/mohammad_mahmoodi.jpg";
+import sobhanAminNejad from "assets/images/speakers/sobhan-amin-nejad.png";
+import mohammadMahmoodi from "assets/images/speakers/mohammad-mahmoodi.png";
 import mrAla from "assets/images/speakers/mohammadreza-ala.png";
 
 export const itemsData: item[] = [
@@ -37,7 +37,7 @@ export const itemsData: item[] = [
   {
     time: "11:00",
     type: "presentation",
-    title: "واقعیت های دنیای برنامه نویسی",
+    title: "واقعیت‌های دنیای برنامه نویسی",
     showByDefault: true,
     expandable: true,
     content:
@@ -54,11 +54,11 @@ export const itemsData: item[] = [
   {
     time: "11:30",
     type: "presentation",
-    title: "پیاده سازی ایزومرفیک وب اپلیکیشن با رندرترون",
+    title: "پیاده سازی ایزومورفیک وب اپلیکیشن با رندرترون",
     showByDefault: true,
     expandable: true,
     content:
-      "استفاده از از رندرترون به عنوان استاتیک رندرینگین انجین برای بهبود پرفرمنس و سئو ی وب اپلییکیشن های تک صفحه‌ای",
+      "استفاده از از رندرترون به عنوان استاتیک رندرینگ انجین برای بهبود پرفرمنس و سئو ی وب اپلییکیشن‌های تک صفحه‌ای",
     speaker: {
       name: "محمد رضا اعلا",
       avatar: mrAla,
@@ -76,7 +76,7 @@ export const itemsData: item[] = [
   {
     time: "12:30",
     type: "talk",
-    title: "ورک‌شاپ تخصصی زیر کاپوت جاوااسکریپت",
+    title: "ورک‌شاپ تخصصی زیر کاپوت جاوا اسکریپت",
   },
   {
     time: "13:30",
@@ -84,17 +84,14 @@ export const itemsData: item[] = [
     title: "معرفی مسابقه",
     expandable: true,
     content:
-      "با همکاری کوئرا یک مسابقه‌ی جذاب طراحی کردیم که با برنده شدن داخلش علاوه بر گرفتن هدیه‌های یادبود، به شرکت‌های بزرگ فناوری ایران هم توسط کوئرا برای استخدام معرفی می‌شوید",
+      "با همکاری کوئرا یک مسابقه‌ی جذاب طراحی کردیم که با برنده شدن داخلش علاوه بر گرفتن هدیه‌های یادبود، به شرکت‌های بزرگ فناوری ایران هم توسط کوئرا برای استخدام معرفی می‌شوید.",
   },
   {
     time: "14:00",
     type: "break",
-    title: "نهار و استراحت",
+    title: "ناهار و استراحت",
     expandable: true,
-    content:
-      "برای صرف نهار و استراحت بین دو نیمه به سالن لادن میریم و نهار رو کنار هم هستیم. منوی نهار برای علاقه‌مندان به شرح زیر است:" +
-      "\n" +
-      "سبزی پلو با گوشت گوساله / سالاد فصل / نوشابه قوطی و دوغ / آب معدنی / خورش مرغ با آلوچه وحشی و اناردون و برنج سفید",
+    content: "برای صرف ناهار و استراحت بین دو نیمه به سالن لادن میریم و ناهار رو کنار هم هستیم.",
   },
   {
     time: "15:30",
@@ -108,7 +105,7 @@ export const itemsData: item[] = [
     showByDefault: true,
     expandable: true,
     content:
-      "بررسی معماری جدید توسعه وب بر پایه جاوااسکریپت سمت کاربر، Api های قابل استفاده مجدد و markup های از پیش ساخته",
+      "بررسی معماری جدید توسعه وب بر پایه جاوا اسکریپت سمت کاربر، Api های قابل استفاده مجدد و markup های از پیش ساخته",
     speaker: {
       name: "سبحان امین‌نژاد",
       avatar: sobhanAminNejad,
@@ -130,7 +127,8 @@ export const itemsData: item[] = [
     showByDefault: true,
     expandable: true,
     content:
-      "پرفورمنس نرم‌افزار همیشه مورد توجه برنامه‌نویس ها بوده. بهینه‌سازی و بالا بردن بهره‌وری کد و در نهایت خلق تجربه‌ی کاربری بهتر. در این ارائه به طور کلی به پرفورمنس در وب نوین پرداخته میشه. در مورد اینکه کی پرفورمنس برای ما مهم میشه؟ چه پارامترها و متریک هایی رو باید محاسبه کینم؟ نیازمندی‌ها، چالش‌های فنی محاسبه‌ی پرفورمنس و استفاده از ابزار های مانیتورینگ صحبت می‌کنیم",
+      "پرفورمنس نرم‌افزار همیشه مورد توجه برنامه‌نویس‌ها بوده. بهینه‌سازی و بالا بردن بهره‌وری کد و در نهایت خلق تجربه‌ی کاربری بهتر. " +
+      "در این ارائه به طور کلی به پرفورمنس در وب نوین پرداخته میشه. در مورد اینکه کی پرفورمنس برای ما مهم میشه؟ چه پارامترها و متریک‌هایی رو باید محاسبه کینم؟ نیازمندی‌ها، چالش‌های فنی محاسبه‌ی پرفورمنس و استفاده از ابزار‌های مانیتورینگ صحبت می‌کنیم",
     speaker: {
       name: "محمد محمودی",
       avatar: mohammadMahmoodi,
@@ -153,7 +151,7 @@ export const itemsData: item[] = [
     showByDefault: true,
     expandable: true,
     content:
-      "بچه‌های شرکت‌های دیوار، کوئرا و باسلام از تجربه‌هاشون درمورد اینکه تیم‌های نامتمرکز توی یک شرکت چطوری با هم دیگه کار می‌کنند و کارها چطوری تقسیم میشه و پیش میره برامون میگن و ما هم هر پرسشی داشتیم در این مورد باهاشون مطرح می‌کنیم",
+      "بچه‌های شرکت‌های دیوار، کوئرا و باسلام از تجربه‌هاشون درمورد اینکه تیم‌های نامتمرکز توی یک شرکت چطوری با همدیگه کار می‌کنند و کارها چطوری تقسیم میشه و پیش میره برامون میگن و ما هم هر پرسشی داشتیم در این مورد باهاشون مطرح می‌کنیم",
     // speaker: {
     //   name: "محمد ایرانمنش - محمدعلی سلطانی‌پور - محمدرضا اعلا",
     //   avatar: speaker3,
