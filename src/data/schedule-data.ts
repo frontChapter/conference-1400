@@ -4,6 +4,8 @@ import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
 import sobhanAminNejad from "assets/images/speakers/sobhan-amin-nejad.png";
 import mohammadMahmoodi from "assets/images/speakers/mohammad-mahmoodi.png";
 import mrAla from "assets/images/speakers/mohammadreza-ala.png";
+import mrIranmanesh from "assets/images/speakers/mohammadreza-iranmanesh.png";
+import rezaMosavi from "assets/images/speakers/reza-mosavi.png";
 
 export const itemsData: item[] = [
   {
@@ -17,7 +19,7 @@ export const itemsData: item[] = [
     title: "مقدمه و معرفی همایش",
   },
   {
-    time: "10:30",
+    time: "10:10",
     type: "presentation",
     title: "سفر در زمان (بازگشت به دوران سایت‌های استاتیک)",
     showByDefault: true,
@@ -35,9 +37,101 @@ export const itemsData: item[] = [
     },
   },
   {
-    time: "11:00",
+    time: "10:40",
     type: "presentation",
-    title: "واقعیت‌های دنیای برنامه نویسی",
+    title: "توسعه‌ی مقیاس‌پذیر زیرساخت فرانت‌اند",
+    showByDefault: true,
+    expandable: true,
+    content:
+      "توی این ارائه محمدرضا در مورد زیرساخت فرانت‌اند دیوار و چالش‌هایی که حل کردن مثل dynamic serving و SSR غیره صحبت میکنه",
+    speaker: {
+      name: "محمدرضا ایرانمنش",
+      avatar: mrIranmanesh,
+      links: {
+        website: "https://imohammadreza.ir/",
+        twitter: "https://twitter.com/iMohammadReza_",
+        instagram: "https://www.instagram.com/imohammadreza.ir/",
+        github: "https://github.com/iMohammadReza",
+        linkedin: "https://www.linkedin.com/in/mohammadrezairanmanesh/",
+      },
+    },
+  },
+  {
+    time: "11:00",
+    type: "break",
+    title: "استراحت صبح",
+    expandable: false,
+  },
+  {
+    time: "11:20",
+    type: "talk",
+    title: "معرفی ابزارهای ساخته‌شده به دست بچه‌های حاضر در صحنه",
+    showByDefault: true,
+    expandable: false,
+  },
+  {
+    time: "11:40",
+    type: "presentation",
+    title: "پیاده سازی ایزومرفیک وب اپلیکیشن با رندرترون",
+    showByDefault: true,
+    expandable: true,
+    content:
+      "استفاده از از رندرترون به عنوان استاتیک رندرینگین انجین برای بهبود پرفرمنس و سئو ی وب اپلییکیشن های تک صفحه ای",
+    speaker: {
+      name: "محمدرضا اعلا",
+      avatar: mrAla,
+      links: {
+        linkedin: "https://www.linkedin.com/in/mohammadrezala/",
+        instagram: "https://www.instagram.com/mhmdrz_a/",
+      },
+    },
+  },
+  {
+    time: "12:10",
+    type: "presentation",
+    title: "Core web vitals",
+    showByDefault: true,
+    expandable: true,
+    content:
+      "Core web vitals ابتکاری توسط Google است که بتوان با اندازه‌گیری آن‌ها تجربه‌کاربری کاربران در وب را سنجید. هر یک از Core Web Vitals نمایانگر جنبه‌ای از تجربه کاربر است، و به صورت میدانی قابل اندازه‌گیری است و تجربه دنیای واقعی یک کاربر را منعکس می‌کند. در این ارائه تجربه باسلام را برای بهبود core web vitals ارائه میکنیم",
+    speaker: {
+      name: "سید رضا موسوی",
+      avatar: rezaMosavi,
+      links: {
+        linkedin: "https://www.linkedin.com/in/rmoosavi/",
+      },
+    },
+  },
+  {
+    time: "12:30",
+    type: "talk",
+    title: "مشارکت تیمی در شرکت‌های بزرگ",
+    showByDefault: true,
+  },
+  {
+    time: "13:30",
+    type: "break",
+    title: "ناهار و استراحت",
+    expandable: true,
+    content: "برای صرف ناهار و استراحت بین دو نیمه به سالن لادن میریم و ناهار رو کنار هم هستیم.",
+  },
+  {
+    time: "15:00",
+    type: "management",
+    title: "اعلام مسابقه",
+  },
+  {
+    time: "13:30",
+    type: "management",
+    title: "معرفی مسابقه",
+    expandable: true,
+    content:
+      "با همکاری کوئرا یک مسابقه‌ی جذاب طراحی کردیم که با برنده شدن داخلش علاوه بر گرفتن هدیه‌های یادبود، به شرکت‌های بزرگ فناوری ایران هم توسط کوئرا برای استخدام معرفی می‌شوید.",
+  },
+  {
+    time: "15:20",
+    type: "presentation",
+    title: "واقعیت‌های دنیای برنامه‌نویسی",
     showByDefault: true,
     expandable: true,
     content:
@@ -52,56 +146,9 @@ export const itemsData: item[] = [
     },
   },
   {
-    time: "11:30",
+    time: "15:50",
     type: "presentation",
-    title: "پیاده سازی ایزومورفیک وب اپلیکیشن با رندرترون",
-    showByDefault: true,
-    expandable: true,
-    content:
-      "استفاده از از رندرترون به عنوان استاتیک رندرینگ انجین برای بهبود پرفرمنس و سئو ی وب اپلییکیشن‌های تک صفحه‌ای",
-    speaker: {
-      name: "محمد رضا اعلا",
-      avatar: mrAla,
-      links: {
-        linkedin: "https://www.linkedin.com/in/mohammadrezala/",
-        instagram: "https://www.instagram.com/mhmdrz_a/",
-      },
-    },
-  },
-  {
-    time: "11:50",
-    type: "break",
-    title: "پذیرایی و استراحت ظهر",
-  },
-  {
-    time: "12:30",
-    type: "talk",
-    title: "ورک‌شاپ تخصصی زیر کاپوت جاوا اسکریپت",
-  },
-  {
-    time: "13:30",
-    type: "management",
-    title: "معرفی مسابقه",
-    expandable: true,
-    content:
-      "با همکاری کوئرا یک مسابقه‌ی جذاب طراحی کردیم که با برنده شدن داخلش علاوه بر گرفتن هدیه‌های یادبود، به شرکت‌های بزرگ فناوری ایران هم توسط کوئرا برای استخدام معرفی می‌شوید.",
-  },
-  {
-    time: "14:00",
-    type: "break",
-    title: "ناهار و استراحت",
-    expandable: true,
-    content: "برای صرف ناهار و استراحت بین دو نیمه به سالن لادن میریم و ناهار رو کنار هم هستیم.",
-  },
-  {
-    time: "15:30",
-    type: "management",
-    title: "اعلام برنده‌ی مسابقه و توییت برتر",
-  },
-  {
-    time: "16:00",
-    type: "presentation",
-    title: "JAMStack",
+    title: "JAM Stack",
     showByDefault: true,
     expandable: true,
     content:
@@ -110,57 +157,37 @@ export const itemsData: item[] = [
       name: "سبحان امین‌نژاد",
       avatar: sobhanAminNejad,
       links: {
-        instagram: "https://www.instagram.com/aminnejads/",
         linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
-      },
-    },
-  },
-  // {
-  //   time: "16:20",
-  //   type: "management",
-  //   title: "میان برنامه‌ی سوم",
-  // },
-  {
-    time: "16:30",
-    type: "presentation",
-    title: "پرفورمنس وب",
-    showByDefault: true,
-    expandable: true,
-    content:
-      "پرفورمنس نرم‌افزار همیشه مورد توجه برنامه‌نویس‌ها بوده. بهینه‌سازی و بالا بردن بهره‌وری کد و در نهایت خلق تجربه‌ی کاربری بهتر. " +
-      "در این ارائه به طور کلی به پرفورمنس در وب نوین پرداخته میشه. در مورد اینکه کی پرفورمنس برای ما مهم میشه؟ چه پارامترها و متریک‌هایی رو باید محاسبه کینم؟ نیازمندی‌ها، چالش‌های فنی محاسبه‌ی پرفورمنس و استفاده از ابزار‌های مانیتورینگ صحبت می‌کنیم",
-    speaker: {
-      name: "محمد محمودی",
-      avatar: mohammadMahmoodi,
-      links: {
-        twitter: "https://twitter.com",
-        facebook: "https://facebook.com",
-        mastodon: "https://mastodon.social",
+        instagram: "https://www.instagram.com/aminnejads/",
       },
     },
   },
   {
-    time: "16:50",
+    time: "16:10",
     type: "break",
     title: "پذیرایی و استراحت عصر",
   },
   {
-    time: "17:30",
-    type: "talk",
-    title: "پنل گفت‌وگو مشارکت تیمی در شرکت‌های بزرگ",
+    time: "16:40",
+    type: "presentation",
+    title: "پرفورمنس",
     showByDefault: true,
     expandable: true,
     content:
-      "بچه‌های شرکت‌های دیوار، کوئرا و باسلام از تجربه‌هاشون درمورد اینکه تیم‌های نامتمرکز توی یک شرکت چطوری با همدیگه کار می‌کنند و کارها چطوری تقسیم میشه و پیش میره برامون میگن و ما هم هر پرسشی داشتیم در این مورد باهاشون مطرح می‌کنیم",
-    // speaker: {
-    //   name: "محمد ایرانمنش - محمدعلی سلطانی‌پور - محمدرضا اعلا",
-    //   avatar: speaker3,
-    // },
+      "پرفورمنس نرم‌افزار همیشه مورد توجه برنامه‌نویس‌ها بوده. بهینه‌سازی و بالا بردن بهره‌وری کد و در نهایت خلق تجربه‌ی کاربری بهتر. در این ارائه به طور کلی به پرفورمنس در وب نوین پرداخته میشه. در مورد اینکه کی پرفورمنس برای ما مهم میشه؟ چه پارامترها و متریک‌هایی رو باید محاسبه کینم؟ نیازمندی‌ها، چالش‌های فنی محاسبه‌ی پرفورمنس و استفاده از ابزار‌های مانیتورینگ صحبت می‌کنیم",
+    speaker: {
+      name: "محمد محمودی",
+      avatar: mohammadMahmoodi,
+      links: {
+        linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
+      },
+    },
   },
   {
-    time: "18:30",
+    time: "17:20",
     type: "management",
     title: "اهدای جوایز و اختتامیه",
+    content: "اهدای هدایا به میهمانان افتخاری و سخنران‌ها | نظرسنجی | دعوت به حضور و مشارکت",
   },
 ];
 
