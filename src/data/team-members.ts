@@ -6,6 +6,8 @@ import amir from "assets/images/team/amirhossein-karimi.jpg";
 import hamzeh from "assets/images/team/hamzeh-ghoreyshi.jpg";
 import hesam from "assets/images/team/hesam-mousavi.jpg";
 import hirad from "assets/images/team/hirad-sajdeh.jpg";
+import mehdi from "assets/images/team/mehdi-mahmoudi.jpg";
+import sadegh from "assets/images/team/sadegh-alavani.jpg";
 import saleh from "assets/images/team/saleh-shojaei.jpg";
 import tahmineh from "assets/images/team/tahmineh-reyvandi.jpg";
 
@@ -65,6 +67,22 @@ export const teamMembers: TeamMember[] = [
     },
   },
   {
+    name: "محمد صادق علوانی",
+    role: "هماهنگی و تدارکات",
+    photo: sadegh,
+    links: {
+      instagram: "https://www.instagram.com/sadeegh.pv/",
+    },
+  },
+  {
+    name: "محمدمهدی محمودی",
+    role: "هماهنگی و تدارکات",
+    photo: mehdi,
+    links: {
+      instagram: "https://www.instagram.com/mehdimh95/",
+    },
+  },
+  {
     name: "هیراد سجده",
     role: "تبلیغات و بازاریابی",
     photo: hirad,
@@ -84,18 +102,6 @@ export const teamMembers: TeamMember[] = [
       dribbble: "https://dribbble.com/Hamzeh_ux",
     },
   },
-  // {
-  //   name: "صادق",
-  //   role: "تیم اجرایی",
-  //   photo: placeholder,
-  //   links: {},
-  // },
-  // {
-  //   name: "مهدی",
-  //   role: "تیم اجرایی",
-  //   photo: placeholder,
-  //   links: {},
-  // },
 ];
 
 export interface TeamMember {
