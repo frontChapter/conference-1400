@@ -1,4 +1,5 @@
-import { item, links, itemsData, planIcons, socialMediaIcons } from "data/schedule-data";
+import { item, itemsData } from "data/schedule-data";
+import { planIcons, socialMediaIcons, socialMediaLinks } from "types";
 import { digitsEnToFa } from "@persian-tools/persian-tools";
 import { useRef, useState } from "react";
 import Image from "next/image";
@@ -185,7 +186,7 @@ const Item: React.FC<{
 };
 
 const Links: React.FC<{
-  links: links;
+  links: socialMediaLinks;
 }> = ({ links }) => {
   return (
     <div
@@ -193,7 +194,7 @@ const Links: React.FC<{
       onClick={(e) => e.stopPropagation()}
     >
       {Object.keys(links).map((key) => {
-        const link = links[key as keyof links];
+        const link = links[key as keyof socialMediaLinks];
         const icon = socialMediaIcons[key as keyof typeof socialMediaIcons];
 
         return (

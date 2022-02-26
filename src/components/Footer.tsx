@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { socialMedia, socialMediaIcons } from "data/social-media";
+import { socialMediaIcons } from "types";
+import { socialMedia } from "data/social-media";
 import logo from "assets/images/logo-vertical-dark.png";
 import { RiPhoneLine } from "react-icons/ri";
 
