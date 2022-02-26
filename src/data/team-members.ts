@@ -31,7 +31,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "حسام موسوی",
-    role: "ویژوال دیزاینر",
+    role: "طراح رابط کاربری و گرافیک",
     photo: hesam,
     links: {
       instagram: "https://www.instagram.com/HesMousavi/",
@@ -76,7 +76,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "حمزه قریشی",
-    role: "مشاور طراحی UX",
+    role: "مشاور طراحی تجربه کاربری",
     photo: hamzeh,
     links: {
       linkedin: "https://www.linkedin.com/in/hamzeh-ux",
