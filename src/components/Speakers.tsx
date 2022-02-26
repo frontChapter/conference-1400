@@ -11,7 +11,7 @@ const Speakers = () => {
       <div className="flex justify-center">
         <div className="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-8 sm:gap-x-6 sm:gap-y-6 md:gap-y-12 md:gap-x-12 lg:gap-x-20 xl:gap-x-10 2xl:gap-x-20">
           {speakersList.map((speaker, index) => (
-            <ListItem key={index} {...speaker} />
+            <Speaker key={index} {...speaker} />
           ))}
         </div>
       </div>
@@ -19,7 +19,7 @@ const Speakers = () => {
   );
 };
 
-const ListItem = ({
+const Speaker = ({
   photo,
   name,
   position,
@@ -85,7 +85,7 @@ const Links: React.FC<{
         return (
           <a key={key} href={link} target="_blank" rel="noreferrer">
             <i
-              className={`${icon} transi block text-2xl leading-none text-gray-400 transition-colors hover:text-gray-500 lg:text-base`}
+              className={`${icon} block text-2xl leading-none text-gray-400 transition-colors hover:text-gray-500 lg:text-base lg:leading-none`}
             />
           </a>
         );
