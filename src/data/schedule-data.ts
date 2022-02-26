@@ -1,3 +1,4 @@
+import { planIcons, socialMediaLinks } from "types";
 // import miladMoafi from "assets/images/speakers/milad-moafi.png";
 import miladAzami from "assets/images/speakers/milad-azami.png";
 import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
@@ -204,27 +205,6 @@ export interface item {
   speaker?: {
     name: string;
     avatar: StaticImageData;
-    links?: links;
+    links?: socialMediaLinks;
   };
 }
-
-export type links = {
-  [key in keyof typeof socialMediaIcons]?: string;
-};
-
-export const planIcons = {
-  management: "ri-flag-fill",
-  break: "ri-restaurant-2-fill",
-  presentation: "ri-slideshow-2-fill",
-  talk: "ri-mic-2-fill",
-};
-
-export const socialMediaIcons = {
-  github: "ri-github-fill",
-  twitter: "ri-twitter-fill",
-  linkedin: "ri-linkedin-fill",
-  instagram: "ri-instagram-fill",
-  facebook: "ri-facebook-fill",
-  website: "ri-earth-fill",
-  mastodon: "ri-mastodon-fill",
-};

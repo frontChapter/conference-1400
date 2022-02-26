@@ -1,3 +1,5 @@
+import { socialMediaIcons } from "types";
+
 export const socialMedia: SocialMedia[] = [
   {
     name: "telegram",
@@ -21,11 +23,3 @@ interface SocialMedia {
   name: keyof typeof socialMediaIcons;
   url: string;
 }
-
-export const socialMediaIcons = {
-  github: "ri-github-fill",
-  twitter: "ri-twitter-fill",
-  linkedin: "ri-linkedin-fill",
-  instagram: "ri-instagram-fill",
-  telegram: "ri-telegram-fill",
-};

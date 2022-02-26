@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { links, socialMediaIcons, speaker, speakersList } from "data/speakers-data";
+import { speaker, speakersList } from "data/speakers-data";
+import { socialMediaIcons, socialMediaLinks } from "types";
 
 const Speakers = () => {
   return (
@@ -70,7 +71,7 @@ const ListItem = ({
 );
 
 const Links: React.FC<{
-  links: links;
+  links: socialMediaLinks;
 }> = ({ links }) => {
   return (
     <div
@@ -78,7 +79,7 @@ const Links: React.FC<{
       onClick={(e) => e.stopPropagation()}
     >
       {Object.keys(links).map((key) => {
-        const link = links[key as keyof links];
+        const link = links[key as keyof socialMediaLinks];
         const icon = socialMediaIcons[key as keyof typeof socialMediaIcons];
 
         return (

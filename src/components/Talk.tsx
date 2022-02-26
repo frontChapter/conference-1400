@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { speaker, speakersList } from "data/speakers-data";
+import { socialMediaIcons, socialMediaLinks } from "types";
 import talkHeader from "assets/images/talk-header.png";
 import queraLogo from "assets/images/talk-quera.png";
 import basalamLogo from "assets/images/talk-basalam.png";
-import { links, socialMediaIcons, speaker, speakersList } from "data/speakers-data";
 
 const Speakers = speakersList.filter((speaker) => speaker.talk);
 
@@ -54,12 +55,12 @@ const Speaker = ({ photo, name, position, companyName, links }: speaker) => (
 );
 
 const Links: React.FC<{
-  links: links;
+  links: socialMediaLinks;
 }> = ({ links }) => {
   return (
     <div className="flex items-center gap-6" onClick={(e) => e.stopPropagation()}>
       {Object.keys(links).map((key) => {
-        const link = links[key as keyof links];
+        const link = links[key as keyof socialMediaLinks];
         const icon = socialMediaIcons[key as keyof typeof socialMediaIcons];
 
         return (

@@ -1,3 +1,5 @@
+import { socialMediaLinks } from "types";
+
 import balehLogo from "assets/images/companies/baleh.png";
 import basalamLogo from "assets/images/companies/basalam.png";
 import divarLogo from "assets/images/companies/divar.png";
@@ -131,19 +133,5 @@ export interface speaker {
   companyLogo?: StaticImageData;
   hideCompanyPrefix?: boolean;
   talk?: boolean;
-  links?: links;
+  links?: socialMediaLinks;
 }
-
-export type links = {
-  [key in keyof typeof socialMediaIcons]?: string;
-};
-
-export const socialMediaIcons = {
-  github: "ri-github-fill",
-  twitter: "ri-twitter-fill",
-  linkedin: "ri-linkedin-fill",
-  instagram: "ri-instagram-fill",
-  facebook: "ri-facebook-fill",
-  website: "ri-earth-fill",
-  mastodon: "ri-mastodon-fill",
-};
