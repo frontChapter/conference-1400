@@ -5,6 +5,7 @@ import rokla from "assets/images/sponsors/rokla.png";
 import shab from "assets/images/sponsors/shab.png";
 import yektanet from "assets/images/sponsors/yektanet.png";
 import parscoders from "assets/images/sponsors/parscoders.png";
+import geektori from "assets/images/sponsors/geektori.png";
 
 export const sponsorsList: Sponsor[] = [
   {
@@ -41,6 +42,11 @@ export const sponsorsList: Sponsor[] = [
     title: "ای فور زی",
     link: "https://a4zi.com/",
     logo: a4zi,
+  },
+  {
+    title: "گیکتوری",
+    link: "https://geektori.ir/",
+    logo: geektori,
   },
 ];
 
