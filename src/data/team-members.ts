@@ -66,7 +66,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "هیراد سجده",
-    role: "تبلیغات و بازاریابی",
+    role: "سوشیال مارکتینگ",
     photo: hirad,
     links: {
       telegram: "https://t.me/hiradsajde",
