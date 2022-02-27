@@ -9,7 +9,7 @@ export const Team: React.FC<{}> = () => {
         تیم برگزاری
       </h3>
       <div className="flex justify-center">
-        <div className="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-8 sm:gap-x-6 sm:gap-y-6 md:gap-y-12 md:gap-x-12 lg:gap-x-20 xl:gap-x-10 2xl:gap-x-20">
+        <div className="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-8 sm:gap-x-6 sm:gap-y-6 md:gap-y-12 md:gap-x-12 lg:gap-x-20 xl:gap-x-10 xl:gap-y-10 2xl:gap-x-24 2xl:gap-y-14">
           {teamMembers.map((member, index) => (
             <Member key={index} {...member} />
           ))}
@@ -20,7 +20,7 @@ export const Team: React.FC<{}> = () => {
 };
 
 const Member = ({ name, role, photo, links }: TeamMember) => (
-  <div className="flex w-48 flex-col items-center space-y-3 rounded-3xl bg-white py-5 px-3 md:w-52 lg:space-y-4 lg:py-6">
+  <div className="flex w-52 flex-col items-center gap-y-3 rounded-3xl bg-white py-5 px-3 md:w-56 lg:gap-y-4 lg:py-6">
     <figure className="h-32 w-32">
       <Image
         src={photo}
