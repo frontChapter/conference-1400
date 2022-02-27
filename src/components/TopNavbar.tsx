@@ -40,7 +40,7 @@ const TopNavbar: React.FC<{}> = () => {
         <div className="order-3 flex basis-1/3 items-center justify-end lg:order-4 lg:mr-auto lg:basis-auto">
           <a
             href={`tel:${supportNumber}`}
-            className="ml-6 hidden items-center gap-1 rounded-full font-medium text-gray-700 lg:flex"
+            className="ml-6 hidden items-center gap-1 rounded-full font-medium text-gray-700 xl:flex"
           >
             <RiPhoneLine className="text-xl" />
             <span>پشتیبانی تلفنی</span>
