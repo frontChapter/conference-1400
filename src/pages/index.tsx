@@ -12,6 +12,7 @@ import Subscribe from "components/Subscribe";
 import Schedule from "components/Schedule";
 import Talk from "components/Talk";
 import EventPlace from "components/EventPlace";
+import Team from "components/Team";
 import Tweets from "components/Tweets";
 import Footer from "components/Footer";
 import Script from "next/script";
@@ -40,6 +41,7 @@ export default function Home({ tweets }: { tweets: false | Tweet[] }) {
         {/* <TripSights /> */}
         <Sponsors />
         <Subscribe />
+        <Team />
         <Tweets tweets={tweets} />
       </main>
       <Footer />

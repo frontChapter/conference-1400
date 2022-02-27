@@ -30,10 +30,10 @@ const items = [
     title: "حامیان",
     href: "/#sponsors",
   },
-  // {
-  //   title: "تیم برگزاری",
-  //   href: "/#team",
-  // },
+  {
+    title: "تیم برگزاری",
+    href: "/#team",
+  },
 ];
 
 interface Props {
