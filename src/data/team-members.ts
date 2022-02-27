@@ -10,6 +10,7 @@ import mehdi from "assets/images/team/mehdi-mahmoudi.jpg";
 import sadegh from "assets/images/team/sadegh-alavani.jpg";
 import saleh from "assets/images/team/saleh-shojaei.jpg";
 import tahmineh from "assets/images/team/tahmineh-reyvandi.jpg";
+import aliShirali from "assets/images/team/ali-shirali.jpg";
 
 export const teamMembers: TeamMember[] = [
   {
@@ -100,6 +101,15 @@ export const teamMembers: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/hamzeh-ux",
       instagram: "https://www.instagram.com/hamzeh.ux/",
       dribbble: "https://dribbble.com/Hamzeh_ux",
+    },
+  },
+  {
+    name: "علی شیرالی",
+    role: "تیم فنی",
+    photo: aliShirali,
+    links: {
+      linkedin: "https://www.linkedin.com/in/alyshirali/",
+      twitter: "https://twitter.com/alyshirali/",
     },
   },
 ];
