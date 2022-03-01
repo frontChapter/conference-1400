@@ -23,4 +23,13 @@ module.exports = {
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: "/contest",
+        destination: "https://quera.org/contest/add_to_contest/8AA058r9mKbjiuC/",
+        permanent: true,
+      },
+    ];
+  },
 };
