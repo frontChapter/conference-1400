@@ -8,7 +8,6 @@ import snappLogo from "assets/images/companies/snapp.png";
 import snappMarketLogo from "assets/images/companies/snapp-market.png";
 import queraLogo from "assets/images/companies/quera.png";
 
-// import miladMoafiAvatar from "assets/images/speakers/milad-moafi.png";
 import sobhanAminNejadAvatar from "assets/images/speakers/sobhan-amin-nejad.png";
 import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
 import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.png";
@@ -16,7 +15,6 @@ import mrAlaAvatar from "assets/images/speakers/mohammadreza-ala.png";
 import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.png";
 import mrIranmaneshAvatar from "assets/images/speakers/mohammadreza-iranmanesh.png";
 import rezaMosaviAvatar from "assets/images/speakers/reza-mosavi.png";
-import aliSoltanipourAvatar from "assets/images/speakers/mohammad-ali-soltanipour.png";
 import mohammadJafariAvatar from "assets/images/speakers/mohammad-jafari.png";
 
 export const speakersList: speaker[] = [
@@ -82,6 +80,7 @@ export const speakersList: speaker[] = [
     companyName: "باسلام",
     photo: rezaMosaviAvatar,
     companyLogo: basalamLogo,
+    talk: true,
     links: {
       linkedin: "https://www.linkedin.com/in/rmoosavi/",
     },
@@ -97,17 +96,6 @@ export const speakersList: speaker[] = [
       instagram: "https://www.instagram.com/imohammadreza.ir/",
       github: "https://github.com/iMohammadReza",
       website: "https://imohammadreza.ir",
-    },
-  },
-  {
-    name: "محمدعلی سلطانی پور",
-    position: "مدیر فنی",
-    companyName: "باسلام",
-    photo: aliSoltanipourAvatar,
-    companyLogo: basalamLogo,
-    talk: true,
-    links: {
-      linkedin: "https://www.linkedin.com/in/soltanipour/",
     },
   },
   {
