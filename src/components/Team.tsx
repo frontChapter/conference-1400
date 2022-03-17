@@ -28,7 +28,7 @@ const Member = ({ name, role, photo, links }: TeamMember) => (
         width={128}
         height={128}
         alt={name}
-        className="rounded-2xl bg-slate-200 text-transparent"
+        className="rounded-2xl bg-slate-200 text-transparent transition-all hover:scale-[105%]"
       />
     </figure>
     <strong className="w-full truncate text-center font-bold text-gray-600 md:text-lg">
