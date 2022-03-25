@@ -89,7 +89,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/AmirHosseinKarimi"><img src="https://avatars.githubusercontent.com/u/17345129?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Amir Hossein Karimi</b></sub></a><br /><a href="https://github.com/frontChapter/conference-1400/commits?author=AmirHosseinKarimi" title="Code">💻</a> <a href="#projectManagement-AmirHosseinKarimi" title="Project Management">📆</a> <a href="https://github.com/frontChapter/conference-1400/commits?author=AmirHosseinKarimi" title="Documentation">📖</a> <a href="#maintenance-AmirHosseinKarimi" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/shiraliali"><img src="https://avatars.githubusercontent.com/u/35615183?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ali shirali</b></sub></a><br /><a href="https://github.com/frontChapter/conference-1400/commits?author=shiraliali" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Hesvm"><img src="https://avatars.githubusercontent.com/u/99117901?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hesvm</b></sub></a><br /><a href="#design-Hesvm" title="Design">🎨</a></td>
-    <td align="center"><a href="http://hiradsajde.ir"><img src="https://avatars.githubusercontent.com/u/77942412?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hirad sajde</b></sub></a><br /><a href="https://github.com/frontChapter/conference-1400/commits?author=hiradsajde" title="Code">💻</a></td>
   </tr>
 </table>
 

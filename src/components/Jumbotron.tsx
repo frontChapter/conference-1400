@@ -1,22 +1,41 @@
 import Image from "next/image";
-import bg from "assets/images/jumbotron-bg.jpg";
 import logo from "assets/images/logo.png";
 import WaveSvg from "assets/images/jumbotron-wave.svg?inline";
 
 const Jumbotron: React.FC<{}> = () => {
   return (
     <div className="container py-9 md:py-12 lg:py-16">
-      <div className="relative overflow-hidden rounded-[20px] py-8 px-4 sm:rounded-[75px] md:pt-20 md:pb-28">
-        <Image
-          alt="تصویر همایش"
-          src={bg}
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          placeholder="blur"
-          priority
-        />
-
+      <div className="relative overflow-hidden rounded-[20px] bg-blue-200 py-8 px-4 sm:rounded-[75px] md:pt-20 md:pb-28">
+        <video
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            objectFit: "cover",
+            zIndex: "0",
+            background: "red",
+            top: 0,
+            left: 0,
+          }}
+          muted
+          loop
+          autoPlay
+          playsInline
+        >
+          <source src="/videos/video.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+        <div
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            width: "100%",
+            height: "100%",
+            backgroundColor: "black",
+            opacity: "0.6",
+          }}
+        ></div>
         <div className="relative flex flex-col items-center">
           <div className="flex items-center">
             <figure className="ml-3 h-6 w-6 md:h-12 md:w-12">
