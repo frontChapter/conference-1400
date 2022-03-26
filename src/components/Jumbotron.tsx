@@ -7,35 +7,16 @@ const Jumbotron: React.FC<{}> = () => {
     <div className="container py-9 md:py-12 lg:py-16">
       <div className="relative overflow-hidden rounded-[20px] bg-blue-200 py-8 px-4 sm:rounded-[75px] md:pt-20 md:pb-28">
         <video
-          style={{
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            objectFit: "cover",
-            zIndex: "0",
-            background: "red",
-            top: 0,
-            left: 0,
-          }}
+          className="absolute top-0 left-0 z-0 h-[100%] w-[100%] object-cover"
           muted
           loop
           autoPlay
-          playsInline
+          poster="/images/video_poster.jpg"
         >
           <source src="/videos/video.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
-        <div
-          style={{
-            position: "absolute",
-            top: "0",
-            left: "0",
-            width: "100%",
-            height: "100%",
-            backgroundColor: "black",
-            opacity: "0.6",
-          }}
-        ></div>
+        <div className="absolute top-0 left-0 h-[100%] w-[100%] bg-black opacity-60" />
         <div className="relative flex flex-col items-center">
           <div className="flex items-center">
             <figure className="ml-3 h-6 w-6 md:h-12 md:w-12">
