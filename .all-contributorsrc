@@ -51,6 +51,17 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "mehdimh95",
+      "name": "Mehdi Mahmoudi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96372415?v=4",
+      "profile": "https://github.com/mehdimh95",
+      "contributions": [
+        "code",
+        "eventOrganizing",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
