@@ -77,6 +77,7 @@ export const teamMembers: TeamMember[] = [
     role: "هماهنگی و تدارکات",
     photo: mehdi,
     links: {
+      linkedin: "https://www.linkedin.com/in/mehdi-mahmoudi95/",
       instagram: "https://www.instagram.com/mehdimh95/",
     },
   },
