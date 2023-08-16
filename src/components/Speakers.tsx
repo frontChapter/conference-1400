@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { speaker, speakersList } from "data/speakers-data";
+import Image from "next/image";
 import { socialMediaIcons, socialMediaLinks } from "types";
 
 const Speakers = () => {
@@ -29,7 +29,7 @@ const Speaker = ({
   hideCompanyPrefix,
   links,
 }: speaker) => (
-  <div className="flex w-48 flex-col items-center space-y-3 rounded-3xl bg-white py-5 px-3 md:w-52 lg:space-y-4 lg:py-6">
+  <div className="flex w-48 flex-col items-center space-y-3 rounded-3xl bg-white px-3 py-5 md:w-52 lg:space-y-4 lg:py-6">
     <figure className="h-32 w-32">
       <Image
         src={photo}
@@ -53,7 +53,14 @@ const Speaker = ({
         )}
         {companyLogo ? (
           <figure className="flex h-[18px] md:h-5">
-            <Image src={companyLogo} objectFit="contain" alt={companyName} title={companyName} />
+            <Image
+              src={companyLogo}
+              objectFit="contain"
+              alt={companyName}
+              title={companyName}
+              width={50}
+              height={18}
+            />
           </figure>
         ) : (
           <span

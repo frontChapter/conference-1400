@@ -1,59 +1,58 @@
 import Image from "next/image";
-import Liara from "assets/images/sponsors/liara.png";
 
 const sponsorsList = [
   {
     title: "لیارا",
     link: "https://digikala.com/",
-    logo: Liara,
+    logo: "/images/sponsors/liara.png",
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Liara,
+    logo: "/images/sponsors/liara.png",
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Liara,
+    logo: "/images/sponsors/liara.png",
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Liara,
+    logo: "/images/sponsors/liara.png",
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Liara,
+    logo: "/images/sponsors/liara.png",
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Liara,
+    logo: "/images/sponsors/liara.png",
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Liara,
+    logo: "/images/sponsors/liara.png",
   },
   {
     title: "دیجی‌کالا",
     link: "https://digikala.com/",
-    logo: Liara,
+    logo: "/images/sponsors/liara.png",
   },
 ];
 
 type IListItemType = {
   link: string;
   title: string;
-  logo: string | StaticImageData;
+  logo: string;
 };
 
 const ListItem = ({ link, title, logo }: IListItemType) => (
   <div className="basis-1/4 px-3">
     <a href={link} target="_blank" rel="noreferrer">
-      <Image layout="responsive" src={logo} alt={title} title={title} />
+      <Image width={300} height={100} src={logo} alt={title} title={title} />
     </a>
   </div>
 );

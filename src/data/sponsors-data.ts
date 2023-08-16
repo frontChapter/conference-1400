@@ -1,57 +1,48 @@
-import a4zi from "assets/images/sponsors/a4zi.png";
-import liara from "assets/images/sponsors/liara.png";
-import quera from "assets/images/sponsors/quera.png";
-import rokla from "assets/images/sponsors/rokla.png";
-import shab from "assets/images/sponsors/shab.png";
-import yektanet from "assets/images/sponsors/yektanet.png";
-import parscoders from "assets/images/sponsors/parscoders.png";
-import geektori from "assets/images/sponsors/geektori.png";
-
 export const sponsorsList: Sponsor[] = [
   {
     title: "پارسکدرز",
     link: "https://parscoders.com/",
-    logo: parscoders,
+    logo: "/images/sponsors/parscoders.png",
   },
   {
     title: "لیارا",
     link: "https://liara.ir/",
-    logo: liara,
+    logo: "/images/sponsors/liara.png",
   },
   {
     title: "کوئرا",
     link: "https://quera.ir/",
-    logo: quera,
+    logo: "/images/sponsors/quera.png",
   },
   {
     title: "شب",
     link: "https://shab.ir/",
-    logo: shab,
+    logo: "/images/sponsors/shab.png",
   },
   {
     title: "یکتانت",
     link: "https://yektanet.com/",
-    logo: yektanet,
+    logo: "/images/sponsors/yektanet.png",
   },
   {
     title: "رکلا",
     link: "https://rokla.ir/",
-    logo: rokla,
+    logo: "/images/sponsors/rokla.png",
   },
   {
     title: "ای فور زی",
     link: "https://a4zi.com/",
-    logo: a4zi,
+    logo: "/images/sponsors/a4zi.png",
   },
   {
     title: "گیکتوری",
     link: "https://geektori.ir/",
-    logo: geektori,
+    logo: "/images/sponsors/geektori.png",
   },
 ];
 
 export interface Sponsor {
   title: string;
   link: string;
-  logo: StaticImageData;
+  logo: string;
 }

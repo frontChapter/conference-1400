@@ -1,7 +1,7 @@
+import { Sponsor, sponsorsList } from "data/sponsors-data";
 import Image from "next/image";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Sponsor, sponsorsList } from "data/sponsors-data";
 
 const Sponsors = () => {
   return (
@@ -23,7 +23,7 @@ const Sponsors = () => {
           target="_blank"
           rel="noreferrer"
           href="https://t.me/ordinarySaleh"
-          className="flex items-center justify-center rounded border border-primary py-2 px-3 text-primary transition hover:bg-primary hover:text-white"
+          className="flex items-center justify-center rounded border border-primary px-3 py-2 text-primary transition hover:bg-primary hover:text-white"
         >
           <i className="ri-hand-heart-fill ml-1 text-xl leading-none" />
           <span className="font-medium">حامی میشوم</span>
@@ -71,6 +71,7 @@ const Sponsor: React.FC<Sponsor> = ({ link, title, logo }: Sponsor) => (
         alt={title}
         title={title}
         className="text-transparent"
+        layout="fill"
       />
     </a>
   </div>

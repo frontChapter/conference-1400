@@ -1,29 +1,12 @@
 import { socialMediaLinks } from "types";
 
-import balehLogo from "assets/images/companies/baleh.png";
-import basalamLogo from "assets/images/companies/basalam.png";
-import divarLogo from "assets/images/companies/divar.png";
-import liaraLogo from "assets/images/companies/liara.png";
-import snappLogo from "assets/images/companies/snapp.png";
-import snappMarketLogo from "assets/images/companies/snapp-market.png";
-import queraLogo from "assets/images/companies/quera.png";
-
-import sobhanAminNejadAvatar from "assets/images/speakers/sobhan-amin-nejad.png";
-import miladAzamiAvatar from "assets/images/speakers/milad-azami.png";
-import amirAliGholiAvatar from "assets/images/speakers/amirali-gholi.png";
-import mrAlaAvatar from "assets/images/speakers/mohammadreza-ala.png";
-import mohammadMahmoodiAvatar from "assets/images/speakers/mohammad-mahmoodi.png";
-import mrIranmaneshAvatar from "assets/images/speakers/mohammadreza-iranmanesh.png";
-import rezaMosaviAvatar from "assets/images/speakers/reza-mosavi.png";
-import mohammadJafariAvatar from "assets/images/speakers/mohammad-jafari.png";
-
 export const speakersList: speaker[] = [
   {
-    photo: amirAliGholiAvatar,
+    photo: "/images/speakers/amirali-gholi.png",
     name: "امیرعلی قلی",
     position: "توسعه‌دهنده‌ جاوا اسکریپت",
     companyName: "لیارا",
-    companyLogo: liaraLogo,
+    companyLogo: "/images/companies/liara.png",
     links: {
       linkedin: "https://www.linkedin.com/in/gholi-dev",
       github: "https://github.com/gholi-dev",
@@ -31,11 +14,11 @@ export const speakersList: speaker[] = [
     },
   },
   {
-    photo: sobhanAminNejadAvatar,
+    photo: "/images/speakers/sobhan-amin-nejad.png",
     name: "سبحان امین‌نژاد",
     position: "توسعه‌دهنده‌ ارشد فرانت‌اند",
     companyName: "اسنپ مارکت",
-    companyLogo: snappMarketLogo,
+    companyLogo: "/images/companies/snapp-market.png",
     links: {
       linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
       instagram: "https://www.instagram.com/aminnejads/",
@@ -45,7 +28,7 @@ export const speakersList: speaker[] = [
     name: "میلاد عظمی",
     position: "اینفولوئنسر فرانت‌اند",
     companyName: "فریلنسر",
-    photo: miladAzamiAvatar,
+    photo: "/images/speakers/milad-azami.png",
     brandClass: "from-[#02abdf] to-[#01bd9c] bg-gradient-to-r bg-clip-text text-transparent",
     hideCompanyPrefix: true,
     links: {
@@ -57,8 +40,8 @@ export const speakersList: speaker[] = [
     name: "محمدرضا اعلا",
     position: "مهندس فرانت‌اند",
     companyName: "اسنپ",
-    photo: mrAlaAvatar,
-    companyLogo: snappLogo,
+    photo: "/images/speakers/mohammadreza-ala.png",
+    companyLogo: "/images/companies/snapp.png",
     links: {
       linkedin: "https://www.linkedin.com/in/mohammadrezala/",
       instagram: "https://www.instagram.com/mhmdrz_a/",
@@ -68,8 +51,8 @@ export const speakersList: speaker[] = [
     name: "محمد محمودی",
     position: "راهبر تیم فنی",
     companyName: "پیام‌رسان بانکی بله",
-    photo: mohammadMahmoodiAvatar,
-    companyLogo: balehLogo,
+    photo: "/images/speakers/mohammad-mahmoodi.png",
+    companyLogo: "/images/companies/baleh.png",
     links: {
       linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
     },
@@ -78,8 +61,8 @@ export const speakersList: speaker[] = [
     name: "سید رضا موسوی",
     position: "چپتر لید فرانت‌اند",
     companyName: "باسلام",
-    photo: rezaMosaviAvatar,
-    companyLogo: basalamLogo,
+    photo: "/images/speakers/reza-mosavi.png",
+    companyLogo: "/images/companies/basalam.png",
     talk: true,
     links: {
       linkedin: "https://www.linkedin.com/in/rmoosavi/",
@@ -89,8 +72,8 @@ export const speakersList: speaker[] = [
     name: "محمدرضا ایرانمنش",
     position: "توسعه‌دهنده‌ ارشد فرانت‌اند",
     companyName: "دیوار",
-    photo: mrIranmaneshAvatar,
-    companyLogo: divarLogo,
+    photo: "/images/speakers/mohammadreza-iranmanesh.png",
+    companyLogo: "/images/companies/divar.png",
     links: {
       twitter: "https://twitter.com/iMohammadReza_",
       instagram: "https://www.instagram.com/imohammadreza.ir/",
@@ -102,8 +85,8 @@ export const speakersList: speaker[] = [
     name: "محمد جعفری",
     position: "توسعه‌دهنده‌ فول‌استک",
     companyName: "کوئرا",
-    photo: mohammadJafariAvatar,
-    companyLogo: queraLogo,
+    photo: "/images/speakers/mohammad-jafari.png",
+    companyLogo: "/images/companies/quera.png",
     talk: true,
     links: {
       linkedin: "https://www.linkedin.com/in/mjafari98/",
@@ -113,12 +96,12 @@ export const speakersList: speaker[] = [
 ];
 
 export interface speaker {
-  photo: StaticImageData;
+  photo: string;
   name: string;
   position: string;
   companyName?: string;
   brandClass?: string;
-  companyLogo?: StaticImageData;
+  companyLogo?: string;
   hideCompanyPrefix?: boolean;
   talk?: boolean;
   links?: socialMediaLinks;

@@ -1,12 +1,5 @@
 import { planIcons, socialMediaLinks } from "types";
 // import miladMoafi from "assets/images/speakers/milad-moafi.png";
-import miladAzami from "assets/images/speakers/milad-azami.png";
-import amirAliGholi from "assets/images/speakers/amirali-gholi.png";
-import sobhanAminNejad from "assets/images/speakers/sobhan-amin-nejad.png";
-import mohammadMahmoodi from "assets/images/speakers/mohammad-mahmoodi.png";
-import mrAla from "assets/images/speakers/mohammadreza-ala.png";
-import mrIranmanesh from "assets/images/speakers/mohammadreza-iranmanesh.png";
-import rezaMosavi from "assets/images/speakers/reza-mosavi.png";
 
 export const itemsData: item[] = [
   {
@@ -29,7 +22,7 @@ export const itemsData: item[] = [
       "در اولین بخش امیرعلی تجربیاتش رو درباره‌ چالش‌ها، مشکلات و راه حل‌های راه‌اندازی یک وبلاگ استاتیک در سطح تجاری با ما به اشتراک میذاره.",
     speaker: {
       name: "امیرعلی قلی",
-      avatar: amirAliGholi,
+      avatar: "/images/speakers/amirali-gholi.png",
       links: {
         linkedin: "https://www.linkedin.com/in/gholi-dev",
         github: "https://github.com/gholi-dev",
@@ -47,7 +40,7 @@ export const itemsData: item[] = [
       "توی این ارائه محمدرضا در مورد زیرساخت فرانت‌اند دیوار و چالش‌هایی که حل کردن مثل dynamic serving و SSR غیره صحبت میکنه",
     speaker: {
       name: "محمدرضا ایرانمنش",
-      avatar: mrIranmanesh,
+      avatar: "/images/speakers/mohammadreza-iranmanesh.png",
       links: {
         website: "https://imohammadreza.ir/",
         twitter: "https://twitter.com/iMohammadReza_",
@@ -80,7 +73,7 @@ export const itemsData: item[] = [
       "استفاده از از رندرترون به عنوان استاتیک رندرینگین انجین برای بهبود پرفرمنس و سئو ی وب اپلییکیشن های تک صفحه ای",
     speaker: {
       name: "محمدرضا اعلا",
-      avatar: mrAla,
+      avatar: "/images/speakers/mohammadreza-ala.png",
       links: {
         linkedin: "https://www.linkedin.com/in/mohammadrezala/",
         instagram: "https://www.instagram.com/mhmdrz_a/",
@@ -97,7 +90,7 @@ export const itemsData: item[] = [
       "Core web vitals ابتکاری توسط Google است که بتوان با اندازه‌گیری آن‌ها تجربه‌کاربری کاربران در وب را سنجید. هر یک از Core Web Vitals نمایانگر جنبه‌ای از تجربه کاربر است، و به صورت میدانی قابل اندازه‌گیری است و تجربه دنیای واقعی یک کاربر را منعکس می‌کند. در این ارائه تجربه باسلام را برای بهبود core web vitals ارائه میکنیم",
     speaker: {
       name: "سید رضا موسوی",
-      avatar: rezaMosavi,
+      avatar: "/images/speakers/reza-mosavi.png",
       links: {
         linkedin: "https://www.linkedin.com/in/rmoosavi/",
       },
@@ -139,7 +132,7 @@ export const itemsData: item[] = [
       "یادگیری برنامه نویسی چقدر طول میکشه؟ پیدا کردن کار راحته؟ تو شهرستان هم میتونم کار بکنم؟ اصلا حقوق برنامه نویسی چقدره؟",
     speaker: {
       name: "میلاد عظمی",
-      avatar: miladAzami,
+      avatar: "/images/speakers/milad-azami.png",
       links: {
         linkedin: "https://www.linkedin.com/in/milad-azami-b226631b5/",
         instagram: "https://www.instagram.com/javascript.front/",
@@ -156,7 +149,7 @@ export const itemsData: item[] = [
       "بررسی معماری جدید توسعه وب بر پایه جاوا اسکریپت سمت کاربر، Api های قابل استفاده مجدد و markup های از پیش ساخته",
     speaker: {
       name: "سبحان امین‌نژاد",
-      avatar: sobhanAminNejad,
+      avatar: "/images/speakers/sobhan-amin-nejad.png",
       links: {
         linkedin: "https://www.linkedin.com/in/sobhan-aminnejad/",
         instagram: "https://www.instagram.com/aminnejads/",
@@ -178,7 +171,7 @@ export const itemsData: item[] = [
       "پرفورمنس نرم‌افزار همیشه مورد توجه برنامه‌نویس‌ها بوده. بهینه‌سازی و بالا بردن بهره‌وری کد و در نهایت خلق تجربه‌ی کاربری بهتر. در این ارائه به طور کلی به پرفورمنس در وب نوین پرداخته میشه. در مورد اینکه کی پرفورمنس برای ما مهم میشه؟ چه پارامترها و متریک‌هایی رو باید محاسبه کینم؟ نیازمندی‌ها، چالش‌های فنی محاسبه‌ی پرفورمنس و استفاده از ابزار‌های مانیتورینگ صحبت می‌کنیم",
     speaker: {
       name: "محمد محمودی",
-      avatar: mohammadMahmoodi,
+      avatar: "/images/speakers/mohammad-mahmoodi.png",
       links: {
         linkedin: "https://www.linkedin.com/in/mohammad-mahmoudi-a7280376/",
       },
@@ -204,7 +197,7 @@ export interface item {
   content?: string;
   speaker?: {
     name: string;
-    avatar: StaticImageData;
+    avatar: string;
     links?: socialMediaLinks;
   };
 }

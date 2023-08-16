@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import logo from "assets/images/logo.png";
+import { RiPhoneLine } from "react-icons/ri";
 import HamburgerButton from "./HamburgerButton";
 import TopNav from "./TopNav";
-import { RiPhoneLine } from "react-icons/ri";
 
 const supportNumber = process.env.NEXT_PUBLIC_SUPPORT_NUMBER;
 
@@ -27,7 +26,7 @@ const TopNavbar: React.FC<{}> = () => {
               }}
             >
               <Image
-                src={logo}
+                src="/images/logo.png"
                 priority
                 objectFit="contain"
                 width={48}

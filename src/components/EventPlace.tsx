@@ -1,7 +1,4 @@
 import Image from "next/image";
-import Star from "assets/images/icons/star.png";
-import MizbanHotel from "assets/images/mizban-hotel.jpg";
-import MizbanHotelMap from "assets/images/mizban-hotel-map.jpg";
 
 const EventPlace: React.FC<{}> = () => {
   return (
@@ -41,7 +38,7 @@ const Hotel: React.FC<{}> = () => {
               href="https://www.eghamat24.com/BabolsarHotels/Mizban2Hotel.html"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-secondary py-2 px-5 font-bold text-white transition hover:bg-secondary-hover md:text-lg"
+              className="rounded-full bg-secondary px-5 py-2 font-bold text-white transition hover:bg-secondary-hover md:text-lg"
             >
               <span className="md:hidden">هتل در اقامت ۲۴</span>
               <span className="hidden md:block">صفحه هتل در سایت اقامت ۲۴</span>
@@ -58,8 +55,9 @@ const Hotel: React.FC<{}> = () => {
           <div className="relative overflow-hidden rounded-3xl">
             <figure className="h-[70px]">
               <Image
-                src={MizbanHotelMap}
-                layout="fill"
+                src="/images/mizban-hotel-map.jpg"
+                height={70}
+                width={200}
                 objectFit="cover"
                 objectPosition="right center"
                 alt="هتل میزبان روی نقشه"
@@ -83,17 +81,16 @@ const Hotel: React.FC<{}> = () => {
           <div className="z-10 flex items-center justify-center space-x-1 space-x-reverse self-center rounded-3xl bg-white p-2 shadow sm:py-4 sm:px-5">
             {[...Array(5)].map((x, y) => (
               <figure key={y} className="w-4 sm:w-6">
-                <Image src={Star} width={24} height={22} alt="⭐️" />
+                <Image src="/images/icons/star.png" width={24} height={22} alt="⭐️" />
               </figure>
             ))}
           </div>
           <div className="relative -mt-5 flex aspect-video items-stretch overflow-auto rounded-3xl sm:-mt-8 md:aspect-auto md:h-full">
             <Image
-              src={MizbanHotel}
+              src="/images/mizban-hotel.jpg"
               layout="fill"
               objectFit="cover"
               objectPosition="left center"
-              placeholder="blur"
               alt="هتل میزبان"
               className="block h-full w-full leading-none text-transparent"
               sizes="(max-width: 639px) 640px,(max-width: 767px) 552px,(max-width: 1023px) 272px,(max-width: 1279px) 368px,(max-width: 1535px) 423px, 519px"

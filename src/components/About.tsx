@@ -1,4 +1,3 @@
-import ducksTalking from "assets/images/ducks-talking.png";
 import Image from "next/image";
 
 const About: React.FC = () => {
@@ -6,7 +5,14 @@ const About: React.FC = () => {
     <div className="bg-white py-9 md:py-12 lg:py-16">
       <div className="container flex flex-col items-center justify-center md:flex-row">
         <div className="flex aspect-square w-52 max-w-full shrink-0 items-center justify-center rounded-3xl bg-blue-500 p-8 md:basis-64 md:p-12 lg:basis-80">
-          <Image src={ducksTalking} objectFit="contain" alt="مکالمه" className="text-transparent" />
+          <Image
+            src="/images/ducks-talking.png"
+            objectFit="contain"
+            alt="مکالمه"
+            className="text-transparent"
+            width={300}
+            height={200}
+          />
         </div>
         <div className="mt-6 flex max-w-lg flex-col space-y-6 md:mt-0 md:max-w-2xl md:pr-8 lg:pr-12">
           <h3 className="text-2xl font-black text-gray-900 sm:text-3xl lg:text-4xl">

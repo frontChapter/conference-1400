@@ -1,8 +1,7 @@
-import Image from "next/image";
-import { socialMediaIcons } from "types";
 import { socialMedia } from "data/social-media";
-import logo from "assets/images/logo-vertical-dark.png";
+import Image from "next/image";
 import { RiPhoneLine } from "react-icons/ri";
+import { socialMediaIcons } from "types";
 
 const supportNumber = process.env.NEXT_PUBLIC_SUPPORT_NUMBER;
 
@@ -10,7 +9,13 @@ const Footer: React.FC<{}> = () => {
   return (
     <footer className="flex flex-col items-center space-y-6 bg-gray-900 py-7 md:py-9 lg:py-12">
       <figure className="flex">
-        <Image src={logo} width={198} height={41} alt="فرانت چپتر" objectFit="contain" />
+        <Image
+          src="/images/logo-vertical-dark.png"
+          width={198}
+          height={41}
+          alt="فرانت چپتر"
+          objectFit="contain"
+        />
       </figure>
       <div className="flex items-center justify-center font-medium text-gray-300">
         <span>طراحی و توسعه با</span>

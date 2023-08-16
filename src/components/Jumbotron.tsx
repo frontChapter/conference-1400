@@ -1,6 +1,5 @@
 import Image from "next/image";
-import logo from "assets/images/logo.png";
-import WaveSvg from "assets/images/jumbotron-wave.svg?inline";
+import WaveSvg from "../../public/images/jumbotron-wave.svg?inline";
 
 const Jumbotron: React.FC<{}> = () => {
   return (
@@ -21,7 +20,7 @@ const Jumbotron: React.FC<{}> = () => {
           <div className="flex items-center">
             <figure className="ml-3 h-6 w-6 md:h-12 md:w-12">
               <Image
-                src={logo}
+                src="/images/logo.png"
                 priority
                 objectFit="contain"
                 width={48}

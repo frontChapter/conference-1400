@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import logo from "assets/images/logo.svg";
 
 const ComingSoon: React.FC<{}> = () => {
   return (
@@ -13,14 +12,10 @@ const ComingSoon: React.FC<{}> = () => {
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center rounded-lg border border-gray-200 bg-white p-8">
               <figure className="w-20">
-                <Image src={logo} alt="لوگو فرانت چپتر" />
+                <Image src="/images/logo.svg" alt="لوگو فرانت چپتر" />
               </figure>
-              <h1 className="mt-4 text-4xl font-bold leading-loose">
-                فرانت چپتر تو راهه!
-              </h1>
-              <h2 className="text-3xl font-bold leading-loose">
-                منتظرمون باشید
-              </h2>
+              <h1 className="mt-4 text-4xl font-bold leading-loose">فرانت چپتر تو راهه!</h1>
+              <h2 className="text-3xl font-bold leading-loose">منتظرمون باشید</h2>
               <div className="mt-8">
                 <a
                   target="_blank"
